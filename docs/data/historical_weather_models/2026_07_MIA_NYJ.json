@@ -1,0 +1,972 @@
+{
+  "version": 1,
+  "type": "retrospective_v10_weather_replay_unvalidated",
+  "game_id": "2026_07_MIA_NYJ",
+  "away": "MIA",
+  "home": "NYJ",
+  "week": 7,
+  "kickoff_at": "2026-10-25T17:00:00Z",
+  "replayed_at": "2026-11-02T23:38:41.012679Z",
+  "original_forecast_run_initialized_at": "2026-10-25T06:00:00Z",
+  "weather_asof_cutoff": "2026-10-25T16:00:00Z",
+  "weather_assumed_available_at": "2026-10-25T13:00:00Z",
+  "weather_source_sha256": "59f6e497a161ca182a6dfc5fb9ec2e683264123ccf6b1f2f3b311054743c5c88",
+  "weather_source": "Open-Meteo original ECMWF model run (assumed T-60 availability)",
+  "forecast_issue_time_verified": false,
+  "historical_football_inputs_point_in_time_verified": false,
+  "original_v10_baseline_sha256": "906b54c48079c52cbe5e3ee27451a29ce1d10fba2fc3861f4ea838f56cd3cd99",
+  "experimental_policy_sha256": "3f9e8338958c3782ddb5224e6a477f7990b677bade9252d9965abc0886cbc3fd",
+  "experimental_engine_commit": "aeec104d4b8a47309ca56d163019853b67e98707",
+  "draws_per_model": 10000,
+  "seed": 20261102,
+  "roof_state": "open_air",
+  "field_exposure": "outdoors",
+  "roof_assumption_not_confirmed": false,
+  "weather_completion_delta": 0,
+  "weather_fg_success_delta": 0,
+  "score_projection": {
+    "away_score_mean": 18.0,
+    "home_score_mean": 23.148,
+    "home_win_probability": 0.6472
+  },
+  "players": [
+    {
+      "player": "Malik Willis",
+      "team": "MIA",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 30.21,
+          "p10": 24.0,
+          "p90": 37.0
+        },
+        "completions": {
+          "mean": 17.48,
+          "p10": 12.0,
+          "p90": 23.0
+        },
+        "passing_yards": {
+          "mean": 188.68,
+          "p10": 116.0,
+          "p90": 264.0
+        },
+        "passing_tds": {
+          "mean": 1.11,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "interceptions": {
+          "mean": 0.87,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 25.14,
+          "p10": 8.0,
+          "p90": 46.0
+        },
+        "rushing_tds": {
+          "mean": 0.12,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Greg Dulcich",
+      "team": "MIA",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.26,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 3.0,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 31.71,
+          "p10": 5.0,
+          "p90": 65.0
+        },
+        "receiving_tds": {
+          "mean": 0.19,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Jalen Tolbert",
+      "team": "MIA",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.83,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.04,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 11.71,
+          "p10": 0.0,
+          "p90": 32.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Ryan Miller",
+      "team": "MIA",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.41,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.27,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 3.3,
+          "p10": 0.0,
+          "p90": 13.0
+        },
+        "receiving_tds": {
+          "mean": 0.02,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "De'Von Achane",
+      "team": "MIA",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 3.91,
+          "p10": 2.0,
+          "p90": 6.0
+        },
+        "rushing_yards": {
+          "mean": 16.47,
+          "p10": 3.0,
+          "p90": 33.0
+        },
+        "rushing_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 1.4,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.85,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 8.77,
+          "p10": 0.0,
+          "p90": 25.0
+        },
+        "receiving_tds": {
+          "mean": 0.05,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Jaylen Wright",
+      "team": "MIA",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 3.94,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "rushing_yards": {
+          "mean": 15.52,
+          "p10": 3.0,
+          "p90": 31.0
+        },
+        "rushing_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Malik Washington",
+      "team": "MIA",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 7.35,
+          "p10": 4.0,
+          "p90": 11.0
+        },
+        "receptions": {
+          "mean": 4.83,
+          "p10": 2.0,
+          "p90": 8.0
+        },
+        "receiving_yards": {
+          "mean": 52.22,
+          "p10": 16.0,
+          "p90": 94.0
+        },
+        "receiving_tds": {
+          "mean": 0.31,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Ollie Gordon II",
+      "team": "MIA",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 11.07,
+          "p10": 7.0,
+          "p90": 16.0
+        },
+        "rushing_yards": {
+          "mean": 51.81,
+          "p10": 25.0,
+          "p90": 82.0
+        },
+        "rushing_tds": {
+          "mean": 0.24,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 0.72,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.53,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 5.28,
+          "p10": 0.0,
+          "p90": 18.0
+        },
+        "receiving_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "DJ Herman",
+      "team": "MIA",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.23,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.14,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 1.5,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Caleb Douglas",
+      "team": "MIA",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.56,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.03,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 11.77,
+          "p10": 0.0,
+          "p90": 33.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Will Kacmarek",
+      "team": "MIA",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.67,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.0,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 10.5,
+          "p10": 0.0,
+          "p90": 29.0
+        },
+        "receiving_tds": {
+          "mean": 0.06,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Chris Bell",
+      "team": "MIA",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.71,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 1.23,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 14.32,
+          "p10": 0.0,
+          "p90": 37.0
+        },
+        "receiving_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Kevin Coleman Jr.",
+      "team": "MIA",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 5.43,
+          "p10": 3.0,
+          "p90": 8.0
+        },
+        "receptions": {
+          "mean": 2.43,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 25.42,
+          "p10": 1.0,
+          "p90": 55.0
+        },
+        "receiving_tds": {
+          "mean": 0.14,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Riley Patterson",
+      "team": "MIA",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.53,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.06,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 1.6,
+          "p10": 0.0,
+          "p90": 3.0
+        }
+      }
+    },
+    {
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 30.59,
+          "p10": 24.0,
+          "p90": 37.0
+        },
+        "completions": {
+          "mean": 20.34,
+          "p10": 15.0,
+          "p90": 26.0
+        },
+        "passing_yards": {
+          "mean": 236.7,
+          "p10": 153.0,
+          "p90": 323.0
+        },
+        "passing_tds": {
+          "mean": 1.69,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 0.41,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "rushing_yards": {
+          "mean": 6.82,
+          "p10": 0.0,
+          "p90": 17.0
+        },
+        "rushing_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Sterling Shepard",
+      "team": "NYJ",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.86,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.53,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 5.98,
+          "p10": 0.0,
+          "p90": 20.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Tim Patrick",
+      "team": "NYJ",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.18,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.25,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 14.69,
+          "p10": 0.0,
+          "p90": 38.0
+        },
+        "receiving_tds": {
+          "mean": 0.1,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Garrett Wilson",
+      "team": "NYJ",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 5.56,
+          "p10": 3.0,
+          "p90": 9.0
+        },
+        "receptions": {
+          "mean": 3.86,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receiving_yards": {
+          "mean": 46.19,
+          "p10": 11.0,
+          "p90": 88.0
+        },
+        "receiving_tds": {
+          "mean": 0.32,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Jelani Woods",
+      "team": "NYJ",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.81,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.54,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.36,
+          "p10": 0.0,
+          "p90": 21.0
+        },
+        "receiving_tds": {
+          "mean": 0.05,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Jeremy Ruckert",
+      "team": "NYJ",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.12,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.87,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 9.17,
+          "p10": 0.0,
+          "p90": 27.0
+        },
+        "receiving_tds": {
+          "mean": 0.06,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Breece Hall",
+      "team": "NYJ",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 6.31,
+          "p10": 3.0,
+          "p90": 10.0
+        },
+        "rushing_yards": {
+          "mean": 23.76,
+          "p10": 7.9,
+          "p90": 43.0
+        },
+        "rushing_tds": {
+          "mean": 0.14,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 1.05,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.81,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 9.26,
+          "p10": 0.0,
+          "p90": 28.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Isaiah Williams",
+      "team": "NYJ",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.25,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.86,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 10.61,
+          "p10": 0.0,
+          "p90": 31.0
+        },
+        "receiving_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Braelon Allen",
+      "team": "NYJ",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 14.23,
+          "p10": 9.0,
+          "p90": 19.0
+        },
+        "rushing_yards": {
+          "mean": 59.63,
+          "p10": 31.0,
+          "p90": 91.0
+        },
+        "rushing_tds": {
+          "mean": 0.35,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 1.76,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.18,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 12.23,
+          "p10": 0.0,
+          "p90": 32.0
+        },
+        "receiving_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Isaiah Davis",
+      "team": "NYJ",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 3.06,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "rushing_yards": {
+          "mean": 11.98,
+          "p10": 1.0,
+          "p90": 25.0
+        },
+        "rushing_tds": {
+          "mean": 0.06,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.62,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.4,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 4.61,
+          "p10": 0.0,
+          "p90": 17.0
+        },
+        "receiving_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Adonai Mitchell",
+      "team": "NYJ",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.2,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.36,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 15.82,
+          "p10": 0.0,
+          "p90": 40.0
+        },
+        "receiving_tds": {
+          "mean": 0.11,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Mason Taylor",
+      "team": "NYJ",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.64,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 2.54,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 26.79,
+          "p10": 2.0,
+          "p90": 58.0
+        },
+        "receiving_tds": {
+          "mean": 0.19,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Kenyon Sadiq",
+      "team": "NYJ",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.9,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 1.71,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 19.44,
+          "p10": 0.0,
+          "p90": 46.0
+        },
+        "receiving_tds": {
+          "mean": 0.14,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Omar Cooper Jr.",
+      "team": "NYJ",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.38,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 3.26,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receiving_yards": {
+          "mean": 41.99,
+          "p10": 8.0,
+          "p90": 82.0
+        },
+        "receiving_tds": {
+          "mean": 0.31,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Jason Sanders",
+      "team": "NYJ",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.7,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.21,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 2.24,
+          "p10": 1.0,
+          "p90": 4.0
+        }
+      }
+    }
+  ],
+  "disclaimer": "RECONSTRUCTED AFTER THE GAME, NOT A LIVE PREGAME FORECAST. Used original archived weather model run (assumed available at T-60) with unvalidated experimental coefficients. Player and injury data may reflect later revisions; roof positions may be assumed. Not proof of prospective skill."
+}

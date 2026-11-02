@@ -1,0 +1,1088 @@
+{
+  "version": 1,
+  "type": "retrospective_v10_weather_replay_unvalidated",
+  "game_id": "2026_07_NE_CHI",
+  "away": "NE",
+  "home": "CHI",
+  "week": 7,
+  "kickoff_at": "2026-10-23T00:15:00Z",
+  "replayed_at": "2026-11-02T23:37:56.275052Z",
+  "original_forecast_run_initialized_at": "2026-10-22T12:00:00Z",
+  "weather_asof_cutoff": "2026-10-22T23:15:00Z",
+  "weather_assumed_available_at": "2026-10-22T19:00:00Z",
+  "weather_source_sha256": "484084c452ff7b78c651de056ba26e9aef34877fce9aebfd089aecad3b9e12f5",
+  "weather_source": "Open-Meteo original ECMWF model run (assumed T-60 availability)",
+  "forecast_issue_time_verified": false,
+  "historical_football_inputs_point_in_time_verified": false,
+  "original_v10_baseline_sha256": "09ac3f2291c933d61c6c25cfa12d9a4639d673497283bc69445213673264a91d",
+  "experimental_policy_sha256": "3f9e8338958c3782ddb5224e6a477f7990b677bade9252d9965abc0886cbc3fd",
+  "experimental_engine_commit": "aeec104d4b8a47309ca56d163019853b67e98707",
+  "draws_per_model": 10000,
+  "seed": 20261102,
+  "roof_state": "open_air",
+  "field_exposure": "outdoors",
+  "roof_assumption_not_confirmed": false,
+  "weather_completion_delta": 0,
+  "weather_fg_success_delta": 0,
+  "score_projection": {
+    "away_score_mean": 22.261,
+    "home_score_mean": 23.406,
+    "home_win_probability": 0.5295
+  },
+  "players": [
+    {
+      "player": "Drake Maye",
+      "team": "NE",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 30.01,
+          "p10": 23.0,
+          "p90": 37.0
+        },
+        "completions": {
+          "mean": 18.26,
+          "p10": 13.0,
+          "p90": 24.0
+        },
+        "passing_yards": {
+          "mean": 224.85,
+          "p10": 144.0,
+          "p90": 308.0
+        },
+        "passing_tds": {
+          "mean": 1.61,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 1.0,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 18.76,
+          "p10": 4.0,
+          "p90": 36.0
+        },
+        "rushing_tds": {
+          "mean": 0.11,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Hunter Henry",
+      "team": "NE",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.26,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 2.42,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 29.83,
+          "p10": 1.0,
+          "p90": 64.0
+        },
+        "receiving_tds": {
+          "mean": 0.21,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Mack Hollins",
+      "team": "NE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.4,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.66,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 21.34,
+          "p10": 0.0,
+          "p90": 50.0
+        },
+        "receiving_tds": {
+          "mean": 0.16,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "A.J. Brown",
+      "team": "NE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 6.6,
+          "p10": 3.0,
+          "p90": 10.0
+        },
+        "receptions": {
+          "mean": 3.15,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 36.39,
+          "p10": 6.0,
+          "p90": 73.0
+        },
+        "receiving_tds": {
+          "mean": 0.26,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Reggie Gilliam",
+      "team": "NE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.78,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.49,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 5.88,
+          "p10": 0.0,
+          "p90": 20.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "team": "NE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 9.37,
+          "p10": 6.0,
+          "p90": 13.0
+        },
+        "rushing_yards": {
+          "mean": 38.7,
+          "p10": 16.0,
+          "p90": 65.0
+        },
+        "rushing_tds": {
+          "mean": 0.22,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 1.43,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.04,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 11.31,
+          "p10": 0.0,
+          "p90": 31.0
+        },
+        "receiving_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Romeo Doubs",
+      "team": "NE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.23,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.38,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 19.57,
+          "p10": 0.0,
+          "p90": 49.0
+        },
+        "receiving_tds": {
+          "mean": 0.14,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Tommy DeVito",
+      "team": "NE",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "completions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "interceptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 2.19,
+          "p10": 0.0,
+          "p90": 8.0
+        },
+        "rushing_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "DeMario Douglas",
+      "team": "NE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.35,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 2.98,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 37.15,
+          "p10": 6.0,
+          "p90": 75.0
+        },
+        "receiving_tds": {
+          "mean": 0.27,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Kyle Williams",
+      "team": "NE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.22,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.76,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 10.52,
+          "p10": 0.0,
+          "p90": 33.0
+        },
+        "receiving_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Corey Kiner",
+      "team": "NE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 5.29,
+          "p10": 2.0,
+          "p90": 8.0
+        },
+        "rushing_yards": {
+          "mean": 24.42,
+          "p10": 7.0,
+          "p90": 44.0
+        },
+        "rushing_tds": {
+          "mean": 0.14,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 0.15,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.1,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_yards": {
+          "mean": 1.21,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Efton Chism III",
+      "team": "NE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.68,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.06,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 12.74,
+          "p10": 0.0,
+          "p90": 35.0
+        },
+        "receiving_tds": {
+          "mean": 0.09,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Lan Larison",
+      "team": "NE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.38,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.25,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 3.01,
+          "p10": 0.0,
+          "p90": 12.0
+        },
+        "receiving_tds": {
+          "mean": 0.02,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 6.5,
+          "p10": 3.0,
+          "p90": 10.0
+        },
+        "rushing_yards": {
+          "mean": 28.03,
+          "p10": 10.0,
+          "p90": 50.0
+        },
+        "rushing_tds": {
+          "mean": 0.16,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 0.73,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.47,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 5.59,
+          "p10": 0.0,
+          "p90": 20.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Eli Raridon",
+      "team": "NE",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.05,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.41,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 17.09,
+          "p10": 0.0,
+          "p90": 43.0
+        },
+        "receiving_tds": {
+          "mean": 0.13,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Andy Borregales",
+      "team": "NE",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.48,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.04,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 2.2,
+          "p10": 1.0,
+          "p90": 4.0
+        }
+      }
+    },
+    {
+      "player": "Caleb Williams",
+      "team": "CHI",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 30.51,
+          "p10": 24.0,
+          "p90": 37.0
+        },
+        "completions": {
+          "mean": 20.75,
+          "p10": 15.0,
+          "p90": 26.0
+        },
+        "passing_yards": {
+          "mean": 231.23,
+          "p10": 154.0,
+          "p90": 313.1
+        },
+        "passing_tds": {
+          "mean": 1.69,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 0.72,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 12.23,
+          "p10": 1.0,
+          "p90": 25.0
+        },
+        "rushing_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Case Keenum",
+      "team": "CHI",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "completions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "interceptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 4.55,
+          "p10": 0.0,
+          "p90": 12.0
+        },
+        "rushing_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Kalif Raymond",
+      "team": "CHI",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.09,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 2.5,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 26.16,
+          "p10": 2.0,
+          "p90": 57.0
+        },
+        "receiving_tds": {
+          "mean": 0.19,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "D'Andre Swift",
+      "team": "CHI",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 8.77,
+          "p10": 5.0,
+          "p90": 13.0
+        },
+        "rushing_yards": {
+          "mean": 35.45,
+          "p10": 15.0,
+          "p90": 60.0
+        },
+        "rushing_tds": {
+          "mean": 0.21,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 3.29,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 2.54,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 25.69,
+          "p10": 2.0,
+          "p90": 55.0
+        },
+        "receiving_tds": {
+          "mean": 0.18,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Cole Kmet",
+      "team": "CHI",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.54,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.02,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 10.94,
+          "p10": 0.0,
+          "p90": 30.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Tyson Bagent",
+      "team": "CHI",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "completions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "interceptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 7.75,
+          "p10": 0.0,
+          "p90": 18.0
+        },
+        "rushing_tds": {
+          "mean": 0.05,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Roschon Johnson",
+      "team": "CHI",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 5.34,
+          "p10": 3.0,
+          "p90": 8.0
+        },
+        "rushing_yards": {
+          "mean": 20.87,
+          "p10": 6.0,
+          "p90": 39.0
+        },
+        "rushing_tds": {
+          "mean": 0.12,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 1.94,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.4,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 15.4,
+          "p10": 0.0,
+          "p90": 39.0
+        },
+        "receiving_tds": {
+          "mean": 0.11,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.26,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 2.55,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 32.42,
+          "p10": 3.0,
+          "p90": 68.0
+        },
+        "receiving_tds": {
+          "mean": 0.24,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Colston Loveland",
+      "team": "CHI",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.82,
+          "p10": 2.0,
+          "p90": 8.0
+        },
+        "receptions": {
+          "mean": 3.13,
+          "p10": 1.0,
+          "p90": 5.1
+        },
+        "receiving_yards": {
+          "mean": 33.89,
+          "p10": 5.0,
+          "p90": 68.0
+        },
+        "receiving_tds": {
+          "mean": 0.25,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 6.06,
+          "p10": 3.0,
+          "p90": 9.0
+        },
+        "rushing_yards": {
+          "mean": 27.36,
+          "p10": 10.0,
+          "p90": 48.0
+        },
+        "rushing_tds": {
+          "mean": 0.17,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 0.73,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.53,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 5.76,
+          "p10": 0.0,
+          "p90": 20.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Jahdae Walker",
+      "team": "CHI",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.26,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.15,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 1.67,
+          "p10": 0.0,
+          "p90": 5.0
+        },
+        "receiving_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Luther Burden III",
+      "team": "CHI",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 6.13,
+          "p10": 3.0,
+          "p90": 9.0
+        },
+        "receptions": {
+          "mean": 4.39,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receiving_yards": {
+          "mean": 51.0,
+          "p10": 14.0,
+          "p90": 93.0
+        },
+        "receiving_tds": {
+          "mean": 0.38,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Zavion Thomas",
+      "team": "CHI",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.5,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.15,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 12.44,
+          "p10": 0.0,
+          "p90": 33.0
+        },
+        "receiving_tds": {
+          "mean": 0.09,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Sam Roush",
+      "team": "CHI",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.44,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.28,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 3.16,
+          "p10": 0.0,
+          "p90": 12.0
+        },
+        "receiving_tds": {
+          "mean": 0.02,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Cairo Santos",
+      "team": "CHI",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.59,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.13,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 2.31,
+          "p10": 1.0,
+          "p90": 4.0
+        }
+      }
+    }
+  ],
+  "disclaimer": "RECONSTRUCTED AFTER THE GAME, NOT A LIVE PREGAME FORECAST. Used original archived weather model run (assumed available at T-60) with unvalidated experimental coefficients. Player and injury data may reflect later revisions; roof positions may be assumed. Not proof of prospective skill."
+}

@@ -1,0 +1,972 @@
+{
+  "version": 1,
+  "type": "retrospective_v10_weather_replay_unvalidated",
+  "game_id": "2026_08_IND_JAC",
+  "away": "IND",
+  "home": "JAC",
+  "week": 8,
+  "kickoff_at": "2026-11-01T18:00:00Z",
+  "replayed_at": "2026-11-02T23:38:08.276165Z",
+  "original_forecast_run_initialized_at": "2026-11-01T06:00:00Z",
+  "weather_asof_cutoff": "2026-11-01T17:00:00Z",
+  "weather_assumed_available_at": "2026-11-01T13:00:00Z",
+  "weather_source_sha256": "ae684d0572c120c0d93360c2238ebc4ca2f81e509c836a25d0fc08582e218bec",
+  "weather_source": "Open-Meteo original ECMWF model run (assumed T-60 availability)",
+  "forecast_issue_time_verified": false,
+  "historical_football_inputs_point_in_time_verified": false,
+  "original_v10_baseline_sha256": "a8d45d0327d093a0b08dd61ac9d1814863e4c9be1a2fd3c4fef4fdb1921ad59a",
+  "experimental_policy_sha256": "3f9e8338958c3782ddb5224e6a477f7990b677bade9252d9965abc0886cbc3fd",
+  "experimental_engine_commit": "aeec104d4b8a47309ca56d163019853b67e98707",
+  "draws_per_model": 10000,
+  "seed": 20261102,
+  "roof_state": "open_air",
+  "field_exposure": "outdoors",
+  "roof_assumption_not_confirmed": false,
+  "weather_completion_delta": -0.008,
+  "weather_fg_success_delta": -0.025,
+  "score_projection": {
+    "away_score_mean": 19.64,
+    "home_score_mean": 24.337,
+    "home_win_probability": 0.6287
+  },
+  "players": [
+    {
+      "player": "Daniel Jones",
+      "team": "IND",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 31.3,
+          "p10": 24.0,
+          "p90": 38.0
+        },
+        "completions": {
+          "mean": 18.48,
+          "p10": 13.0,
+          "p90": 24.0
+        },
+        "passing_yards": {
+          "mean": 216.72,
+          "p10": 135.0,
+          "p90": 302.0
+        },
+        "passing_tds": {
+          "mean": 1.37,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 0.86,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 10.06,
+          "p10": 0.0,
+          "p90": 22.0
+        },
+        "rushing_tds": {
+          "mean": 0.05,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Keenan Allen",
+      "team": "IND",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.61,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 3.06,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 34.25,
+          "p10": 5.0,
+          "p90": 69.0
+        },
+        "receiving_tds": {
+          "mean": 0.22,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Laquon Treadwell",
+      "team": "IND",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.73,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 1.56,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 19.35,
+          "p10": 0.0,
+          "p90": 47.0
+        },
+        "receiving_tds": {
+          "mean": 0.13,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Mo Alie-Cox",
+      "team": "IND",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.6,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.97,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 11.05,
+          "p10": 0.0,
+          "p90": 31.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Ashton Dulin",
+      "team": "IND",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.95,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.54,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.47,
+          "p10": 0.0,
+          "p90": 22.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Nick Westbrook-Ikhine",
+      "team": "IND",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.35,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.2,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 2.43,
+          "p10": 0.0,
+          "p90": 9.0
+        },
+        "receiving_tds": {
+          "mean": 0.02,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Jonathan Taylor",
+      "team": "IND",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 16.32,
+          "p10": 11.0,
+          "p90": 22.0
+        },
+        "rushing_yards": {
+          "mean": 66.02,
+          "p10": 36.0,
+          "p90": 99.0
+        },
+        "rushing_tds": {
+          "mean": 0.33,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 3.02,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 1.88,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 22.99,
+          "p10": 0.0,
+          "p90": 53.0
+        },
+        "receiving_tds": {
+          "mean": 0.15,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Andrew Ogletree",
+      "team": "IND",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.86,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.58,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.63,
+          "p10": 0.0,
+          "p90": 23.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Alec Pierce",
+      "team": "IND",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.5,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.33,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 3.97,
+          "p10": 0.0,
+          "p90": 15.0
+        },
+        "receiving_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Will Mallory",
+      "team": "IND",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.55,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 1.47,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 17.56,
+          "p10": 0.0,
+          "p90": 44.0
+        },
+        "receiving_tds": {
+          "mean": 0.11,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Josh Downs",
+      "team": "IND",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.74,
+          "p10": 2.0,
+          "p90": 8.0
+        },
+        "receptions": {
+          "mean": 2.64,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 32.12,
+          "p10": 3.0,
+          "p90": 67.0
+        },
+        "receiving_tds": {
+          "mean": 0.2,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Tyler Warren",
+      "team": "IND",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.72,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 2.84,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 30.8,
+          "p10": 4.0,
+          "p90": 64.0
+        },
+        "receiving_tds": {
+          "mean": 0.18,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Seth McGowan",
+      "team": "IND",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 5.11,
+          "p10": 2.0,
+          "p90": 8.0
+        },
+        "rushing_yards": {
+          "mean": 20.82,
+          "p10": 6.0,
+          "p90": 38.0
+        },
+        "rushing_tds": {
+          "mean": 0.1,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.79,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.54,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.26,
+          "p10": 0.0,
+          "p90": 21.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Deion Burks",
+      "team": "IND",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.13,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.7,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 8.81,
+          "p10": 0.0,
+          "p90": 27.0
+        },
+        "receiving_tds": {
+          "mean": 0.05,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Spencer Shrader",
+      "team": "IND",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.6,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.07,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 1.83,
+          "p10": 0.0,
+          "p90": 4.0
+        }
+      }
+    },
+    {
+      "player": "Trevor Lawrence",
+      "team": "JAC",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 32.78,
+          "p10": 26.0,
+          "p90": 40.0
+        },
+        "completions": {
+          "mean": 20.31,
+          "p10": 15.0,
+          "p90": 26.0
+        },
+        "passing_yards": {
+          "mean": 244.65,
+          "p10": 161.0,
+          "p90": 332.0
+        },
+        "passing_tds": {
+          "mean": 1.82,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 0.73,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 12.27,
+          "p10": 0.0,
+          "p90": 26.0
+        },
+        "rushing_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Ameer Abdullah",
+      "team": "JAC",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 0.72,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 3.18,
+          "p10": 0.0,
+          "p90": 10.0
+        },
+        "rushing_tds": {
+          "mean": 0.02,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.31,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.2,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 2.15,
+          "p10": 0.0,
+          "p90": 8.0
+        },
+        "receiving_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Nick Mullens",
+      "team": "JAC",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "completions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "interceptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 1.94,
+          "p10": 0.0,
+          "p90": 7.0
+        },
+        "rushing_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Jakobi Meyers",
+      "team": "JAC",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 5.85,
+          "p10": 3.0,
+          "p90": 9.0
+        },
+        "receptions": {
+          "mean": 3.78,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receiving_yards": {
+          "mean": 47.58,
+          "p10": 12.0,
+          "p90": 89.0
+        },
+        "receiving_tds": {
+          "mean": 0.35,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Quintin Morris",
+      "team": "JAC",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.19,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.12,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 1.32,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Parker Washington",
+      "team": "JAC",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 8.04,
+          "p10": 5.0,
+          "p90": 12.0
+        },
+        "receptions": {
+          "mean": 4.39,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receiving_yards": {
+          "mean": 58.52,
+          "p10": 17.0,
+          "p90": 107.0
+        },
+        "receiving_tds": {
+          "mean": 0.45,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Chris Rodriguez Jr.",
+      "team": "JAC",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 7.44,
+          "p10": 4.0,
+          "p90": 11.0
+        },
+        "rushing_yards": {
+          "mean": 33.36,
+          "p10": 13.0,
+          "p90": 57.0
+        },
+        "rushing_tds": {
+          "mean": 0.2,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 0.54,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.33,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 3.72,
+          "p10": 0.0,
+          "p90": 14.0
+        },
+        "receiving_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Brenton Strange",
+      "team": "JAC",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 6.01,
+          "p10": 3.0,
+          "p90": 9.0
+        },
+        "receptions": {
+          "mean": 4.42,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receiving_yards": {
+          "mean": 50.3,
+          "p10": 14.0,
+          "p90": 92.0
+        },
+        "receiving_tds": {
+          "mean": 0.38,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Brian Thomas Jr.",
+      "team": "JAC",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.72,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 1.37,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 15.84,
+          "p10": 0.0,
+          "p90": 41.0
+        },
+        "receiving_tds": {
+          "mean": 0.11,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "LeQuint Allen Jr.",
+      "team": "JAC",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 0.75,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 3.25,
+          "p10": 0.0,
+          "p90": 10.0
+        },
+        "rushing_tds": {
+          "mean": 0.02,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.59,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.34,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 3.77,
+          "p10": 0.0,
+          "p90": 14.0
+        },
+        "receiving_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Bhayshul Tuten",
+      "team": "JAC",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 14.11,
+          "p10": 9.0,
+          "p90": 19.0
+        },
+        "rushing_yards": {
+          "mean": 60.13,
+          "p10": 31.0,
+          "p90": 93.0
+        },
+        "rushing_tds": {
+          "mean": 0.36,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 2.67,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 2.06,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 23.38,
+          "p10": 0.0,
+          "p90": 52.0
+        },
+        "receiving_tds": {
+          "mean": 0.17,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Josh Cameron",
+      "team": "JAC",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.49,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.92,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 11.27,
+          "p10": 0.0,
+          "p90": 32.0
+        },
+        "receiving_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Nate Boerkircher",
+      "team": "JAC",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.71,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.19,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 13.16,
+          "p10": 0.0,
+          "p90": 35.0
+        },
+        "receiving_tds": {
+          "mean": 0.1,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Cam Little",
+      "team": "JAC",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.66,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.12,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 2.45,
+          "p10": 1.0,
+          "p90": 4.0
+        }
+      }
+    }
+  ],
+  "disclaimer": "RECONSTRUCTED AFTER THE GAME, NOT A LIVE PREGAME FORECAST. Used original archived weather model run (assumed available at T-60) with unvalidated experimental coefficients. Player and injury data may reflect later revisions; roof positions may be assumed. Not proof of prospective skill."
+}

@@ -1,0 +1,931 @@
+{
+  "version": 1,
+  "type": "retrospective_v10_weather_replay_unvalidated",
+  "game_id": "2026_07_CLE_TEN",
+  "away": "CLE",
+  "home": "TEN",
+  "week": 7,
+  "kickoff_at": "2026-10-25T17:00:00Z",
+  "replayed_at": "2026-11-02T23:38:48.319512Z",
+  "original_forecast_run_initialized_at": "2026-10-25T06:00:00Z",
+  "weather_asof_cutoff": "2026-10-25T16:00:00Z",
+  "weather_assumed_available_at": "2026-10-25T13:00:00Z",
+  "weather_source_sha256": "a2e70d8f48ca72eadbfcc4401e1cfd10344fb65f167a7dde67368f5a5e997303",
+  "weather_source": "Open-Meteo original ECMWF model run (assumed T-60 availability)",
+  "forecast_issue_time_verified": false,
+  "historical_football_inputs_point_in_time_verified": false,
+  "original_v10_baseline_sha256": "f6081548f96e421c8a7a3038f545dcccd002bba366cdda77df290a26d7550a1b",
+  "experimental_policy_sha256": "3f9e8338958c3782ddb5224e6a477f7990b677bade9252d9965abc0886cbc3fd",
+  "experimental_engine_commit": "aeec104d4b8a47309ca56d163019853b67e98707",
+  "draws_per_model": 10000,
+  "seed": 20261102,
+  "roof_state": "open_air",
+  "field_exposure": "outdoors",
+  "roof_assumption_not_confirmed": false,
+  "weather_completion_delta": 0,
+  "weather_fg_success_delta": 0,
+  "score_projection": {
+    "away_score_mean": 19.506,
+    "home_score_mean": 19.91,
+    "home_win_probability": 0.5085
+  },
+  "players": [
+    {
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 29.9,
+          "p10": 23.0,
+          "p90": 37.0
+        },
+        "completions": {
+          "mean": 18.57,
+          "p10": 13.0,
+          "p90": 24.0
+        },
+        "passing_yards": {
+          "mean": 209.55,
+          "p10": 131.0,
+          "p90": 292.0
+        },
+        "passing_tds": {
+          "mean": 1.28,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 0.4,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "rushing_yards": {
+          "mean": 20.11,
+          "p10": 5.0,
+          "p90": 38.0
+        },
+        "rushing_tds": {
+          "mean": 0.1,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Jerry Jeudy",
+      "team": "CLE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.26,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 2.12,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 25.16,
+          "p10": 0.0,
+          "p90": 55.0
+        },
+        "receiving_tds": {
+          "mean": 0.16,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Tylan Wallace",
+      "team": "CLE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.78,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.54,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.15,
+          "p10": 0.0,
+          "p90": 21.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Blake Whiteheart",
+      "team": "CLE",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.81,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.54,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.28,
+          "p10": 0.0,
+          "p90": 21.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Jaleel McLaughlin",
+      "team": "CLE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 3.05,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "rushing_yards": {
+          "mean": 13.98,
+          "p10": 1.0,
+          "p90": 29.0
+        },
+        "rushing_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 2.18,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.49,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 15.3,
+          "p10": 0.0,
+          "p90": 38.0
+        },
+        "receiving_tds": {
+          "mean": 0.09,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Audric Estim\u00e9",
+      "team": "CLE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 5.15,
+          "p10": 2.0,
+          "p90": 8.0
+        },
+        "rushing_yards": {
+          "mean": 20.23,
+          "p10": 5.0,
+          "p90": 38.0
+        },
+        "rushing_tds": {
+          "mean": 0.1,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Raheim Sanders",
+      "team": "CLE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 1.53,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "rushing_yards": {
+          "mean": 6.59,
+          "p10": 0.0,
+          "p90": 16.0
+        },
+        "rushing_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 1.44,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.1,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 11.48,
+          "p10": 0.0,
+          "p90": 31.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.36,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 2.0,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 21.18,
+          "p10": 0.0,
+          "p90": 48.0
+        },
+        "receiving_tds": {
+          "mean": 0.13,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Isaiah Bond",
+      "team": "CLE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.24,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 1.9,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 23.32,
+          "p10": 0.0,
+          "p90": 53.0
+        },
+        "receiving_tds": {
+          "mean": 0.15,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 9.68,
+          "p10": 6.0,
+          "p90": 14.0
+        },
+        "rushing_yards": {
+          "mean": 36.52,
+          "p10": 15.0,
+          "p90": 62.0
+        },
+        "rushing_tds": {
+          "mean": 0.18,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 2.92,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 2.29,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 22.16,
+          "p10": 0.0,
+          "p90": 50.0
+        },
+        "receiving_tds": {
+          "mean": 0.13,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Denzel Boston",
+      "team": "CLE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.4,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 2.24,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 31.3,
+          "p10": 0.0,
+          "p90": 68.0
+        },
+        "receiving_tds": {
+          "mean": 0.19,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "KC Concepcion",
+      "team": "CLE",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 4.63,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 2.87,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 30.22,
+          "p10": 4.0,
+          "p90": 62.0
+        },
+        "receiving_tds": {
+          "mean": 0.18,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Andre Szmyt",
+      "team": "CLE",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.69,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "fg_made": {
+          "mean": 2.21,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 1.74,
+          "p10": 0.0,
+          "p90": 3.0
+        }
+      }
+    },
+    {
+      "player": "Cam Ward",
+      "team": "TEN",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 33.26,
+          "p10": 26.0,
+          "p90": 40.0
+        },
+        "completions": {
+          "mean": 20.73,
+          "p10": 15.0,
+          "p90": 26.0
+        },
+        "passing_yards": {
+          "mean": 220.75,
+          "p10": 143.0,
+          "p90": 305.0
+        },
+        "passing_tds": {
+          "mean": 1.36,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 0.74,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 11.13,
+          "p10": 0.0,
+          "p90": 24.0
+        },
+        "rushing_tds": {
+          "mean": 0.06,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Calvin Ridley",
+      "team": "TEN",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.42,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.33,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 15.47,
+          "p10": 0.0,
+          "p90": 39.0
+        },
+        "receiving_tds": {
+          "mean": 0.09,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Tony Pollard",
+      "team": "TEN",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 16.89,
+          "p10": 12.0,
+          "p90": 22.0
+        },
+        "rushing_yards": {
+          "mean": 70.22,
+          "p10": 39.0,
+          "p90": 106.0
+        },
+        "rushing_tds": {
+          "mean": 0.35,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 1.95,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.17,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 11.34,
+          "p10": 0.0,
+          "p90": 30.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Kylen Granson",
+      "team": "TEN",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.84,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.49,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 5.42,
+          "p10": 0.0,
+          "p90": 18.0
+        },
+        "receiving_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Daniel Bellinger",
+      "team": "TEN",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.96,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.13,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 11.94,
+          "p10": 0.0,
+          "p90": 32.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Wan'Dale Robinson",
+      "team": "TEN",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 7.26,
+          "p10": 4.0,
+          "p90": 11.0
+        },
+        "receptions": {
+          "mean": 4.65,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receiving_yards": {
+          "mean": 46.01,
+          "p10": 13.0,
+          "p90": 85.0
+        },
+        "receiving_tds": {
+          "mean": 0.28,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Tyjae Spears",
+      "team": "TEN",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 2.12,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "rushing_yards": {
+          "mean": 8.7,
+          "p10": 0.0,
+          "p90": 20.0
+        },
+        "rushing_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 2.47,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 2.0,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 17.99,
+          "p10": 0.0,
+          "p90": 42.0
+        },
+        "receiving_tds": {
+          "mean": 0.11,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Elic Ayomanor",
+      "team": "TEN",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 2.56,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receptions": {
+          "mean": 1.44,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 17.43,
+          "p10": 0.0,
+          "p90": 44.0
+        },
+        "receiving_tds": {
+          "mean": 0.1,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Kalel Mullings",
+      "team": "TEN",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 1.15,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "rushing_yards": {
+          "mean": 4.93,
+          "p10": 0.0,
+          "p90": 13.0
+        },
+        "rushing_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Gunnar Helm",
+      "team": "TEN",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.94,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 1.25,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 13.04,
+          "p10": 0.0,
+          "p90": 34.0
+        },
+        "receiving_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Chimere Dike",
+      "team": "TEN",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.78,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.56,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 5.95,
+          "p10": 0.0,
+          "p90": 20.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Nicholas Singleton",
+      "team": "TEN",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 1.84,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "rushing_yards": {
+          "mean": 7.51,
+          "p10": 0.0,
+          "p90": 18.0
+        },
+        "rushing_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Carnell Tate",
+      "team": "TEN",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 8.4,
+          "p10": 5.0,
+          "p90": 12.0
+        },
+        "receptions": {
+          "mean": 5.48,
+          "p10": 3.0,
+          "p90": 9.0
+        },
+        "receiving_yards": {
+          "mean": 62.68,
+          "p10": 22.0,
+          "p90": 109.0
+        },
+        "receiving_tds": {
+          "mean": 0.4,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Joey Slye",
+      "team": "TEN",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.64,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.16,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 1.82,
+          "p10": 0.0,
+          "p90": 3.0
+        }
+      }
+    }
+  ],
+  "disclaimer": "RECONSTRUCTED AFTER THE GAME, NOT A LIVE PREGAME FORECAST. Used original archived weather model run (assumed available at T-60) with unvalidated experimental coefficients. Player and injury data may reflect later revisions; roof positions may be assumed. Not proof of prospective skill."
+}

@@ -1,0 +1,888 @@
+{
+  "version": 1,
+  "type": "retrospective_v10_weather_replay_unvalidated",
+  "game_id": "2026_08_ATL_TB",
+  "away": "ATL",
+  "home": "TB",
+  "week": 8,
+  "kickoff_at": "2026-11-01T18:00:00Z",
+  "replayed_at": "2026-11-02T23:38:24.477135Z",
+  "original_forecast_run_initialized_at": "2026-11-01T06:00:00Z",
+  "weather_asof_cutoff": "2026-11-01T17:00:00Z",
+  "weather_assumed_available_at": "2026-11-01T13:00:00Z",
+  "weather_source_sha256": "3f7f120e2541fefef3fedff466f9178ad016c76e2fa8ee44a418c3bafd08617a",
+  "weather_source": "Open-Meteo original ECMWF model run (assumed T-60 availability)",
+  "forecast_issue_time_verified": false,
+  "historical_football_inputs_point_in_time_verified": false,
+  "original_v10_baseline_sha256": "ebd4d8c74358f4b38e49e896ae7d49df035ec068456d491a0571d0de4d795c92",
+  "experimental_policy_sha256": "3f9e8338958c3782ddb5224e6a477f7990b677bade9252d9965abc0886cbc3fd",
+  "experimental_engine_commit": "aeec104d4b8a47309ca56d163019853b67e98707",
+  "draws_per_model": 10000,
+  "seed": 20261102,
+  "roof_state": "open_air",
+  "field_exposure": "outdoors",
+  "roof_assumption_not_confirmed": false,
+  "weather_completion_delta": -0.008,
+  "weather_fg_success_delta": -0.025,
+  "score_projection": {
+    "away_score_mean": 21.855,
+    "home_score_mean": 19.279,
+    "home_win_probability": 0.4159
+  },
+  "players": [
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 30.53,
+          "p10": 24.0,
+          "p90": 37.0
+        },
+        "completions": {
+          "mean": 19.32,
+          "p10": 14.0,
+          "p90": 25.0
+        },
+        "passing_yards": {
+          "mean": 218.73,
+          "p10": 140.0,
+          "p90": 300.0
+        },
+        "passing_tds": {
+          "mean": 1.53,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 0.99,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 15.22,
+          "p10": 3.0,
+          "p90": 30.0
+        },
+        "rushing_tds": {
+          "mean": 0.09,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Austin Hooper",
+      "team": "ATL",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.68,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.23,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 13.03,
+          "p10": 0.0,
+          "p90": 35.0
+        },
+        "receiving_tds": {
+          "mean": 0.09,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Cooper Rush",
+      "team": "ATL",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "completions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "interceptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 2.21,
+          "p10": 0.0,
+          "p90": 7.0
+        },
+        "rushing_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Olamide Zaccheaus",
+      "team": "ATL",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.27,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receptions": {
+          "mean": 0.58,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.27,
+          "p10": 0.0,
+          "p90": 22.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Charlie Woerner",
+      "team": "ATL",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.02,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.59,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.52,
+          "p10": 0.0,
+          "p90": 21.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Chris Blair",
+      "team": "ATL",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.66,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.35,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 3.8,
+          "p10": 0.0,
+          "p90": 14.0
+        },
+        "receiving_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Khalil Herbert",
+      "team": "ATL",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 2.45,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "rushing_yards": {
+          "mean": 10.21,
+          "p10": 0.0,
+          "p90": 22.0
+        },
+        "rushing_tds": {
+          "mean": 0.06,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.82,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.56,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.33,
+          "p10": 0.0,
+          "p90": 21.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Kyle Pitts",
+      "team": "ATL",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.95,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 2.9,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 29.87,
+          "p10": 4.0,
+          "p90": 61.0
+        },
+        "receiving_tds": {
+          "mean": 0.2,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Drake London",
+      "team": "ATL",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 8.02,
+          "p10": 5.0,
+          "p90": 12.0
+        },
+        "receptions": {
+          "mean": 5.13,
+          "p10": 2.0,
+          "p90": 8.0
+        },
+        "receiving_yards": {
+          "mean": 66.33,
+          "p10": 23.0,
+          "p90": 115.0
+        },
+        "receiving_tds": {
+          "mean": 0.48,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Nick Muse",
+      "team": "ATL",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.29,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.9,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 9.23,
+          "p10": 0.0,
+          "p90": 26.0
+        },
+        "receiving_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Jahan Dotson",
+      "team": "ATL",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.16,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 1.67,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 22.25,
+          "p10": 0.0,
+          "p90": 53.0
+        },
+        "receiving_tds": {
+          "mean": 0.16,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 16.75,
+          "p10": 11.0,
+          "p90": 22.0
+        },
+        "rushing_yards": {
+          "mean": 79.2,
+          "p10": 45.0,
+          "p90": 117.0
+        },
+        "rushing_tds": {
+          "mean": 0.45,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 4.16,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 3.07,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 30.32,
+          "p10": 5.0,
+          "p90": 62.0
+        },
+        "receiving_tds": {
+          "mean": 0.21,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Zachariah Branch",
+      "team": "ATL",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 1.7,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 1.21,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receiving_yards": {
+          "mean": 12.25,
+          "p10": 0.0,
+          "p90": 32.0
+        },
+        "receiving_tds": {
+          "mean": 0.08,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Nick Folk",
+      "team": "ATL",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.52,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.01,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 2.15,
+          "p10": 0.0,
+          "p90": 4.0
+        }
+      }
+    },
+    {
+      "player": "Baker Mayfield",
+      "team": "TB",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 28.5,
+          "p10": 22.0,
+          "p90": 35.0
+        },
+        "completions": {
+          "mean": 17.93,
+          "p10": 13.0,
+          "p90": 23.0
+        },
+        "passing_yards": {
+          "mean": 189.81,
+          "p10": 117.0,
+          "p90": 265.1
+        },
+        "passing_tds": {
+          "mean": 1.19,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "interceptions": {
+          "mean": 0.9,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "rushing_yards": {
+          "mean": 7.46,
+          "p10": 0.0,
+          "p90": 17.0
+        },
+        "rushing_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Chris Godwin Jr.",
+      "team": "TB",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 8.63,
+          "p10": 5.0,
+          "p90": 12.1
+        },
+        "receptions": {
+          "mean": 6.17,
+          "p10": 3.0,
+          "p90": 9.0
+        },
+        "receiving_yards": {
+          "mean": 62.54,
+          "p10": 23.0,
+          "p90": 108.0
+        },
+        "receiving_tds": {
+          "mean": 0.39,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Kenny Gainwell",
+      "team": "TB",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 2.48,
+          "p10": 0.0,
+          "p90": 6.0
+        },
+        "rushing_yards": {
+          "mean": 10.87,
+          "p10": 0.0,
+          "p90": 29.0
+        },
+        "rushing_tds": {
+          "mean": 0.06,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.93,
+          "p10": 0.0,
+          "p90": 3.0
+        },
+        "receptions": {
+          "mean": 0.62,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receiving_yards": {
+          "mean": 6.08,
+          "p10": 0.0,
+          "p90": 21.0
+        },
+        "receiving_tds": {
+          "mean": 0.04,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Cade Otton",
+      "team": "TB",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.86,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 2.32,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 24.64,
+          "p10": 0.0,
+          "p90": 54.0
+        },
+        "receiving_tds": {
+          "mean": 0.15,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Sean Tucker",
+      "team": "TB",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 3.13,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "rushing_yards": {
+          "mean": 13.9,
+          "p10": 2.0,
+          "p90": 29.0
+        },
+        "rushing_tds": {
+          "mean": 0.07,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "targets": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "receiving_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Payne Durham",
+      "team": "TB",
+      "position": "TE",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.82,
+          "p10": 0.0,
+          "p90": 2.0
+        },
+        "receptions": {
+          "mean": 0.52,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 5.78,
+          "p10": 0.0,
+          "p90": 19.0
+        },
+        "receiving_tds": {
+          "mean": 0.03,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Bucky Irving",
+      "team": "TB",
+      "position": "RB",
+      "identity_status": "model_roster",
+      "stats": {
+        "carries": {
+          "mean": 16.68,
+          "p10": 11.0,
+          "p90": 22.0
+        },
+        "rushing_yards": {
+          "mean": 72.49,
+          "p10": 40.0,
+          "p90": 109.0
+        },
+        "rushing_tds": {
+          "mean": 0.38,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "targets": {
+          "mean": 4.16,
+          "p10": 2.0,
+          "p90": 7.0
+        },
+        "receptions": {
+          "mean": 2.83,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "receiving_yards": {
+          "mean": 25.89,
+          "p10": 3.0,
+          "p90": 55.0
+        },
+        "receiving_tds": {
+          "mean": 0.16,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Jalen McMillan",
+      "team": "TB",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 0.32,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receptions": {
+          "mean": 0.2,
+          "p10": 0.0,
+          "p90": 1.0
+        },
+        "receiving_yards": {
+          "mean": 2.16,
+          "p10": 0.0,
+          "p90": 8.0
+        },
+        "receiving_tds": {
+          "mean": 0.01,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Tez Johnson",
+      "team": "TB",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.49,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 2.29,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 28.4,
+          "p10": 0.0,
+          "p90": 62.0
+        },
+        "receiving_tds": {
+          "mean": 0.18,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Ted Hurst III",
+      "team": "TB",
+      "position": "WR",
+      "identity_status": "model_roster",
+      "stats": {
+        "targets": {
+          "mean": 3.5,
+          "p10": 1.0,
+          "p90": 6.0
+        },
+        "receptions": {
+          "mean": 1.8,
+          "p10": 0.0,
+          "p90": 4.0
+        },
+        "receiving_yards": {
+          "mean": 21.28,
+          "p10": 0.0,
+          "p90": 50.0
+        },
+        "receiving_tds": {
+          "mean": 0.14,
+          "p10": 0.0,
+          "p90": 1.0
+        }
+      }
+    },
+    {
+      "player": "Jalon Daniels",
+      "team": "TB",
+      "position": "QB",
+      "identity_status": "model_roster",
+      "stats": {
+        "attempts": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "completions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_yards": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "passing_tds": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "interceptions": {
+          "mean": 0.0,
+          "p10": 0.0,
+          "p90": 0.0
+        },
+        "rushing_yards": {
+          "mean": 11.1,
+          "p10": 0.0,
+          "p90": 24.0
+        },
+        "rushing_tds": {
+          "mean": 0.06,
+          "p10": 0.0,
+          "p90": 0.0
+        }
+      }
+    },
+    {
+      "player": "Chase McLaughlin",
+      "team": "TB",
+      "position": "K",
+      "identity_status": "model_roster",
+      "stats": {
+        "fg_attempts": {
+          "mean": 2.56,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "fg_made": {
+          "mean": 2.03,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "pat_made": {
+          "mean": 1.79,
+          "p10": 0.0,
+          "p90": 3.0
+        }
+      }
+    }
+  ],
+  "disclaimer": "RECONSTRUCTED AFTER THE GAME, NOT A LIVE PREGAME FORECAST. Used original archived weather model run (assumed available at T-60) with unvalidated experimental coefficients. Player and injury data may reflect later revisions; roof positions may be assumed. Not proof of prospective skill."
+}
