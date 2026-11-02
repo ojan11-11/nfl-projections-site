@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c1726">
+<meta name="description" content="NFL stadium open-air, fixed, and retractable roofs for football weather modeling.">
+<title>Stadium Roofs | NFL Monte Carlo</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./stadiums.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a href="./" class="brand"><span class="brand-mark">M<span class="brand-accent">C</span></span><span class="brand-text"><strong>NFL MONTE CARLO</strong><small>RESEARCH PROJECTIONS</small></span></a>
+<a href="./" style="color:#e3bb70;text-decoration:none;font-size:13px">Player projections</a>
+<a href="./history.html" style="color:#e3bb70;text-decoration:none;font-size:13px">Historical archive</a>
+</div></header>
+<main class="container">
+<section class="hero" style="padding-bottom:34px">
+<div class="eyebrow">WEATHER MODEL REFERENCE</div>
+<h1>Know the roof.<br><span>Know the conditions.</span></h1>
+<p class="intro">A stadium's roof construction and its actual game-day position are different facts. Weather-adjusted forecasts require verified venue information before a model can apply outdoor conditions.</p>
+</section>
+<section class="workspace">
+<div class="section-header"><div><div class="eyebrow muted">2026 NFL VENUES</div><h2>Stadium roof guide</h2></div><span id="roof-count" class="status">32 TEAMS</span></div>
+<div class="game-weather">
+<h3>How we treat roofs</h3>
+<p class="weather-usage"><strong>Open air:</strong> Outdoors, so a verified pregame forecast can affect the research simulation. <strong>Fixed roof:</strong> Indoor, domed, or covered/skylight venue; the experimental model assumes no outdoor weather impact. <strong>Retractable:</strong> The structure can open or close; without a timestamped game-day roof announcement, V10+Weather is withheld.</p>
+<p class="weather-roof-context">This is a reference for each team's usual home stadium, not proof of a particular game venue. Neutral-site games, relocation, stadium changes, and retractable roof movement require separate verification. SoFi has a fixed canopy with open sides; local field conditions may differ from enclosed domes and remain a research limitation.</p>
+</div>
+<div class="controls">
+<div class="control-field game-control"><label for="roof-filter">FILTER ROOF TYPE</label><select id="roof-filter">
+<option value="all">All roof types</option>
+<option value="retractable">Retractable roof</option>
+<option value="fixed_roof">Fixed roof, dome or skylight</option>
+<option value="open_air">Open-air field</option>
+</select></div></div>
+<div id="roof-error" class="notice" role="status" hidden></div>
+<div class="table-scroll"><table><thead><tr><th>TEAM</th><th>USUAL HOME STADIUM</th><th>ROOF CATEGORY</th><th>GAME-DAY WEATHER POLICY</th></tr></thead><tbody id="roof-table"></tbody></table></div>
+<p class="table-footnote">2026 stadium classification reference: <a href="https://www.nbcsportsbayarea.com/nfl/nfl-stadiums-open-air-dome-retractable-roofs/1954148/" rel="noopener noreferrer" target="_blank">NBC Sports NFL stadium roof guide (Sep. 2026)</a>. Game-specific roof positions and forecast snapshots are determined separately.</p>
+</section>
+</main>
+<footer class="footer"><div class="container footer-wrap"><div><strong>NFL MONTE CARLO</strong><p>Independent NFL simulation research.</p></div><div class="footer-note">Experimental weather coefficients are not independently validated.</div></div></footer>
+</body></html>

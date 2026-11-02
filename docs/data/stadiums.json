@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "source": "2026 NFL stadium roof categories: NBC Sports September 4, 2026; fixed-roof/skylight venues included.",
+  "source_url": "https://www.nbcsportsbayarea.com/nfl/nfl-stadiums-open-air-dome-retractable-roofs/1954148/",
+  "usage": "Usual home venue reference only. Actual game venue and retractable roof state must be verified separately; never assume roof position from roof category.",
+  "teams": {
+    "ARI": {
+      "name": "State Farm Stadium",
+      "roof_type": "retractable"
+    },
+    "ATL": {
+      "name": "Mercedes-Benz Stadium",
+      "roof_type": "retractable"
+    },
+    "BAL": {
+      "name": "M&T Bank Stadium",
+      "roof_type": "open_air"
+    },
+    "BUF": {
+      "name": "Highmark Stadium",
+      "roof_type": "open_air"
+    },
+    "CAR": {
+      "name": "Bank of America Stadium",
+      "roof_type": "open_air"
+    },
+    "CHI": {
+      "name": "Soldier Field",
+      "roof_type": "open_air"
+    },
+    "CIN": {
+      "name": "Paycor Stadium",
+      "roof_type": "open_air"
+    },
+    "CLE": {
+      "name": "Huntington Bank Field",
+      "roof_type": "open_air"
+    },
+    "DAL": {
+      "name": "AT&T Stadium",
+      "roof_type": "retractable"
+    },
+    "DEN": {
+      "name": "Empower Field at Mile High",
+      "roof_type": "open_air"
+    },
+    "DET": {
+      "name": "Ford Field",
+      "roof_type": "fixed_roof"
+    },
+    "GB": {
+      "name": "Lambeau Field",
+      "roof_type": "open_air"
+    },
+    "HOU": {
+      "name": "NRG Stadium",
+      "roof_type": "retractable"
+    },
+    "IND": {
+      "name": "Lucas Oil Stadium",
+      "roof_type": "retractable"
+    },
+    "JAC": {
+      "name": "EverBank Stadium",
+      "roof_type": "open_air"
+    },
+    "KC": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "roof_type": "open_air"
+    },
+    "LAC": {
+      "name": "SoFi Stadium",
+      "roof_type": "fixed_roof"
+    },
+    "LAR": {
+      "name": "SoFi Stadium",
+      "roof_type": "fixed_roof"
+    },
+    "LV": {
+      "name": "Allegiant Stadium",
+      "roof_type": "fixed_roof"
+    },
+    "MIA": {
+      "name": "Hard Rock Stadium",
+      "roof_type": "open_air"
+    },
+    "MIN": {
+      "name": "U.S. Bank Stadium",
+      "roof_type": "fixed_roof"
+    },
+    "NE": {
+      "name": "Gillette Stadium",
+      "roof_type": "open_air"
+    },
+    "NO": {
+      "name": "Caesars Superdome",
+      "roof_type": "fixed_roof"
+    },
+    "NYG": {
+      "name": "MetLife Stadium",
+      "roof_type": "open_air"
+    },
+    "NYJ": {
+      "name": "MetLife Stadium",
+      "roof_type": "open_air"
+    },
+    "PHI": {
+      "name": "Lincoln Financial Field",
+      "roof_type": "open_air"
+    },
+    "PIT": {
+      "name": "Acrisure Stadium",
+      "roof_type": "open_air"
+    },
+    "SEA": {
+      "name": "Lumen Field",
+      "roof_type": "open_air"
+    },
+    "SF": {
+      "name": "Levi's Stadium",
+      "roof_type": "open_air"
+    },
+    "TB": {
+      "name": "Raymond James Stadium",
+      "roof_type": "open_air"
+    },
+    "TEN": {
+      "name": "Nissan Stadium",
+      "roof_type": "open_air"
+    },
+    "WAS": {
+      "name": "Northwest Stadium",
+      "roof_type": "open_air"
+    }
+  }
+}

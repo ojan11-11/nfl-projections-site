@@ -16,3 +16,15 @@
 .score-vs{font-size:25px;color:#6c8699;align-self:center}
 .score-win-prob{text-align:center;color:#a6b7c5;font-size:12px;margin:9px 0 0}
 @media(max-width:750px){.score-panel{padding:18px 13px}.score-panel-header{font-size:9px;flex-wrap:wrap}.score-panel-hint{display:block;padding-top:3px}.score-team{min-width:55px}.score-panel-main{gap:25px}.score-vs{font-size:20px}}
+
+/* Per-game forecast provenance is separate from simulation output. */
+.game-weather{margin-top:25px;padding:22px 24px;border:1px solid #344457;border-radius:5px;background:#121e2c}
+.game-weather h3{font-size:clamp(19px,2.8vw,25px);font-weight:650;margin:7px 0 10px;color:#e7ecf0}
+.weather-usage{color:#bccbd4;font-size:14px;line-height:1.65;margin:0 0 13px}
+.weather-conditions{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:16px 0 12px}
+.weather-cell{padding:11px 14px;border:1px solid #384b59;background:#0b1a28;border-radius:4px;display:flex;flex-direction:column;gap:5px}
+.weather-cell-label{text-transform:uppercase;letter-spacing:.08em;font-size:10px;color:#9cafbc}
+.weather-cell-value{font-size:14px;font-weight:650;color:#e4ebee;line-height:1.35;overflow-wrap:anywhere}
+.weather-roof-context{color:#93aab8;font-size:12px;line-height:1.7;margin:7px 0 0}
+.weather-availability{border:1px solid #75623f;color:#e6cb91;background:rgba(159,116,47,.08);font-size:13px;line-height:1.6;padding:12px 14px;border-radius:4px;margin-top:10px}
+@media(max-width:650px){.game-weather{padding:17px 14px}.weather-conditions{grid-template-columns:repeat(2,minmax(0,1fr))}.weather-cell{padding:9px}}

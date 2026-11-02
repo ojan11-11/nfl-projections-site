@@ -17,6 +17,7 @@
         <span class="brand-text"><strong>NFL MONTE CARLO</strong><small>RESEARCH PROJECTIONS</small></span>
       </a>
       <a href="./history.html" style="color:#e3bb70;text-decoration:none;font-size:13px;font-weight:700">Weeks 7–8 historical research</a>
+      <a href="./stadiums.html" style="color:#e3bb70;text-decoration:none;font-size:13px">Stadium roof guide</a>
     </div>
   </header>
 
@@ -24,11 +25,11 @@
     <section class="hero" aria-labelledby="page-title">
       <div class="eyebrow">SIMULATED. DOCUMENTED. BEFORE KICKOFF.</div>
       <h1 id="page-title">Your game.<br><span>Your numbers.</span></h1>
-      <p class="intro">Player projections from 10,000 simulated NFL games per model. Built around the five positions that matter: QB, RB, WR, TE and K.</p>
+      <p class="intro">Player projections from 10,000 simulated NFL games per model. V10+Weather is an unvalidated research option and appears only when a real pregame weather run exists.</p>
       <div class="hero-metrics">
         <div class="metric"><strong>10,000</strong><span>SIMULATIONS / MODEL</span></div>
         <div class="metric"><strong>5</strong><span>POSITION GROUPS</span></div>
-        <div class="metric"><strong>3</strong><span>MODEL VERSIONS</span></div>
+        <div class="metric"><strong>4</strong><span>MODEL OPTIONS · WEATHER EXPERIMENTAL</span></div>
       </div>
     </section>
 
@@ -52,6 +53,7 @@
             <option value="v9">V9 — baseline</option>
             <option value="v10">V10 — research</option>
             <option value="v10_fg">V10+FG — research</option>
+            <option value="v10_weather">V10+Weather — experimental</option>
           </select>
         </div>
       </div>
@@ -88,9 +90,8 @@
   <p class="score-win-prob" id="live-win-prob">—</p>
 </section>
         <div id="research-banner" class="research-banner" hidden>
-          <strong>Experimental model</strong> — For research comparison only. V9 is the baseline; this model has not been promoted for production scoring.
+          <strong id="research-banner-title">Experimental model</strong> — <span id="research-banner-message">For research comparison only. V9 is the baseline; this model has not been promoted for production scoring.</span>
         </div>
-
         <div class="position-tabs" role="tablist" aria-label="Select player position">
           <button type="button" class="tab active" data-position="QB" aria-selected="true" role="tab">QBs</button>
           <button type="button" class="tab" data-position="RB" aria-selected="false" role="tab">RBs</button>
@@ -113,6 +114,14 @@
           </table>
         </div>
         <div class="table-footnote">Yardage ranges are the 10th–90th percentile of simulated outcomes. Other numbers are mean projections. They are not guaranteed results.</div>
+        <section class="game-weather" aria-labelledby="game-weather-title">
+          <div class="eyebrow muted">STADIUM &amp; WEATHER</div>
+          <h3 id="game-weather-title">Weather forecast used</h3>
+          <p id="game-weather-usage" class="weather-usage"></p>
+          <div id="weather-availability" class="weather-availability" hidden role="status"></div>
+          <div id="weather-conditions" class="weather-conditions" hidden aria-label="Stadium forecast captured before kickoff"></div>
+          <p id="game-roof-context" class="weather-roof-context"></p>
+        </section>
       </div>
     </section>
 

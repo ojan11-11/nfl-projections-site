@@ -10,7 +10,7 @@ const COL={
  K:[["fg_attempts","FG att"],["fg_made","FG made"],["pat_made","XP made"]]
 };
 const YARDS=new Set(["passing_yards","rushing_yards","receiving_yards"]);
-const S={index:[],game:null,model:"v9",position:"QB"};
+const S={index:[],game:null,model:"v9",position:"QB",stadiums:null};
 const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 const clear=n=>n.replaceChildren();
 const time=str=>new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"}).format(new Date(str));
@@ -23,6 +23,15 @@ function render(){
  $("history-week").textContent="WEEK "+d.week+" • RECONSTRUCTED AFTER KICKOFF";
  $("history-title").textContent=d.away+" @ "+d.home;
  $("history-meta").textContent="Kickoff: "+time(d.kickoff_at)+"  •  Replayed: "+time(d.replayed_at)+"  •  "+d.draws_per_model.toLocaleString()+" draws/model  •  Historical injury archive: "+d.official_inactive_evidence.replace(/_/g," ");
+ const venue=S.stadiums?.teams?.[d.home];
+ const label=venue ? ({
+    open_air:"Open-air stadium",retractable:"Retractable roof — game-day position unverified",
+    fixed_roof:"Fixed roof, dome, or skylight"
+ }[venue.roof_type]||"Roof type unknown") : "";
+ $("history-roof-reference").textContent=venue?
+   "Usual "+d.home+" home venue: "+venue.name+" · "+label+
+   ". Home stadium reference only, not a verified location/roof state for this historical replay." :
+   "The game venue and roof condition were not verified for this historical replay.";
  for(const tab of document.querySelectorAll("[data-position]")){const ok=tab.dataset.position===S.position;tab.classList.toggle("active",ok);tab.setAttribute("aria-selected",ok?"true":"false");tab.tabIndex=ok?0:-1;}
  const score=d.score_projections?.[S.model];
  const validScore=score && Number.isFinite(score.away_score_mean)
@@ -56,6 +65,15 @@ async function load(id){
  if(d.type!=="retrospective_pregame_style"||d.original_pregame_snapshot_verified!==false||!M.every(m=>Array.isArray(d.models?.[m])))throw Error("Unexpected research archive record");
  S.game=d;render();
 }
+async function loadStadiumRoofs() {
+ try {
+  const r=await fetch("./data/stadiums.json",{cache:"no-store"});
+  if(!r.ok)return;
+  const d=await r.json();
+  if(d.schema_version===1&&d.season===2026&&d.teams)S.stadiums=d;
+ }catch(e){/* Never infer or fabricate an unavailable roof. */}
+ if(S.game)render();
+}
 async function init(){
  try{
   const r=await fetch("./data/historical/index.json",{cache:"no-store"});
@@ -73,4 +91,5 @@ async function init(){
 $("history-game").addEventListener("change",async e=>{try{showError("");await load(e.target.value);}catch(err){showError(err.message);}});
 $("history-model").addEventListener("change",e=>{if(M.includes(e.target.value)){S.model=e.target.value;render();}});
 for(const tab of document.querySelectorAll("[data-position]"))tab.addEventListener("click",()=>{S.position=tab.dataset.position;render();});
+loadStadiumRoofs();
 init();
