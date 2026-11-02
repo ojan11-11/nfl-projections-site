@@ -48,9 +48,14 @@ Historical data files may contain later corrections, and full archived starter/i
 <div class="table-heading"><div><h3 id="history-position">Quarterback projections</h3><p>Mean estimates; yardage cells show the 10th–90th percentile range.</p></div><span class="count" id="history-count">—</span></div>
 <div class="table-scroll"><table><thead id="history-head"></thead><tbody id="history-body"></tbody></table></div>
 <p class="table-footnote">These numbers were simulated retrospectively, not observed forecasts. They do not use actual game scores as targets, but available archival inputs are incomplete.</p>
-<section class="game-weather" aria-label="Historical game stadium and weather provenance">
-<div class="eyebrow muted">STADIUM &amp; WEATHER</div><h3>Weather forecast used</h3>
-<p class="weather-usage">None. These Week 7–8 retrospective simulations did not incorporate a verified weather forecast. We do not reconstruct past weather forecasts using actual conditions observed after kickoff.</p>
+<section class="game-weather" aria-label="Historical as-of weather forecast and roof assumptions">
+<div class="eyebrow muted">ORIGINAL FORECAST RUN · HISTORICAL RESEARCH</div>
+<h3>What weather was forecast one hour before kickoff?</h3>
+<p class="weather-usage"><strong>Important:</strong> This section uses archived weather-model forecasts that were assumed available at the T−60-minute cutoff, never observed game weather. The V9, V10 and V10+FG scores shown above were generated without this weather information; forecasts below are supplementary context, not inputs to those simulations.</p>
+<div id="history-weather-status" class="weather-availability" role="status">Checking archived pregame forecast availability…</div>
+<div id="history-weather-values" class="weather-conditions" hidden aria-label="Archived pregame forecast values"></div>
+<p id="history-weather-source" class="weather-roof-context"></p>
+<p id="history-weather-roof-scenario" class="weather-roof-context"></p>
 <p id="history-roof-reference" class="weather-roof-context">Home stadium roof reference unavailable.</p>
 </section>
 </div></section>
