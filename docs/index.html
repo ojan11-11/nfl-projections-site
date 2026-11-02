@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Transparent, frozen pregame NFL Monte Carlo player projections for quarterbacks, running backs, wide receivers, tight ends and kickers.">
+  <meta name="theme-color" content="#0c1726">
+  <title>NFL Monte Carlo | Pregame Player Projections</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="./" class="brand" aria-label="NFL Monte Carlo homepage">
+        <span class="brand-mark" aria-hidden="true">M<span class="brand-accent">C</span></span>
+        <span class="brand-text"><strong>NFL MONTE CARLO</strong><small>RESEARCH PROJECTIONS</small></span>
+      </a>
+      <span class="site-chip"><span class="pulse-dot"></span> POINT-IN-TIME FORECASTS</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="eyebrow">SIMULATED. DOCUMENTED. BEFORE KICKOFF.</div>
+      <h1 id="page-title">Your game.<br><span>Your numbers.</span></h1>
+      <p class="intro">Player projections from 10,000 simulated NFL games per model. Built around the five positions that matter: QB, RB, WR, TE and K.</p>
+      <div class="hero-metrics">
+        <div class="metric"><strong>10,000</strong><span>SIMULATIONS / MODEL</span></div>
+        <div class="metric"><strong>5</strong><span>POSITION GROUPS</span></div>
+        <div class="metric"><strong>3</strong><span>MODEL VERSIONS</span></div>
+      </div>
+    </section>
+
+    <section class="workspace" aria-labelledby="workspace-title">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow muted">MODEL OUTPUT</div>
+          <h2 id="workspace-title">Player projections</h2>
+        </div>
+        <span class="status" id="status-chip">CHECKING FORECASTS</span>
+      </div>
+
+      <div class="controls">
+        <div class="control-field game-control">
+          <label for="game-select">MATCHUP</label>
+          <select id="game-select"><option value="">Loading verified matchups…</option></select>
+        </div>
+        <div class="control-field model-control">
+          <label for="model-select">SIMULATION MODEL</label>
+          <select id="model-select">
+            <option value="v9">V9 — baseline</option>
+            <option value="v10">V10 — research</option>
+            <option value="v10_fg">V10+FG — research</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="error-state" class="notice" hidden role="status"></div>
+
+      <div id="empty-state" class="empty-state" role="status" hidden>
+        <div class="empty-symbol" aria-hidden="true">01</div>
+        <h3>No verified forecasts published yet.</h3>
+        <p>Reports appear here only after all required pregame inputs pass validation and the simulations finish before kickoff. No placeholder projections or postgame backfills.</p>
+        <button id="refresh-button" class="outline-button" type="button">Check for new forecasts</button>
+      </div>
+
+      <div id="forecast" hidden>
+        <div class="matchup-bar">
+          <div>
+            <div class="eyebrow muted" id="matchup-overline">MATCHUP PROJECTION</div>
+            <h3 id="matchup-title">—</h3>
+            <div class="match-meta" id="match-meta"></div>
+          </div>
+          <div class="capture-badge"><span class="capture-dot"></span><span id="capture-label">FROZEN PREGAME</span></div>
+        </div>
+
+        <div id="research-banner" class="research-banner" hidden>
+          <strong>Experimental model</strong> — For research comparison only. V9 is the baseline; this model has not been promoted for production scoring.
+        </div>
+
+        <div class="position-tabs" role="tablist" aria-label="Select player position">
+          <button type="button" class="tab active" data-position="QB" aria-selected="true" role="tab">QBs</button>
+          <button type="button" class="tab" data-position="RB" aria-selected="false" role="tab">RBs</button>
+          <button type="button" class="tab" data-position="WR" aria-selected="false" role="tab">WRs</button>
+          <button type="button" class="tab" data-position="TE" aria-selected="false" role="tab">TEs</button>
+          <button type="button" class="tab" data-position="K" aria-selected="false" role="tab">Kickers</button>
+        </div>
+
+        <div class="table-heading">
+          <div>
+            <h3 id="table-title">Quarterback projections</h3>
+            <p id="table-subtitle">Means from the simulation; yardage ranges shown in parentheses.</p>
+          </div>
+          <span id="player-count" class="count">—</span>
+        </div>
+        <div class="table-scroll">
+          <table aria-describedby="table-subtitle" id="projection-table">
+            <thead id="projection-head"></thead>
+            <tbody id="projection-body"></tbody>
+          </table>
+        </div>
+        <div class="table-footnote">Yardage ranges are the 10th–90th percentile of simulated outcomes. Other numbers are mean projections. They are not guaranteed results.</div>
+      </div>
+    </section>
+
+    <section class="method" aria-labelledby="method-title">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow muted">OUR APPROACH</div>
+          <h2 id="method-title">A forecast you can trace.</h2>
+        </div>
+      </div>
+      <div class="method-grid">
+        <article class="method-card"><span class="method-num">01</span><h3>Freeze the inputs</h3><p>Player availability and source timestamps are checked before a game starts. Incomplete forecasts are withheld.</p></article>
+        <article class="method-card"><span class="method-num">02</span><h3>Simulate the game</h3><p>Each projection comes from the Monte Carlo play-and-drive engine, with 10,000 simulations per model.</p></article>
+        <article class="method-card"><span class="method-num">03</span><h3>Publish the evidence</h3><p>Every report displays its kickoff and frozen information cutoff so readers know what was available beforehand.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div><strong>NFL MONTE CARLO</strong><p>Independent football research. Not affiliated with the NFL or its teams.</p></div>
+      <div class="footer-note">Experimental projections are not betting advice or promises of performance. No sportsbook lines or odds drive the models.</div>
+    </div>
+  </footer>
+</body>
+</html>
