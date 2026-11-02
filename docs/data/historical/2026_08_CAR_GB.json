@@ -1,0 +1,3732 @@
+{
+  "version": 1,
+  "type": "retrospective_pregame_style",
+  "game_id": "2026_08_CAR_GB",
+  "matchup": "CAR @ GB",
+  "away": "CAR",
+  "home": "GB",
+  "week": 8,
+  "kickoff_at": "2026-10-30T00:15:00Z",
+  "replayed_at": "2026-11-02T21:30:27.754896Z",
+  "source_cutoff_target": "2026-10-30T00:13:00Z",
+  "draws_per_model": 10000,
+  "official_inactive_evidence": "not_archived",
+  "original_pregame_snapshot_verified": false,
+  "disclaimer": "RECONSTRUCTED AFTER KICKOFF. NOT A LIVE PREGAME FORECAST. Only earlier-week player statistics were fed into the model, but historical player files may contain later revisions; complete pre-kickoff injury/lineup archives are unavailable.",
+  "models": {
+    "v9": [
+      {
+        "player": "Bryce Young",
+        "team": "CAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 34.21,
+            "p10": 27.0,
+            "p90": 41.0
+          },
+          "completions": {
+            "mean": 21.76,
+            "p10": 16.0,
+            "p90": 28.0
+          },
+          "passing_yards": {
+            "mean": 241.17,
+            "p10": 160.0,
+            "p90": 327.0
+          },
+          "passing_tds": {
+            "mean": 1.61,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.58,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.45,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Darren Waller",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.6,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.55,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 18.55,
+            "p10": 0.0,
+            "p90": 44.0
+          },
+          "receiving_tds": {
+            "mean": 0.12,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "David Moore",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.86,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.48,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.47,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "AJ Dillon",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.26,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "rushing_yards": {
+            "mean": 4.75,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.28,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.04,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Chuba Hubbard",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 14.38,
+            "p10": 10.0,
+            "p90": 19.0
+          },
+          "rushing_yards": {
+            "mean": 62.23,
+            "p10": 33.0,
+            "p90": 95.0
+          },
+          "rushing_tds": {
+            "mean": 0.35,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 3.32,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.43,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 23.28,
+            "p10": 1.0,
+            "p90": 50.0
+          },
+          "receiving_tds": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tommy Tremble",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.54,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.87,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 18.8,
+            "p10": 0.0,
+            "p90": 44.0
+          },
+          "receiving_tds": {
+            "mean": 0.12,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "John Metchie III",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.24,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 1.91,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 20.66,
+            "p10": 0.0,
+            "p90": 48.0
+          },
+          "receiving_tds": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Kenny Pickett",
+        "team": "CAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 3.16,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Brycen Tremayne",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.11,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 0.67,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.9,
+            "p10": 0.0,
+            "p90": 25.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Xavier Legette",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.83,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.48,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.52,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jonathon Brooks",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 0.79,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.11,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.21,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jalen Coker",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 5.83,
+            "p10": 3.0,
+            "p90": 9.0
+          },
+          "receptions": {
+            "mean": 3.36,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 38.7,
+            "p10": 8.0,
+            "p90": 76.0
+          },
+          "receiving_tds": {
+            "mean": 0.26,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tetairoa McMillan",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 6.93,
+            "p10": 4.0,
+            "p90": 10.0
+          },
+          "receptions": {
+            "mean": 4.69,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receiving_yards": {
+            "mean": 55.67,
+            "p10": 17.0,
+            "p90": 101.0
+          },
+          "receiving_tds": {
+            "mean": 0.38,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Mitchell Evans",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.54,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.09,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 12.24,
+            "p10": 0.0,
+            "p90": 33.0
+          },
+          "receiving_tds": {
+            "mean": 0.08,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jimmy Horn Jr.",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.16,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 1.08,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ja'Seem Reed",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.37,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.23,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.49,
+            "p10": 0.0,
+            "p90": 9.1
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Anthony Tyus III",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.96,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "rushing_yards": {
+            "mean": 8.35,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "rushing_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Trevor Etienne",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 3.52,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "rushing_yards": {
+            "mean": 13.1,
+            "p10": 2.0,
+            "p90": 27.0
+          },
+          "rushing_tds": {
+            "mean": 0.07,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 1.71,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.24,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 13.25,
+            "p10": 0.0,
+            "p90": 34.1
+          },
+          "receiving_tds": {
+            "mean": 0.09,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ryan Fitzgerald",
+        "team": "CAR",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.69,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "fg_made": {
+            "mean": 2.21,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.1,
+            "p10": 0.0,
+            "p90": 4.0
+          }
+        }
+      },
+      {
+        "player": "Jordan Love",
+        "team": "GB",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 35.84,
+            "p10": 29.0,
+            "p90": 43.0
+          },
+          "completions": {
+            "mean": 22.73,
+            "p10": 17.0,
+            "p90": 29.0
+          },
+          "passing_yards": {
+            "mean": 252.16,
+            "p10": 170.0,
+            "p90": 339.0
+          },
+          "passing_tds": {
+            "mean": 1.72,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.66,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 2.61,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tyrod Taylor",
+        "team": "GB",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 2.91,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jonnu Smith",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.92,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.65,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.19,
+            "p10": 0.0,
+            "p90": 23.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Josh Jacobs",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 7.13,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "rushing_yards": {
+            "mean": 30.32,
+            "p10": 11.0,
+            "p90": 53.0
+          },
+          "rushing_tds": {
+            "mean": 0.17,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.31,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 2.91,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 31.15,
+            "p10": 5.0,
+            "p90": 63.0
+          },
+          "receiving_tds": {
+            "mean": 0.21,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Bo Melton",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.12,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 0.66,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 6.83,
+            "p10": 0.0,
+            "p90": 22.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Skyy Moore",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.1,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.66,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 6.6,
+            "p10": 0.0,
+            "p90": 20.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Pierre Strong",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 4.45,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "rushing_yards": {
+            "mean": 18.0,
+            "p10": 4.0,
+            "p90": 35.0
+          },
+          "rushing_tds": {
+            "mean": 0.11,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 3.74,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.72,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 26.69,
+            "p10": 3.0,
+            "p90": 56.0
+          },
+          "receiving_tds": {
+            "mean": 0.18,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Christian Watson",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 5.26,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.2,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 42.56,
+            "p10": 8.0,
+            "p90": 83.0
+          },
+          "receiving_tds": {
+            "mean": 0.31,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Chris Brooks",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.04,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 4.7,
+            "p10": 0.0,
+            "p90": 13.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.47,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.31,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 3.27,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tucker Kraft",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.13,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 2.82,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 29.21,
+            "p10": 4.0,
+            "p90": 60.0
+          },
+          "receiving_tds": {
+            "mean": 0.19,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Jayden Reed",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.48,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 3.01,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "MarShawn Lloyd",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 4.32,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "rushing_yards": {
+            "mean": 16.39,
+            "p10": 3.0,
+            "p90": 32.0
+          },
+          "rushing_tds": {
+            "mean": 0.09,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 1.52,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.07,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 10.29,
+            "p10": 0.0,
+            "p90": 28.0
+          },
+          "receiving_tds": {
+            "mean": 0.07,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Savion Williams",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.04,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receptions": {
+            "mean": 1.64,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 17.99,
+            "p10": 0.0,
+            "p90": 43.0
+          },
+          "receiving_tds": {
+            "mean": 0.12,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Kaleb Johnson",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 2.27,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "rushing_yards": {
+            "mean": 9.8,
+            "p10": 0.0,
+            "p90": 22.0
+          },
+          "rushing_tds": {
+            "mean": 0.06,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.06,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receptions": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 0.4,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Mark Redman",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.84,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.53,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 5.83,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Matthew Golden",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 6.88,
+            "p10": 4.0,
+            "p90": 10.0
+          },
+          "receptions": {
+            "mean": 3.73,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 45.44,
+            "p10": 10.0,
+            "p90": 87.0
+          },
+          "receiving_tds": {
+            "mean": 0.32,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "J. Michael Sturdivant",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.17,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.11,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 1.19,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Trey Smack",
+        "team": "GB",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.63,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.17,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.17,
+            "p10": 1.0,
+            "p90": 4.0
+          }
+        }
+      }
+    ],
+    "v10": [
+      {
+        "player": "Bryce Young",
+        "team": "CAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 34.15,
+            "p10": 27.0,
+            "p90": 41.0
+          },
+          "completions": {
+            "mean": 21.44,
+            "p10": 16.0,
+            "p90": 27.0
+          },
+          "passing_yards": {
+            "mean": 242.96,
+            "p10": 160.0,
+            "p90": 329.0
+          },
+          "passing_tds": {
+            "mean": 1.64,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.61,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.45,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Darren Waller",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.6,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.5,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 18.27,
+            "p10": 0.0,
+            "p90": 45.0
+          },
+          "receiving_tds": {
+            "mean": 0.13,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "David Moore",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.87,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.47,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.51,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "AJ Dillon",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.27,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "rushing_yards": {
+            "mean": 4.8,
+            "p10": 0.0,
+            "p90": 13.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.29,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.08,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Chuba Hubbard",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 14.53,
+            "p10": 10.0,
+            "p90": 20.0
+          },
+          "rushing_yards": {
+            "mean": 62.84,
+            "p10": 33.0,
+            "p90": 96.0
+          },
+          "rushing_tds": {
+            "mean": 0.35,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 3.32,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.43,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 23.9,
+            "p10": 1.0,
+            "p90": 52.0
+          },
+          "receiving_tds": {
+            "mean": 0.16,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tommy Tremble",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.54,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.84,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 19.1,
+            "p10": 0.0,
+            "p90": 45.0
+          },
+          "receiving_tds": {
+            "mean": 0.12,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "John Metchie III",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.26,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 1.89,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 20.81,
+            "p10": 0.0,
+            "p90": 48.0
+          },
+          "receiving_tds": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Kenny Pickett",
+        "team": "CAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 3.18,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Brycen Tremayne",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.11,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.67,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.93,
+            "p10": 0.0,
+            "p90": 25.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Xavier Legette",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.83,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.47,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.56,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jonathon Brooks",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 0.79,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.18,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.19,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.19,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jalen Coker",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 5.8,
+            "p10": 3.0,
+            "p90": 9.0
+          },
+          "receptions": {
+            "mean": 3.3,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 38.88,
+            "p10": 7.0,
+            "p90": 76.0
+          },
+          "receiving_tds": {
+            "mean": 0.27,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tetairoa McMillan",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 6.89,
+            "p10": 4.0,
+            "p90": 10.0
+          },
+          "receptions": {
+            "mean": 4.6,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receiving_yards": {
+            "mean": 55.76,
+            "p10": 17.0,
+            "p90": 101.0
+          },
+          "receiving_tds": {
+            "mean": 0.38,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Mitchell Evans",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.52,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.09,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 12.6,
+            "p10": 0.0,
+            "p90": 34.0
+          },
+          "receiving_tds": {
+            "mean": 0.09,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jimmy Horn Jr.",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.16,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 1.09,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ja'Seem Reed",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.37,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.22,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.39,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Anthony Tyus III",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.96,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "rushing_yards": {
+            "mean": 8.36,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "rushing_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Trevor Etienne",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 3.51,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "rushing_yards": {
+            "mean": 13.11,
+            "p10": 2.0,
+            "p90": 27.0
+          },
+          "rushing_tds": {
+            "mean": 0.07,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 1.69,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.21,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 13.12,
+            "p10": 0.0,
+            "p90": 35.0
+          },
+          "receiving_tds": {
+            "mean": 0.08,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ryan Fitzgerald",
+        "team": "CAR",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.68,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.21,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.12,
+            "p10": 0.0,
+            "p90": 4.0
+          }
+        }
+      },
+      {
+        "player": "Jordan Love",
+        "team": "GB",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 35.45,
+            "p10": 28.0,
+            "p90": 43.0
+          },
+          "completions": {
+            "mean": 22.18,
+            "p10": 16.0,
+            "p90": 28.0
+          },
+          "passing_yards": {
+            "mean": 252.7,
+            "p10": 169.0,
+            "p90": 341.0
+          },
+          "passing_tds": {
+            "mean": 1.74,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.66,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 2.78,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tyrod Taylor",
+        "team": "GB",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 2.92,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jonnu Smith",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.92,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.64,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.19,
+            "p10": 0.0,
+            "p90": 23.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Josh Jacobs",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 7.29,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "rushing_yards": {
+            "mean": 31.02,
+            "p10": 12.0,
+            "p90": 54.0
+          },
+          "rushing_tds": {
+            "mean": 0.17,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.25,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 2.84,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 31.39,
+            "p10": 4.0,
+            "p90": 65.0
+          },
+          "receiving_tds": {
+            "mean": 0.21,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Bo Melton",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.11,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 0.65,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 6.75,
+            "p10": 0.0,
+            "p90": 21.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Skyy Moore",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.11,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 0.65,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 6.67,
+            "p10": 0.0,
+            "p90": 21.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Pierre Strong",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 4.57,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "rushing_yards": {
+            "mean": 18.52,
+            "p10": 4.0,
+            "p90": 36.0
+          },
+          "rushing_tds": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 3.68,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.65,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 26.87,
+            "p10": 3.0,
+            "p90": 57.0
+          },
+          "receiving_tds": {
+            "mean": 0.19,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Christian Watson",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 5.2,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.12,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 42.08,
+            "p10": 7.0,
+            "p90": 82.0
+          },
+          "receiving_tds": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Chris Brooks",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.07,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 4.91,
+            "p10": 0.0,
+            "p90": 13.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.46,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 3.25,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tucker Kraft",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.11,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 2.78,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 29.77,
+            "p10": 4.0,
+            "p90": 62.0
+          },
+          "receiving_tds": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Jayden Reed",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.48,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 3.19,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "MarShawn Lloyd",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 4.4,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "rushing_yards": {
+            "mean": 16.81,
+            "p10": 3.0,
+            "p90": 34.0
+          },
+          "rushing_tds": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 1.52,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.07,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 10.71,
+            "p10": 0.0,
+            "p90": 29.0
+          },
+          "receiving_tds": {
+            "mean": 0.07,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Savion Williams",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.02,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receptions": {
+            "mean": 1.61,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 17.92,
+            "p10": 0.0,
+            "p90": 43.0
+          },
+          "receiving_tds": {
+            "mean": 0.12,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Kaleb Johnson",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 2.3,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "rushing_yards": {
+            "mean": 9.79,
+            "p10": 0.0,
+            "p90": 22.0
+          },
+          "rushing_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.07,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receptions": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 0.43,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Mark Redman",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.83,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.51,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.68,
+            "p10": 0.0,
+            "p90": 20.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Matthew Golden",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 6.79,
+            "p10": 4.0,
+            "p90": 10.0
+          },
+          "receptions": {
+            "mean": 3.59,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 44.9,
+            "p10": 10.0,
+            "p90": 86.0
+          },
+          "receiving_tds": {
+            "mean": 0.31,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "J. Michael Sturdivant",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.17,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.11,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 1.24,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Trey Smack",
+        "team": "GB",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.67,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.19,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.2,
+            "p10": 1.0,
+            "p90": 4.0
+          }
+        }
+      }
+    ],
+    "v10_fg": [
+      {
+        "player": "Bryce Young",
+        "team": "CAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 34.11,
+            "p10": 27.0,
+            "p90": 41.0
+          },
+          "completions": {
+            "mean": 21.35,
+            "p10": 16.0,
+            "p90": 27.0
+          },
+          "passing_yards": {
+            "mean": 241.75,
+            "p10": 159.0,
+            "p90": 328.1
+          },
+          "passing_tds": {
+            "mean": 1.66,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.59,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.47,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Darren Waller",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.6,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.5,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 18.36,
+            "p10": 0.0,
+            "p90": 45.0
+          },
+          "receiving_tds": {
+            "mean": 0.13,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "David Moore",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.87,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.47,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.42,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "AJ Dillon",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.29,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "rushing_yards": {
+            "mean": 4.91,
+            "p10": 0.0,
+            "p90": 13.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.29,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.12,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Chuba Hubbard",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 14.56,
+            "p10": 10.0,
+            "p90": 20.0
+          },
+          "rushing_yards": {
+            "mean": 63.02,
+            "p10": 34.0,
+            "p90": 96.0
+          },
+          "rushing_tds": {
+            "mean": 0.33,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 3.33,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.41,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 23.78,
+            "p10": 1.0,
+            "p90": 52.0
+          },
+          "receiving_tds": {
+            "mean": 0.16,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tommy Tremble",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.5,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.81,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 18.94,
+            "p10": 0.0,
+            "p90": 45.0
+          },
+          "receiving_tds": {
+            "mean": 0.13,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "John Metchie III",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.25,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 1.88,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 20.61,
+            "p10": 0.0,
+            "p90": 48.0
+          },
+          "receiving_tds": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Kenny Pickett",
+        "team": "CAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 3.17,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Brycen Tremayne",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.1,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.65,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.65,
+            "p10": 0.0,
+            "p90": 24.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Xavier Legette",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.83,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.47,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.45,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jonathon Brooks",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 0.8,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.25,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.19,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.18,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jalen Coker",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 5.82,
+            "p10": 3.0,
+            "p90": 9.0
+          },
+          "receptions": {
+            "mean": 3.33,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 39.14,
+            "p10": 8.0,
+            "p90": 77.0
+          },
+          "receiving_tds": {
+            "mean": 0.28,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tetairoa McMillan",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 6.9,
+            "p10": 4.0,
+            "p90": 10.0
+          },
+          "receptions": {
+            "mean": 4.59,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receiving_yards": {
+            "mean": 55.57,
+            "p10": 17.0,
+            "p90": 100.0
+          },
+          "receiving_tds": {
+            "mean": 0.38,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Mitchell Evans",
+        "team": "CAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.51,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.06,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 12.24,
+            "p10": 0.0,
+            "p90": 33.0
+          },
+          "receiving_tds": {
+            "mean": 0.09,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jimmy Horn Jr.",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.16,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 1.11,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ja'Seem Reed",
+        "team": "CAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.38,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.23,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.49,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Anthony Tyus III",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.97,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "rushing_yards": {
+            "mean": 8.39,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "rushing_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Trevor Etienne",
+        "team": "CAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 3.54,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "rushing_yards": {
+            "mean": 13.27,
+            "p10": 2.0,
+            "p90": 27.0
+          },
+          "rushing_tds": {
+            "mean": 0.07,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 1.7,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.21,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 13.01,
+            "p10": 0.0,
+            "p90": 34.0
+          },
+          "receiving_tds": {
+            "mean": 0.09,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ryan Fitzgerald",
+        "team": "CAR",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.71,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "fg_made": {
+            "mean": 2.23,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.12,
+            "p10": 0.0,
+            "p90": 4.0
+          }
+        }
+      },
+      {
+        "player": "Jordan Love",
+        "team": "GB",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 35.46,
+            "p10": 28.0,
+            "p90": 43.0
+          },
+          "completions": {
+            "mean": 22.2,
+            "p10": 16.0,
+            "p90": 28.0
+          },
+          "passing_yards": {
+            "mean": 252.46,
+            "p10": 169.0,
+            "p90": 338.0
+          },
+          "passing_tds": {
+            "mean": 1.74,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.68,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 2.75,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tyrod Taylor",
+        "team": "GB",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 3.03,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jonnu Smith",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.9,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.62,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.28,
+            "p10": 0.0,
+            "p90": 23.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Josh Jacobs",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 7.29,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "rushing_yards": {
+            "mean": 31.18,
+            "p10": 11.0,
+            "p90": 54.0
+          },
+          "rushing_tds": {
+            "mean": 0.18,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.25,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 2.85,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 31.46,
+            "p10": 4.0,
+            "p90": 65.0
+          },
+          "receiving_tds": {
+            "mean": 0.21,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Bo Melton",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.1,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 0.64,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 6.69,
+            "p10": 0.0,
+            "p90": 21.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Skyy Moore",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.1,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.64,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 6.46,
+            "p10": 0.0,
+            "p90": 20.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Pierre Strong",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 4.55,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "rushing_yards": {
+            "mean": 18.38,
+            "p10": 4.0,
+            "p90": 36.0
+          },
+          "rushing_tds": {
+            "mean": 0.11,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 3.69,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.65,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 26.88,
+            "p10": 2.0,
+            "p90": 57.0
+          },
+          "receiving_tds": {
+            "mean": 0.18,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Christian Watson",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 5.21,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.13,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 42.65,
+            "p10": 7.0,
+            "p90": 84.0
+          },
+          "receiving_tds": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Chris Brooks",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.07,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 4.85,
+            "p10": 0.0,
+            "p90": 13.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.44,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.29,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 3.06,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tucker Kraft",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.08,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 2.76,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 29.11,
+            "p10": 3.0,
+            "p90": 60.0
+          },
+          "receiving_tds": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Jayden Reed",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.48,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.29,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 3.12,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "MarShawn Lloyd",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 4.42,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "rushing_yards": {
+            "mean": 16.81,
+            "p10": 3.0,
+            "p90": 34.0
+          },
+          "rushing_tds": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 1.51,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.06,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 10.62,
+            "p10": 0.0,
+            "p90": 29.0
+          },
+          "receiving_tds": {
+            "mean": 0.07,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Savion Williams",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.01,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receptions": {
+            "mean": 1.6,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 17.99,
+            "p10": 0.0,
+            "p90": 43.0
+          },
+          "receiving_tds": {
+            "mean": 0.12,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Kaleb Johnson",
+        "team": "GB",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 2.32,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "rushing_yards": {
+            "mean": 10.08,
+            "p10": 0.0,
+            "p90": 22.0
+          },
+          "rushing_tds": {
+            "mean": 0.06,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.07,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receptions": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_yards": {
+            "mean": 0.44,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "receiving_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Mark Redman",
+        "team": "GB",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.83,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.68,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Matthew Golden",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 6.83,
+            "p10": 4.0,
+            "p90": 10.0
+          },
+          "receptions": {
+            "mean": 3.64,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 45.15,
+            "p10": 10.0,
+            "p90": 86.0
+          },
+          "receiving_tds": {
+            "mean": 0.32,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "J. Michael Sturdivant",
+        "team": "GB",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.17,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.11,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 1.25,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Trey Smack",
+        "team": "GB",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.67,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.21,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.21,
+            "p10": 1.0,
+            "p90": 4.0
+          }
+        }
+      }
+    ]
+  }
+}

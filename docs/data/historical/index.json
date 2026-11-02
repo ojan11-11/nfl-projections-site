@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "type": "retrospective_pregame_style_not_prospective",
+  "warning": "RECONSTRUCTED AFTER KICKOFF. NOT A LIVE PREGAME FORECAST. Only earlier-week player statistics were fed into the model, but historical player files may contain later revisions; complete pre-kickoff injury/lineup archives are unavailable.",
+  "games": [
+    {
+      "game_id": "2026_08_PHI_WAS",
+      "matchup": "PHI @ WAS",
+      "week": 8,
+      "kickoff_at": "2026-11-02T01:20:00Z",
+      "replayed_at": "2026-11-02T21:34:48.562173Z"
+    },
+    {
+      "game_id": "2026_08_KC_DEN",
+      "matchup": "KC @ DEN",
+      "week": 8,
+      "kickoff_at": "2026-11-01T21:25:00Z",
+      "replayed_at": "2026-11-02T21:34:04.865452Z"
+    },
+    {
+      "game_id": "2026_08_NE_MIA",
+      "matchup": "NE @ MIA",
+      "week": 8,
+      "kickoff_at": "2026-11-01T21:25:00Z",
+      "replayed_at": "2026-11-02T21:34:26.667768Z"
+    },
+    {
+      "game_id": "2026_08_LAC_LAR",
+      "matchup": "LAC @ LAR",
+      "week": 8,
+      "kickoff_at": "2026-11-01T21:05:00Z",
+      "replayed_at": "2026-11-02T21:33:42.937290Z"
+    },
+    {
+      "game_id": "2026_08_ARI_DAL",
+      "matchup": "ARI @ DAL",
+      "week": 8,
+      "kickoff_at": "2026-11-01T18:00:00Z",
+      "replayed_at": "2026-11-02T21:31:32.703730Z"
+    },
+    {
+      "game_id": "2026_08_ATL_TB",
+      "matchup": "ATL @ TB",
+      "week": 8,
+      "kickoff_at": "2026-11-01T18:00:00Z",
+      "replayed_at": "2026-11-02T21:33:21.320987Z"
+    },
+    {
+      "game_id": "2026_08_BAL_BUF",
+      "matchup": "BAL @ BUF",
+      "week": 8,
+      "kickoff_at": "2026-11-01T18:00:00Z",
+      "replayed_at": "2026-11-02T21:30:49.649048Z"
+    },
+    {
+      "game_id": "2026_08_CLE_PIT",
+      "matchup": "CLE @ PIT",
+      "week": 8,
+      "kickoff_at": "2026-11-01T18:00:00Z",
+      "replayed_at": "2026-11-02T21:32:59.628246Z"
+    },
+    {
+      "game_id": "2026_08_IND_JAC",
+      "matchup": "IND @ JAC",
+      "week": 8,
+      "kickoff_at": "2026-11-01T18:00:00Z",
+      "replayed_at": "2026-11-02T21:32:15.990759Z"
+    },
+    {
+      "game_id": "2026_08_LV_NYJ",
+      "matchup": "LV @ NYJ",
+      "week": 8,
+      "kickoff_at": "2026-11-01T18:00:00Z",
+      "replayed_at": "2026-11-02T21:32:37.569305Z"
+    },
+    {
+      "game_id": "2026_08_MIN_DET",
+      "matchup": "MIN @ DET",
+      "week": 8,
+      "kickoff_at": "2026-11-01T18:00:00Z",
+      "replayed_at": "2026-11-02T21:31:54.167133Z"
+    },
+    {
+      "game_id": "2026_08_TEN_CIN",
+      "matchup": "TEN @ CIN",
+      "week": 8,
+      "kickoff_at": "2026-11-01T18:00:00Z",
+      "replayed_at": "2026-11-02T21:31:11.175871Z"
+    },
+    {
+      "game_id": "2026_08_CAR_GB",
+      "matchup": "CAR @ GB",
+      "week": 8,
+      "kickoff_at": "2026-10-30T00:15:00Z",
+      "replayed_at": "2026-11-02T21:30:27.754896Z"
+    },
+    {
+      "game_id": "2026_07_DAL_PHI",
+      "matchup": "DAL @ PHI",
+      "week": 7,
+      "kickoff_at": "2026-10-27T00:15:00Z",
+      "replayed_at": "2026-11-02T21:37:17.596825Z"
+    },
+    {
+      "game_id": "2026_07_KC_SEA",
+      "matchup": "KC @ SEA",
+      "week": 7,
+      "kickoff_at": "2026-10-26T00:20:00Z",
+      "replayed_at": "2026-11-02T21:36:46.929242Z"
+    },
+    {
+      "game_id": "2026_07_GB_DET",
+      "matchup": "GB @ DET",
+      "week": 7,
+      "kickoff_at": "2026-10-25T20:25:00Z",
+      "replayed_at": "2026-11-02T21:35:44.738180Z"
+    },
+    {
+      "game_id": "2026_07_LAR_LV",
+      "matchup": "LAR @ LV",
+      "week": 7,
+      "kickoff_at": "2026-10-25T20:25:00Z",
+      "replayed_at": "2026-11-02T21:36:15.194681Z"
+    },
+    {
+      "game_id": "2026_07_DEN_ARI",
+      "matchup": "DEN @ ARI",
+      "week": 7,
+      "kickoff_at": "2026-10-25T20:05:00Z",
+      "replayed_at": "2026-11-02T21:35:14.438552Z"
+    },
+    {
+      "game_id": "2026_07_CIN_BAL",
+      "matchup": "CIN @ BAL",
+      "week": 7,
+      "kickoff_at": "2026-10-25T17:00:00Z",
+      "replayed_at": "2026-11-02T21:32:11.481633Z"
+    },
+    {
+      "game_id": "2026_07_CLE_TEN",
+      "matchup": "CLE @ TEN",
+      "week": 7,
+      "kickoff_at": "2026-10-25T17:00:00Z",
+      "replayed_at": "2026-11-02T21:34:43.985059Z"
+    },
+    {
+      "game_id": "2026_07_IND_MIN",
+      "matchup": "IND @ MIN",
+      "week": 7,
+      "kickoff_at": "2026-10-25T17:00:00Z",
+      "replayed_at": "2026-11-02T21:33:42.602698Z"
+    },
+    {
+      "game_id": "2026_07_MIA_NYJ",
+      "matchup": "MIA @ NYJ",
+      "week": 7,
+      "kickoff_at": "2026-10-25T17:00:00Z",
+      "replayed_at": "2026-11-02T21:34:13.111352Z"
+    },
+    {
+      "game_id": "2026_07_NYG_HOU",
+      "matchup": "NYG @ HOU",
+      "week": 7,
+      "kickoff_at": "2026-10-25T17:00:00Z",
+      "replayed_at": "2026-11-02T21:33:11.679240Z"
+    },
+    {
+      "game_id": "2026_07_SF_ATL",
+      "matchup": "SF @ ATL",
+      "week": 7,
+      "kickoff_at": "2026-10-25T17:00:00Z",
+      "replayed_at": "2026-11-02T21:31:41.358947Z"
+    },
+    {
+      "game_id": "2026_07_TB_CAR",
+      "matchup": "TB @ CAR",
+      "week": 7,
+      "kickoff_at": "2026-10-25T17:00:00Z",
+      "replayed_at": "2026-11-02T21:32:41.687685Z"
+    },
+    {
+      "game_id": "2026_07_PIT_NO",
+      "matchup": "PIT @ NO",
+      "week": 7,
+      "kickoff_at": "2026-10-25T13:30:00Z",
+      "replayed_at": "2026-11-02T21:31:11.720030Z"
+    },
+    {
+      "game_id": "2026_07_NE_CHI",
+      "matchup": "NE @ CHI",
+      "week": 7,
+      "kickoff_at": "2026-10-23T00:15:00Z",
+      "replayed_at": "2026-11-02T21:30:41.976540Z"
+    }
+  ],
+  "requested_games": 27,
+  "complete_replays": 27,
+  "blocked_replays": []
+}

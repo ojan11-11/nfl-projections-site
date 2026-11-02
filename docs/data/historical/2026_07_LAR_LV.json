@@ -1,0 +1,3048 @@
+{
+  "version": 1,
+  "type": "retrospective_pregame_style",
+  "game_id": "2026_07_LAR_LV",
+  "matchup": "LAR @ LV",
+  "away": "LAR",
+  "home": "LV",
+  "week": 7,
+  "kickoff_at": "2026-10-25T20:25:00Z",
+  "replayed_at": "2026-11-02T21:36:15.194681Z",
+  "source_cutoff_target": "2026-10-25T20:23:00Z",
+  "draws_per_model": 10000,
+  "official_inactive_evidence": "not_archived",
+  "original_pregame_snapshot_verified": false,
+  "disclaimer": "RECONSTRUCTED AFTER KICKOFF. NOT A LIVE PREGAME FORECAST. Only earlier-week player statistics were fed into the model, but historical player files may contain later revisions; complete pre-kickoff injury/lineup archives are unavailable.",
+  "models": {
+    "v9": [
+      {
+        "player": "Matthew Stafford",
+        "team": "LAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 35.42,
+            "p10": 28.0,
+            "p90": 43.0
+          },
+          "completions": {
+            "mean": 23.63,
+            "p10": 18.0,
+            "p90": 30.0
+          },
+          "passing_yards": {
+            "mean": 269.32,
+            "p10": 183.0,
+            "p90": 357.0
+          },
+          "passing_tds": {
+            "mean": 2.08,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "interceptions": {
+            "mean": 0.83,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.43,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Davante Adams",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.98,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.1,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 41.45,
+            "p10": 7.0,
+            "p90": 82.0
+          },
+          "receiving_tds": {
+            "mean": 0.32,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tyler Higbee",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.69,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.88,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 32.64,
+            "p10": 4.0,
+            "p90": 66.0
+          },
+          "receiving_tds": {
+            "mean": 0.25,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Colby Parkinson",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.32,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.28,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 23.64,
+            "p10": 0.0,
+            "p90": 52.0
+          },
+          "receiving_tds": {
+            "mean": 0.17,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tutu Atwell",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.77,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.53,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 6.03,
+            "p10": 0.0,
+            "p90": 20.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ronnie Rivers",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 0.92,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 4.05,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.36,
+            "p10": 0.0,
+            "p90": 9.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Kyren Williams",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 12.32,
+            "p10": 8.0,
+            "p90": 17.0
+          },
+          "rushing_yards": {
+            "mean": 57.97,
+            "p10": 30.0,
+            "p90": 90.0
+          },
+          "rushing_tds": {
+            "mean": 0.37,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.83,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.49,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 33.66,
+            "p10": 6.0,
+            "p90": 67.0
+          },
+          "receiving_tds": {
+            "mean": 0.26,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Davis Allen",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.66,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.43,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 4.94,
+            "p10": 0.0,
+            "p90": 17.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Puka Nacua",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 7.95,
+            "p10": 4.9,
+            "p90": 12.0
+          },
+          "receptions": {
+            "mean": 5.68,
+            "p10": 3.0,
+            "p90": 9.0
+          },
+          "receiving_yards": {
+            "mean": 65.69,
+            "p10": 24.0,
+            "p90": 113.0
+          },
+          "receiving_tds": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Stetson Bennett",
+        "team": "LAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 0.76,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "rushing_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Blake Corum",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 7.0,
+            "p10": 4.0,
+            "p90": 10.0
+          },
+          "rushing_yards": {
+            "mean": 31.75,
+            "p10": 12.0,
+            "p90": 55.0
+          },
+          "rushing_tds": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 1.64,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.13,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 13.09,
+            "p10": 0.0,
+            "p90": 35.0
+          },
+          "receiving_tds": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jordan Whittington",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.37,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.24,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.63,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Konata Mumpfield",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.55,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.43,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 17.48,
+            "p10": 0.0,
+            "p90": 43.0
+          },
+          "receiving_tds": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Terrance Ferguson",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.43,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 0.88,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 9.96,
+            "p10": 0.0,
+            "p90": 29.0
+          },
+          "receiving_tds": {
+            "mean": 0.08,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Blake Grupe",
+        "team": "LAR",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.51,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.06,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.66,
+            "p10": 1.0,
+            "p90": 5.0
+          }
+        }
+      },
+      {
+        "player": "Kirk Cousins",
+        "team": "LV",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 34.51,
+            "p10": 27.0,
+            "p90": 42.0
+          },
+          "completions": {
+            "mean": 22.08,
+            "p10": 16.0,
+            "p90": 28.0
+          },
+          "passing_yards": {
+            "mean": 251.27,
+            "p10": 169.0,
+            "p90": 337.0
+          },
+          "passing_tds": {
+            "mean": 1.79,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.78,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 2.57,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ian Thomas",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.89,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.66,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.3,
+            "p10": 0.0,
+            "p90": 23.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Cody White",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.97,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receptions": {
+            "mean": 1.01,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 11.77,
+            "p10": 0.0,
+            "p90": 32.0
+          },
+          "receiving_tds": {
+            "mean": 0.09,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Dareke Young",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.24,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.15,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 1.72,
+            "p10": 0.0,
+            "p90": 6.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jalen Nailor",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.09,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.52,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 16.6,
+            "p10": 0.0,
+            "p90": 41.0
+          },
+          "receiving_tds": {
+            "mean": 0.12,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Deven Thompkins",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.79,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.54,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 5.76,
+            "p10": 0.0,
+            "p90": 19.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tre Tucker",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.75,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.24,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 41.07,
+            "p10": 7.0,
+            "p90": 81.0
+          },
+          "receiving_tds": {
+            "mean": 0.29,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Michael Mayer",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.88,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.79,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 40.49,
+            "p10": 9.0,
+            "p90": 77.0
+          },
+          "receiving_tds": {
+            "mean": 0.28,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Brock Bowers",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 7.5,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "receptions": {
+            "mean": 4.79,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receiving_yards": {
+            "mean": 58.53,
+            "p10": 18.0,
+            "p90": 104.0
+          },
+          "receiving_tds": {
+            "mean": 0.42,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Dylan Laube",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.15,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "rushing_yards": {
+            "mean": 4.67,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.69,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.18,
+            "p10": 0.0,
+            "p90": 17.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ashton Jeanty",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 13.23,
+            "p10": 9.0,
+            "p90": 18.0
+          },
+          "rushing_yards": {
+            "mean": 48.94,
+            "p10": 23.0,
+            "p90": 78.0
+          },
+          "rushing_tds": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.53,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 3.11,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 33.04,
+            "p10": 5.0,
+            "p90": 66.0
+          },
+          "receiving_tds": {
+            "mean": 0.24,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Jack Bech",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.89,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.61,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 6.77,
+            "p10": 0.0,
+            "p90": 22.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Mike Washington Jr.",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 6.22,
+            "p10": 3.0,
+            "p90": 10.0
+          },
+          "rushing_yards": {
+            "mean": 27.81,
+            "p10": 10.0,
+            "p90": 49.0
+          },
+          "rushing_tds": {
+            "mean": 0.16,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 0.68,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.46,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 4.66,
+            "p10": 0.0,
+            "p90": 16.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Malik Benson",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.77,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.38,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 4.01,
+            "p10": 0.0,
+            "p90": 15.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Fernando Mendoza",
+        "team": "LV",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 4.96,
+            "p10": 0.0,
+            "p90": 13.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Matt Gay",
+        "team": "LV",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.6,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.15,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.28,
+            "p10": 1.0,
+            "p90": 4.0
+          }
+        }
+      }
+    ],
+    "v10": [
+      {
+        "player": "Matthew Stafford",
+        "team": "LAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 35.1,
+            "p10": 28.0,
+            "p90": 42.0
+          },
+          "completions": {
+            "mean": 23.17,
+            "p10": 17.0,
+            "p90": 29.0
+          },
+          "passing_yards": {
+            "mean": 269.93,
+            "p10": 183.0,
+            "p90": 360.0
+          },
+          "passing_tds": {
+            "mean": 2.1,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "interceptions": {
+            "mean": 0.83,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.58,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Davante Adams",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.93,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.04,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 41.14,
+            "p10": 7.0,
+            "p90": 81.0
+          },
+          "receiving_tds": {
+            "mean": 0.32,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tyler Higbee",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.7,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.87,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 33.37,
+            "p10": 5.0,
+            "p90": 69.0
+          },
+          "receiving_tds": {
+            "mean": 0.26,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Colby Parkinson",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.28,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.22,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 23.9,
+            "p10": 0.0,
+            "p90": 53.0
+          },
+          "receiving_tds": {
+            "mean": 0.18,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tutu Atwell",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.74,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.51,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.99,
+            "p10": 0.0,
+            "p90": 20.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ronnie Rivers",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 0.94,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 4.17,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.28,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.19,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.21,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Kyren Williams",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 12.64,
+            "p10": 8.0,
+            "p90": 17.0
+          },
+          "rushing_yards": {
+            "mean": 59.33,
+            "p10": 30.0,
+            "p90": 92.0
+          },
+          "rushing_tds": {
+            "mean": 0.37,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.79,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.41,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 33.54,
+            "p10": 6.0,
+            "p90": 67.0
+          },
+          "receiving_tds": {
+            "mean": 0.26,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Davis Allen",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.65,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.42,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 4.92,
+            "p10": 0.0,
+            "p90": 18.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Puka Nacua",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 7.87,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "receptions": {
+            "mean": 5.58,
+            "p10": 3.0,
+            "p90": 9.0
+          },
+          "receiving_yards": {
+            "mean": 66.14,
+            "p10": 23.0,
+            "p90": 115.0
+          },
+          "receiving_tds": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Stetson Bennett",
+        "team": "LAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 0.87,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "rushing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Blake Corum",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 7.15,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "rushing_yards": {
+            "mean": 32.44,
+            "p10": 12.0,
+            "p90": 56.0
+          },
+          "rushing_tds": {
+            "mean": 0.21,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 1.6,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.08,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 12.35,
+            "p10": 0.0,
+            "p90": 34.0
+          },
+          "receiving_tds": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jordan Whittington",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.36,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.23,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.71,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Konata Mumpfield",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.56,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.41,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 17.72,
+            "p10": 0.0,
+            "p90": 43.0
+          },
+          "receiving_tds": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Terrance Ferguson",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.41,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 0.87,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 10.06,
+            "p10": 0.0,
+            "p90": 29.0
+          },
+          "receiving_tds": {
+            "mean": 0.08,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Blake Grupe",
+        "team": "LAR",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.51,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.07,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.69,
+            "p10": 1.0,
+            "p90": 5.0
+          }
+        }
+      },
+      {
+        "player": "Kirk Cousins",
+        "team": "LV",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 34.25,
+            "p10": 27.0,
+            "p90": 41.0
+          },
+          "completions": {
+            "mean": 21.68,
+            "p10": 16.0,
+            "p90": 28.0
+          },
+          "passing_yards": {
+            "mean": 251.6,
+            "p10": 167.0,
+            "p90": 340.0
+          },
+          "passing_tds": {
+            "mean": 1.8,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.77,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 2.48,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "rushing_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ian Thomas",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.9,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.66,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.56,
+            "p10": 0.0,
+            "p90": 24.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Cody White",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.93,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receptions": {
+            "mean": 0.97,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 11.57,
+            "p10": 0.0,
+            "p90": 33.0
+          },
+          "receiving_tds": {
+            "mean": 0.09,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Dareke Young",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.22,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 1.54,
+            "p10": 0.0,
+            "p90": 5.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jalen Nailor",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.08,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.49,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 16.79,
+            "p10": 0.0,
+            "p90": 42.0
+          },
+          "receiving_tds": {
+            "mean": 0.12,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Deven Thompkins",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.78,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.53,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 6.02,
+            "p10": 0.0,
+            "p90": 20.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tre Tucker",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.7,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.17,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 40.68,
+            "p10": 7.0,
+            "p90": 81.0
+          },
+          "receiving_tds": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Michael Mayer",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.87,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.73,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 40.68,
+            "p10": 9.0,
+            "p90": 78.0
+          },
+          "receiving_tds": {
+            "mean": 0.28,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Brock Bowers",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 7.38,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "receptions": {
+            "mean": 4.67,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receiving_yards": {
+            "mean": 57.92,
+            "p10": 18.0,
+            "p90": 103.0
+          },
+          "receiving_tds": {
+            "mean": 0.43,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Dylan Laube",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.16,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "rushing_yards": {
+            "mean": 4.75,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.68,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.22,
+            "p10": 0.0,
+            "p90": 17.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ashton Jeanty",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 13.26,
+            "p10": 9.0,
+            "p90": 18.0
+          },
+          "rushing_yards": {
+            "mean": 49.35,
+            "p10": 24.0,
+            "p90": 79.0
+          },
+          "rushing_tds": {
+            "mean": 0.29,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.55,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 3.08,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 33.57,
+            "p10": 5.0,
+            "p90": 68.0
+          },
+          "receiving_tds": {
+            "mean": 0.24,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Jack Bech",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.91,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.62,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.07,
+            "p10": 0.0,
+            "p90": 23.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Mike Washington Jr.",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 6.24,
+            "p10": 3.0,
+            "p90": 10.0
+          },
+          "rushing_yards": {
+            "mean": 27.87,
+            "p10": 9.0,
+            "p90": 50.0
+          },
+          "rushing_tds": {
+            "mean": 0.16,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 0.68,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.44,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 4.56,
+            "p10": 0.0,
+            "p90": 16.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Malik Benson",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.75,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.36,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 3.87,
+            "p10": 0.0,
+            "p90": 14.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Fernando Mendoza",
+        "team": "LV",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 5.01,
+            "p10": 0.0,
+            "p90": 13.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Matt Gay",
+        "team": "LV",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.62,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.17,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.27,
+            "p10": 1.0,
+            "p90": 4.0
+          }
+        }
+      }
+    ],
+    "v10_fg": [
+      {
+        "player": "Matthew Stafford",
+        "team": "LAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 35.08,
+            "p10": 28.0,
+            "p90": 42.0
+          },
+          "completions": {
+            "mean": 23.16,
+            "p10": 17.0,
+            "p90": 29.0
+          },
+          "passing_yards": {
+            "mean": 271.79,
+            "p10": 185.0,
+            "p90": 361.0
+          },
+          "passing_tds": {
+            "mean": 2.14,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "interceptions": {
+            "mean": 0.81,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 3.4,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Davante Adams",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.97,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.08,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 41.85,
+            "p10": 7.0,
+            "p90": 83.0
+          },
+          "receiving_tds": {
+            "mean": 0.34,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tyler Higbee",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.69,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.86,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 33.63,
+            "p10": 5.0,
+            "p90": 69.0
+          },
+          "receiving_tds": {
+            "mean": 0.27,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Colby Parkinson",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.28,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receptions": {
+            "mean": 2.22,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receiving_yards": {
+            "mean": 23.76,
+            "p10": 0.0,
+            "p90": 52.0
+          },
+          "receiving_tds": {
+            "mean": 0.19,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Tutu Atwell",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.76,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 6.13,
+            "p10": 0.0,
+            "p90": 20.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ronnie Rivers",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 0.93,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 4.03,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.28,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.18,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.14,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Kyren Williams",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 12.59,
+            "p10": 8.0,
+            "p90": 17.0
+          },
+          "rushing_yards": {
+            "mean": 59.13,
+            "p10": 30.0,
+            "p90": 92.0
+          },
+          "rushing_tds": {
+            "mean": 0.37,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.82,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.44,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 34.55,
+            "p10": 6.0,
+            "p90": 70.0
+          },
+          "receiving_tds": {
+            "mean": 0.27,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Davis Allen",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.65,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.41,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 4.95,
+            "p10": 0.0,
+            "p90": 18.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Puka Nacua",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 7.87,
+            "p10": 4.0,
+            "p90": 12.0
+          },
+          "receptions": {
+            "mean": 5.56,
+            "p10": 3.0,
+            "p90": 9.0
+          },
+          "receiving_yards": {
+            "mean": 66.23,
+            "p10": 24.0,
+            "p90": 115.0
+          },
+          "receiving_tds": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Stetson Bennett",
+        "team": "LAR",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 0.82,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "rushing_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Blake Corum",
+        "team": "LAR",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 7.11,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "rushing_yards": {
+            "mean": 32.44,
+            "p10": 12.0,
+            "p90": 56.0
+          },
+          "rushing_tds": {
+            "mean": 0.2,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 1.58,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 1.07,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 12.76,
+            "p10": 0.0,
+            "p90": 35.0
+          },
+          "receiving_tds": {
+            "mean": 0.1,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jordan Whittington",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.36,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.23,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 2.64,
+            "p10": 0.0,
+            "p90": 10.0
+          },
+          "receiving_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Konata Mumpfield",
+        "team": "LAR",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 2.52,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.4,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 17.46,
+            "p10": 0.0,
+            "p90": 44.0
+          },
+          "receiving_tds": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Terrance Ferguson",
+        "team": "LAR",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.4,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receptions": {
+            "mean": 0.87,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 10.03,
+            "p10": 0.0,
+            "p90": 29.0
+          },
+          "receiving_tds": {
+            "mean": 0.08,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Blake Grupe",
+        "team": "LAR",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.52,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.09,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.72,
+            "p10": 1.0,
+            "p90": 5.0
+          }
+        }
+      },
+      {
+        "player": "Kirk Cousins",
+        "team": "LV",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 34.23,
+            "p10": 27.0,
+            "p90": 41.0
+          },
+          "completions": {
+            "mean": 21.68,
+            "p10": 16.0,
+            "p90": 27.0
+          },
+          "passing_yards": {
+            "mean": 251.84,
+            "p10": 167.0,
+            "p90": 341.0
+          },
+          "passing_tds": {
+            "mean": 1.8,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "interceptions": {
+            "mean": 0.78,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "rushing_yards": {
+            "mean": 2.52,
+            "p10": 0.0,
+            "p90": 8.0
+          },
+          "rushing_tds": {
+            "mean": 0.02,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ian Thomas",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.9,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.66,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 7.6,
+            "p10": 0.0,
+            "p90": 23.0
+          },
+          "receiving_tds": {
+            "mean": 0.06,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Cody White",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 1.93,
+            "p10": 0.0,
+            "p90": 4.0
+          },
+          "receptions": {
+            "mean": 0.96,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 11.68,
+            "p10": 0.0,
+            "p90": 33.0
+          },
+          "receiving_tds": {
+            "mean": 0.09,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Dareke Young",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.23,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receptions": {
+            "mean": 0.14,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 1.61,
+            "p10": 0.0,
+            "p90": 5.0
+          },
+          "receiving_tds": {
+            "mean": 0.01,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Jalen Nailor",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 3.05,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receptions": {
+            "mean": 1.49,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "receiving_yards": {
+            "mean": 16.59,
+            "p10": 0.0,
+            "p90": 42.0
+          },
+          "receiving_tds": {
+            "mean": 0.11,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Deven Thompkins",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.77,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.82,
+            "p10": 0.0,
+            "p90": 20.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Tre Tucker",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.71,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.18,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 40.5,
+            "p10": 8.0,
+            "p90": 80.0
+          },
+          "receiving_tds": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Michael Mayer",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 4.86,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receptions": {
+            "mean": 3.72,
+            "p10": 1.0,
+            "p90": 6.0
+          },
+          "receiving_yards": {
+            "mean": 40.92,
+            "p10": 9.0,
+            "p90": 79.0
+          },
+          "receiving_tds": {
+            "mean": 0.28,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Brock Bowers",
+        "team": "LV",
+        "position": "TE",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 7.41,
+            "p10": 4.0,
+            "p90": 11.0
+          },
+          "receptions": {
+            "mean": 4.68,
+            "p10": 2.0,
+            "p90": 8.0
+          },
+          "receiving_yards": {
+            "mean": 58.19,
+            "p10": 18.0,
+            "p90": 105.0
+          },
+          "receiving_tds": {
+            "mean": 0.42,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Dylan Laube",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 1.15,
+            "p10": 0.0,
+            "p90": 3.0
+          },
+          "rushing_yards": {
+            "mean": 4.67,
+            "p10": 0.0,
+            "p90": 12.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "targets": {
+            "mean": 0.69,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.52,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 5.31,
+            "p10": 0.0,
+            "p90": 18.0
+          },
+          "receiving_tds": {
+            "mean": 0.04,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Ashton Jeanty",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 13.32,
+            "p10": 9.0,
+            "p90": 18.0
+          },
+          "rushing_yards": {
+            "mean": 49.64,
+            "p10": 24.0,
+            "p90": 80.0
+          },
+          "rushing_tds": {
+            "mean": 0.3,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 4.54,
+            "p10": 2.0,
+            "p90": 7.0
+          },
+          "receptions": {
+            "mean": 3.08,
+            "p10": 1.0,
+            "p90": 5.0
+          },
+          "receiving_yards": {
+            "mean": 33.62,
+            "p10": 5.0,
+            "p90": 67.0
+          },
+          "receiving_tds": {
+            "mean": 0.24,
+            "p10": 0.0,
+            "p90": 1.0
+          }
+        }
+      },
+      {
+        "player": "Jack Bech",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.9,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.63,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receiving_yards": {
+            "mean": 6.86,
+            "p10": 0.0,
+            "p90": 22.0
+          },
+          "receiving_tds": {
+            "mean": 0.05,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Mike Washington Jr.",
+        "team": "LV",
+        "position": "RB",
+        "identity_status": "model_roster",
+        "stats": {
+          "carries": {
+            "mean": 6.22,
+            "p10": 3.0,
+            "p90": 10.0
+          },
+          "rushing_yards": {
+            "mean": 28.05,
+            "p10": 10.0,
+            "p90": 49.0
+          },
+          "rushing_tds": {
+            "mean": 0.16,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "targets": {
+            "mean": 0.69,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.46,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 4.87,
+            "p10": 0.0,
+            "p90": 17.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Malik Benson",
+        "team": "LV",
+        "position": "WR",
+        "identity_status": "model_roster",
+        "stats": {
+          "targets": {
+            "mean": 0.76,
+            "p10": 0.0,
+            "p90": 2.0
+          },
+          "receptions": {
+            "mean": 0.36,
+            "p10": 0.0,
+            "p90": 1.0
+          },
+          "receiving_yards": {
+            "mean": 3.92,
+            "p10": 0.0,
+            "p90": 14.0
+          },
+          "receiving_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Fernando Mendoza",
+        "team": "LV",
+        "position": "QB",
+        "identity_status": "model_roster",
+        "stats": {
+          "attempts": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "completions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_yards": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "passing_tds": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "interceptions": {
+            "mean": 0.0,
+            "p10": 0.0,
+            "p90": 0.0
+          },
+          "rushing_yards": {
+            "mean": 5.04,
+            "p10": 0.0,
+            "p90": 13.0
+          },
+          "rushing_tds": {
+            "mean": 0.03,
+            "p10": 0.0,
+            "p90": 0.0
+          }
+        }
+      },
+      {
+        "player": "Matt Gay",
+        "team": "LV",
+        "position": "K",
+        "identity_status": "model_roster",
+        "stats": {
+          "fg_attempts": {
+            "mean": 2.63,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "fg_made": {
+            "mean": 2.17,
+            "p10": 1.0,
+            "p90": 4.0
+          },
+          "pat_made": {
+            "mean": 2.28,
+            "p10": 1.0,
+            "p90": 4.0
+          }
+        }
+      }
+    ]
+  }
+}
