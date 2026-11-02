@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "type": "historical_asof_archived_model_forecast",
+  "game_id": "2026_07_SF_ATL",
+  "matchup": "SF @ ATL",
+  "kickoff_at": "2026-10-25T17:00:00Z",
+  "as_of_at": "2026-10-25T16:00:00Z",
+  "model_run_initialized_at": "2026-10-25T06:00:00Z",
+  "conservative_assumed_available_at": "2026-10-25T13:00:00Z",
+  "model_run_publication_time_verified": false,
+  "forecast_model": "ECMWF IFS HRES archived single run",
+  "source": "Open-Meteo Single Runs API, original ECMWF model initialization",
+  "source_request_url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=33.7554&longitude=-84.4008&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_gusts_10m%2Cprecipitation%2Crain%2Csnowfall&models=ecmwf_ifs&run=2026-10-25T06%3A00&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=UTC&forecast_days=4",
+  "archived_run_payload_sha256": "ab65a2472226b389a204a4a897787104e8f0f7a8eb5bd7f258af7e27c434f21f",
+  "historical_archive_retrieved_at": "2026-11-02T23:15:24.723516Z",
+  "venue": {
+    "name": "Mercedes-Benz Stadium",
+    "home_team": "ATL",
+    "espn_event_id": "401873017",
+    "type": "retractable",
+    "verified_matchup_venue": true
+  },
+  "forecast": {
+    "temperature_f": 65.0,
+    "wind_mph": 10.2,
+    "gust_mph": 25.3,
+    "precipitation_in_per_hour": 0.0,
+    "rain_in_per_hour": 0.0,
+    "snowfall_cm_per_hour": 0.0,
+    "forecast_valid_at": "2026-10-25T17:00:00Z"
+  },
+  "roof_scenario": {
+    "assumed_state": "closed",
+    "field_exposure": "sheltered",
+    "direct_outdoor_weather_adjustment": "zero",
+    "source": "explicit_model_assumption_not_confirmed",
+    "reason": "Assume retractable roof CLOSED due to forecast strong wind",
+    "triggers": [
+      "strong wind"
+    ]
+  },
+  "assumed_publication_delay_hours": 7,
+  "roof_closed_when_adverse": "MODEL ASSUMPTION, NOT ACTUAL ROOF CONFIRMATION",
+  "original_replay_models_used_weather": false,
+  "uncertainty": "Forecast-model initialization is NOT verified public issuance time. Assumed conservative 7h processing lag for ECMWF; original forecasts retrieved after the games. Not weather observations; these weather conditions were NOT fed to the existing Week 7/8 simulations."
+}

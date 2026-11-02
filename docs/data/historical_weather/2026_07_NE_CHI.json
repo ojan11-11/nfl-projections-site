@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "type": "historical_asof_archived_model_forecast",
+  "game_id": "2026_07_NE_CHI",
+  "matchup": "NE @ CHI",
+  "kickoff_at": "2026-10-23T00:15:00Z",
+  "as_of_at": "2026-10-22T23:15:00Z",
+  "model_run_initialized_at": "2026-10-22T12:00:00Z",
+  "conservative_assumed_available_at": "2026-10-22T19:00:00Z",
+  "model_run_publication_time_verified": false,
+  "forecast_model": "ECMWF IFS HRES archived single run",
+  "source": "Open-Meteo Single Runs API, original ECMWF model initialization",
+  "source_request_url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=41.8623&longitude=-87.6167&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_gusts_10m%2Cprecipitation%2Crain%2Csnowfall&models=ecmwf_ifs&run=2026-10-22T12%3A00&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=UTC&forecast_days=4",
+  "archived_run_payload_sha256": "ca2ce7414e9fe31bbfb281c2e24048ded2afce5668e590e6945aa3414c87cd48",
+  "historical_archive_retrieved_at": "2026-11-02T23:15:24.723516Z",
+  "venue": {
+    "name": "Soldier Field",
+    "home_team": "CHI",
+    "espn_event_id": "401873010",
+    "type": "outdoors",
+    "verified_matchup_venue": true
+  },
+  "forecast": {
+    "temperature_f": 59.4,
+    "wind_mph": 2.6,
+    "gust_mph": 5.1,
+    "precipitation_in_per_hour": 0.0,
+    "rain_in_per_hour": 0.0,
+    "snowfall_cm_per_hour": 0.0,
+    "forecast_valid_at": "2026-10-23T00:00:00Z"
+  },
+  "roof_scenario": {
+    "assumed_state": "open_air",
+    "field_exposure": "outdoors",
+    "direct_outdoor_weather_adjustment": "eligible_for_experimental_testing",
+    "source": "stadium_structure_reference",
+    "reason": "Open field exposed to forecast outdoor conditions",
+    "triggers": []
+  },
+  "assumed_publication_delay_hours": 7,
+  "roof_closed_when_adverse": "MODEL ASSUMPTION, NOT ACTUAL ROOF CONFIRMATION",
+  "original_replay_models_used_weather": false,
+  "uncertainty": "Forecast-model initialization is NOT verified public issuance time. Assumed conservative 7h processing lag for ECMWF; original forecasts retrieved after the games. Not weather observations; these weather conditions were NOT fed to the existing Week 7/8 simulations."
+}
