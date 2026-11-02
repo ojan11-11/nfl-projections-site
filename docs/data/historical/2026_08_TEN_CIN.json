@@ -2663,5 +2663,22 @@
         }
       }
     ]
+  },
+  "score_projections": {
+    "v9": {
+      "away_score_mean": 19.626,
+      "home_score_mean": 27.292,
+      "home_win_probability": 0.7136
+    },
+    "v10": {
+      "away_score_mean": 20.058,
+      "home_score_mean": 27.329,
+      "home_win_probability": 0.7029
+    },
+    "v10_fg": {
+      "away_score_mean": 20.103,
+      "home_score_mean": 27.345,
+      "home_win_probability": 0.6993
+    }
   }
 }

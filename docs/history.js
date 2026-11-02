@@ -24,6 +24,19 @@ function render(){
  $("history-title").textContent=d.away+" @ "+d.home;
  $("history-meta").textContent="Kickoff: "+time(d.kickoff_at)+"  •  Replayed: "+time(d.replayed_at)+"  •  "+d.draws_per_model.toLocaleString()+" draws/model  •  Historical injury archive: "+d.official_inactive_evidence.replace(/_/g," ");
  for(const tab of document.querySelectorAll("[data-position]")){const ok=tab.dataset.position===S.position;tab.classList.toggle("active",ok);tab.setAttribute("aria-selected",ok?"true":"false");tab.tabIndex=ok?0:-1;}
+ const score=d.score_projections?.[S.model];
+ const validScore=score && Number.isFinite(score.away_score_mean)
+   && Number.isFinite(score.home_score_mean)
+   && Number.isFinite(score.home_win_probability);
+ $("history-score-panel").hidden=!validScore;
+ if(validScore){
+  $("history-away-name").textContent=d.away;
+  $("history-home-name").textContent=d.home;
+  $("history-away-score").textContent=score.away_score_mean.toFixed(1);
+  $("history-home-score").textContent=score.home_score_mean.toFixed(1);
+  $("history-score-model").textContent=S.model==="v9"?"V9 BASELINE":S.model==="v10"?"V10 RESEARCH":"V10+FG RESEARCH";
+  $("history-win-prob").textContent=d.home+" win probability: "+(score.home_win_probability*100).toFixed(1)+"% · Reconstructed after kickoff";
+ }
  const set=(d.models[S.model]||[]).filter(p=>p.position===S.position);
  $("history-count").textContent=set.length+" players";
  $("history-position").textContent=({QB:"Quarterback",RB:"Running back",WR:"Wide receiver",TE:"Tight end",K:"Kicker"})[S.position]+" projections";

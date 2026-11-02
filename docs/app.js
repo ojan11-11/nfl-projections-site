@@ -122,6 +122,19 @@ function render() {
     tab.setAttribute("aria-selected",selected?"true":"false");
     tab.tabIndex=selected?0:-1;
   }
+  const score=report.score_projections?.[state.model];
+  const validScore=score && Number.isFinite(score.away_score_mean)
+    && Number.isFinite(score.home_score_mean)
+    && Number.isFinite(score.home_win_probability);
+  $("live-score-panel").hidden=!validScore;
+  if(validScore){
+    $("live-away-name").textContent=report.away;
+    $("live-home-name").textContent=report.home;
+    $("live-away-score").textContent=score.away_score_mean.toFixed(1);
+    $("live-home-score").textContent=score.home_score_mean.toFixed(1);
+    $("live-score-model").textContent=state.model==="v9"?"V9 BASELINE":state.model==="v10"?"V10 RESEARCH":"V10+FG RESEARCH";
+    $("live-win-prob").textContent=report.home+" win probability: "+(score.home_win_probability*100).toFixed(1)+"%";
+  }
   renderPlayers();
 }
 async function loadGame(id) {

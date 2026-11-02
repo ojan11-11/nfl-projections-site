@@ -75,6 +75,18 @@
           <div class="capture-badge"><span class="capture-dot"></span><span id="capture-label">FROZEN PREGAME</span></div>
         </div>
 
+<section class="score-panel" id="live-score-panel" aria-label="Simulated expected final score" hidden>
+  <div class="score-panel-header">
+    <span>EXPECTED FINAL SCORE <span class="score-panel-hint">· SIMULATION AVERAGES, NOT ACTUAL RESULTS</span></span>
+    <span class="score-model-label" id="live-score-model">V9 BASELINE</span>
+  </div>
+  <div class="score-panel-main">
+    <div class="score-team"><span id="live-away-name">AWAY</span><strong id="live-away-score">—</strong></div>
+    <span class="score-vs" aria-hidden="true">–</span>
+    <div class="score-team"><span id="live-home-name">HOME</span><strong id="live-home-score">—</strong></div>
+  </div>
+  <p class="score-win-prob" id="live-win-prob">—</p>
+</section>
         <div id="research-banner" class="research-banner" hidden>
           <strong>Experimental model</strong> — For research comparison only. V9 is the baseline; this model has not been promoted for production scoring.
         </div>

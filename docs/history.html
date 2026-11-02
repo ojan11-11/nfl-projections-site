@@ -30,6 +30,18 @@ Historical data files may contain later corrections, and full archived starter/i
 <div class="empty-state" id="history-empty" hidden><h3>No completed replays available yet.</h3><p>Incomplete simulations and games without a verified player report are withheld rather than replaced with fictional statistics.</p></div>
 <div id="history-forecast" hidden>
 <div class="matchup-bar"><div><div class="eyebrow muted" id="history-week">RETROSPECTIVE REPLAY</div><h3 id="history-title">—</h3><div class="match-meta" id="history-meta"></div></div><div class="capture-badge" style="border-color:#8c6646;color:#e3bb70">RUN AFTER GAME</div></div>
+<section class="score-panel" id="history-score-panel" aria-label="Simulated expected final score" hidden>
+  <div class="score-panel-header">
+    <span>EXPECTED FINAL SCORE <span class="score-panel-hint">· SIMULATION AVERAGES, NOT ACTUAL RESULTS</span></span>
+    <span class="score-model-label" id="history-score-model">V9 BASELINE</span>
+  </div>
+  <div class="score-panel-main">
+    <div class="score-team"><span id="history-away-name">AWAY</span><strong id="history-away-score">—</strong></div>
+    <span class="score-vs" aria-hidden="true">–</span>
+    <div class="score-team"><span id="history-home-name">HOME</span><strong id="history-home-score">—</strong></div>
+  </div>
+  <p class="score-win-prob" id="history-win-prob">—</p>
+</section>
 <div class="position-tabs" role="tablist" aria-label="Position">
 <button class="tab active" data-position="QB" aria-selected="true" role="tab">QBs</button><button class="tab" data-position="RB" aria-selected="false" role="tab">RBs</button><button class="tab" data-position="WR" aria-selected="false" role="tab">WRs</button><button class="tab" data-position="TE" aria-selected="false" role="tab">TEs</button><button class="tab" data-position="K" aria-selected="false" role="tab">Kickers</button></div>
 <div class="table-heading"><div><h3 id="history-position">Quarterback projections</h3><p>Mean estimates; yardage cells show the 10th–90th percentile range.</p></div><span class="count" id="history-count">—</span></div>
