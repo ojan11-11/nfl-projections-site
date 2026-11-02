@@ -2,60 +2,45 @@
   "version": 1,
   "type": "historical_weather_archive_audit",
   "requested_games": 27,
-  "completed": 19,
+  "completed": 24,
   "game_ids": [
+    "2026_07_CIN_BAL",
+    "2026_07_CLE_TEN",
+    "2026_07_DAL_PHI",
+    "2026_07_DEN_ARI",
+    "2026_07_IND_MIN",
+    "2026_07_KC_SEA",
+    "2026_07_LAR_LV",
+    "2026_07_MIA_NYJ",
     "2026_07_NE_CHI",
     "2026_07_SF_ATL",
-    "2026_07_CIN_BAL",
     "2026_07_TB_CAR",
-    "2026_07_IND_MIN",
-    "2026_07_MIA_NYJ",
-    "2026_07_CLE_TEN",
-    "2026_07_DEN_ARI",
-    "2026_07_DAL_PHI",
-    "2026_08_CAR_GB",
-    "2026_08_BAL_BUF",
-    "2026_08_TEN_CIN",
     "2026_08_ARI_DAL",
-    "2026_08_MIN_DET",
     "2026_08_ATL_TB",
-    "2026_08_LAC_LAR",
+    "2026_08_BAL_BUF",
+    "2026_08_CAR_GB",
+    "2026_08_CLE_PIT",
+    "2026_08_IND_JAC",
     "2026_08_KC_DEN",
+    "2026_08_LAC_LAR",
+    "2026_08_LV_NYJ",
+    "2026_08_MIN_DET",
     "2026_08_NE_MIA",
-    "2026_08_PHI_WAS"
+    "2026_08_PHI_WAS",
+    "2026_08_TEN_CIN"
   ],
   "blocked": [
     {
-      "game_id": "2026_07_PIT_NO",
-      "reason": "Neutral/relocated/unexpected actual venue: Stade de France"
+      "game_id": "2026_07_GB_DET",
+      "reason": "HTTPSConnectionPool(host='single-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=50)"
     },
     {
       "game_id": "2026_07_NYG_HOU",
       "reason": "Neutral/relocated/unexpected actual venue: Reliant Stadium"
     },
     {
-      "game_id": "2026_07_GB_DET",
-      "reason": "HTTPSConnectionPool(host='single-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=50)"
-    },
-    {
-      "game_id": "2026_07_LAR_LV",
-      "reason": "HTTPSConnectionPool(host='single-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=50)"
-    },
-    {
-      "game_id": "2026_07_KC_SEA",
-      "reason": "HTTPSConnectionPool(host='single-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=50)"
-    },
-    {
-      "game_id": "2026_08_IND_JAC",
-      "reason": "HTTPSConnectionPool(host='single-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=50)"
-    },
-    {
-      "game_id": "2026_08_LV_NYJ",
-      "reason": "HTTPSConnectionPool(host='single-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=50)"
-    },
-    {
-      "game_id": "2026_08_CLE_PIT",
-      "reason": "HTTPSConnectionPool(host='single-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=50)"
+      "game_id": "2026_07_PIT_NO",
+      "reason": "Neutral/relocated/unexpected actual venue: Stade de France"
     }
   ],
   "warning": "Archived as-of weather, not game-day observed weather. Run-publication delay assumed, not verified. Original 3-model replays did not use weather."
