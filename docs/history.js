@@ -1,7 +1,7 @@
 "use strict";
 const $=id=>document.getElementById(id);
 const POS=["QB","RB","WR","TE","K"];
-const M=["v9","v10","v10_fg"];
+const M=["v9","v10","v10_fg","v10_weather"];
 const COL={
  QB:[["attempts","Pass att"],["completions","Comp"],["passing_yards","Pass yds"],["passing_tds","Pass TD"],["interceptions","INT"],["rushing_yards","Rush yds"],["rushing_tds","Rush TD"]],
  RB:[["carries","Carries"],["rushing_yards","Rush yds"],["rushing_tds","Rush TD"],["targets","Targets"],["receptions","Rec"],["receiving_yards","Rec yds"],["receiving_tds","Rec TD"]],
@@ -10,7 +10,7 @@ const COL={
  K:[["fg_attempts","FG att"],["fg_made","FG made"],["pat_made","XP made"]]
 };
 const YARDS=new Set(["passing_yards","rushing_yards","receiving_yards"]);
-const S={index:[],game:null,model:"v9",position:"QB",stadiums:null,weather:null,weatherLoading:false,weatherError:"",gameRequestId:0};
+const S={index:[],game:null,model:"v9",position:"QB",stadiums:null,weather:null,weatherLoading:false,weatherError:"",weatherModel:null,weatherModelLoading:false,weatherModelError:"",gameRequestId:0};
 const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 const clear=n=>n.replaceChildren();
 const time=str=>new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"}).format(new Date(str));
@@ -84,7 +84,8 @@ function render(){
    ". Home stadium reference only, not a verified location/roof state for this historical replay." :
    "The game venue and roof condition were not verified for this historical replay.";
  for(const tab of document.querySelectorAll("[data-position]")){const ok=tab.dataset.position===S.position;tab.classList.toggle("active",ok);tab.setAttribute("aria-selected",ok?"true":"false");tab.tabIndex=ok?0:-1;}
- const score=d.score_projections?.[S.model];
+ $("history-weather-model-banner").hidden=S.model!=="v10_weather";
+ const score=S.model==="v10_weather"?S.weatherModel?.score_projection:d.score_projections?.[S.model];
  const validScore=score && Number.isFinite(score.away_score_mean)
    && Number.isFinite(score.home_score_mean)
    && Number.isFinite(score.home_win_probability);
@@ -94,11 +95,11 @@ function render(){
   $("history-home-name").textContent=d.home;
   $("history-away-score").textContent=score.away_score_mean.toFixed(1);
   $("history-home-score").textContent=score.home_score_mean.toFixed(1);
-  $("history-score-model").textContent=S.model==="v9"?"V9 BASELINE":S.model==="v10"?"V10 RESEARCH":"V10+FG RESEARCH";
+  $("history-score-model").textContent=S.model==="v9"?"V9 BASELINE":S.model==="v10"?"V10 RESEARCH":S.model==="v10_fg"?"V10+FG RESEARCH":"V10+WEATHER RECONSTRUCTION";
   $("history-win-prob").textContent=d.home+" win probability: "+(score.home_win_probability*100).toFixed(1)+"% · Reconstructed after kickoff";
  }
  renderWeather();
- const set=(d.models[S.model]||[]).filter(p=>p.position===S.position);
+ const set=(S.model==="v10_weather"?(S.weatherModel?.players||[]):(d.models[S.model]||[])).filter(p=>p.position===S.position);
  $("history-count").textContent=set.length+" players";
  $("history-position").textContent=({QB:"Quarterback",RB:"Running back",WR:"Wide receiver",TE:"Tight end",K:"Kicker"})[S.position]+" projections";
  const head=$("history-head"),body=$("history-body");clear(head);clear(body);
@@ -106,7 +107,7 @@ function render(){
  for(const h of ["PLAYER","TEAM",...COL[S.position].map(x=>x[1])]){const th=el("th",h);th.scope="col";row.append(th);}head.append(row);
  const importance=p=>{const s=p.stats||{};const n=k=>Number(s[k]?.mean||0);return S.position==="QB"?n("attempts"):S.position==="RB"?n("carries")+n("targets"):S.position==="K"?n("fg_attempts"):n("targets");};
  set.sort((a,b)=> (a.team===d.away?0:1)-(b.team===d.away?0:1)||importance(b)-importance(a)||a.player.localeCompare(b.player));
- if(!set.length){const tr=el("tr"),td=el("td","No projections for this position in the archived simulation.");td.colSpan=COL[S.position].length+2;tr.append(td);body.append(tr);return;}
+ if(!set.length){const tr=el("tr"),td=el("td",S.model==="v10_weather"&&!S.weatherModel?(S.weatherModelLoading?"Checking the archived V10+Weather research simulation…":S.weatherModelError||"V10+Weather could not be reconstructed with verified archived inputs for this matchup."):"No projections for this position in the archived simulation.");td.colSpan=COL[S.position].length+2;tr.append(td);body.append(tr);return;}
  for(const p of set){const tr=el("tr"),player=el("td",p.player+(p.identity_status==="unconfirmed"?" (unconfirmed)":"")),team=el("td",p.team);player.className="player-name";team.className="team-label";tr.append(player,team);
  for(const [key] of COL[S.position]){const v=p.stats[key],td=el("td");if(v&&Number.isFinite(Number(v.mean))){td.append(el("span",Number(v.mean).toFixed(1)));if(YARDS.has(key)) {const rr=el("span"," ("+Math.round(v.p10)+"–"+Math.round(v.p90)+")");rr.className="range";td.append(rr);}}else{td.textContent="—";}tr.append(td);}body.append(tr);}
 }
@@ -114,9 +115,9 @@ async function load(id){
  const r=await fetch("./data/historical/"+encodeURIComponent(id)+".json",{cache:"no-store"});
  if(!r.ok)throw Error("Historical report unavailable");
  const d=await r.json();
- if(d.type!=="retrospective_pregame_style"||d.original_pregame_snapshot_verified!==false||!M.every(m=>Array.isArray(d.models?.[m])))throw Error("Unexpected research archive record");
+ if(d.type!=="retrospective_pregame_style"||d.original_pregame_snapshot_verified!==false||!["v9","v10","v10_fg"].every(m=>Array.isArray(d.models?.[m])))throw Error("Unexpected research archive record");
  const token=++S.gameRequestId;
- S.game=d;S.weather=null;S.weatherLoading=true;S.weatherError="";render();
+ S.game=d;S.weather=null;S.weatherLoading=true;S.weatherError="";S.weatherModel=null;S.weatherModelLoading=true;S.weatherModelError="";render();
  try {
   const wx=await fetch("./data/historical_weather/"+encodeURIComponent(id)+".json",{cache:"no-store"});
   if(token!==S.gameRequestId)return;
@@ -133,6 +134,27 @@ async function load(id){
   }
  }catch(e){if(token!==S.gameRequestId)return;S.weatherError="Could not load the archived forecast."}
  if(token===S.gameRequestId){S.weatherLoading=false;render();}
+ try{
+  const response=await fetch("./data/historical_weather_models/"+encodeURIComponent(id)+".json",{cache:"no-store"});
+  if(token!==S.gameRequestId)return;
+  if(response.status===404)S.weatherModelError="No V10+Weather reconstruction is available for this matchup. The roof could be unverified or the 10,000-draw run failed validation.";
+  else if(!response.ok)S.weatherModelError="The archived V10+Weather research feed is temporarily unavailable.";
+  else{
+   const doc=await response.json();
+   if(doc.type==="retrospective_v10_weather_replay_unvalidated" &&
+      doc.game_id===id && doc.away===d.away && doc.home===d.home &&
+      doc.forecast_issue_time_verified===false &&
+      doc.historical_football_inputs_point_in_time_verified===false &&
+      doc.draws_per_model===10000 && Array.isArray(doc.players) &&
+      doc.players.length>1 && doc.score_projection &&
+      doc.weather_asof_cutoff===S.weather?.as_of_at &&
+      doc.original_forecast_run_initialized_at===S.weather?.model_run_initialized_at &&
+      doc.disclaimer?.includes("RECONSTRUCTED AFTER THE GAME")){
+     S.weatherModel=doc;
+   }else S.weatherModelError="Weather simulation did not match this game's archived forecast or historical audit.";
+  }
+ }catch(e){if(token!==S.gameRequestId)return;S.weatherModelError="Unable to load experimental weather projections.";}
+ if(token===S.gameRequestId){S.weatherModelLoading=false;render();}
 }
 async function loadStadiumRoofs() {
  try {
