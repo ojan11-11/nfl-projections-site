@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "type": "historical_asof_archived_model_forecast",
+  "game_id": "2026_07_NYG_HOU",
+  "matchup": "NYG @ HOU",
+  "kickoff_at": "2026-10-25T17:00:00Z",
+  "as_of_at": "2026-10-25T16:00:00Z",
+  "model_run_initialized_at": "2026-10-25T06:00:00Z",
+  "conservative_assumed_available_at": "2026-10-25T13:00:00Z",
+  "model_run_publication_time_verified": false,
+  "forecast_model": "ECMWF IFS HRES archived single run",
+  "source": "Open-Meteo Single Runs API, original ECMWF model initialization",
+  "source_request_url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=29.6847&longitude=-95.4107&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_gusts_10m%2Cprecipitation%2Crain%2Csnowfall&models=ecmwf_ifs&run=2026-10-25T06%3A00&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=UTC&forecast_days=4",
+  "archived_run_payload_sha256": "9d7fe99404bb5bf0967fbe08487ac9357dee3189681eb981318a4422c5ec9be3",
+  "historical_archive_retrieved_at": "2026-11-02T23:28:32.935337Z",
+  "venue": {
+    "name": "Reliant Stadium",
+    "home_team": "HOU",
+    "espn_event_id": "401873016",
+    "type": "retractable",
+    "verified_matchup_venue": true,
+    "neutral_site": false
+  },
+  "forecast": {
+    "temperature_f": 78.4,
+    "wind_mph": 7.0,
+    "gust_mph": 20.1,
+    "precipitation_in_per_hour": 0.0,
+    "rain_in_per_hour": 0.0,
+    "snowfall_cm_per_hour": 0.0,
+    "forecast_valid_at": "2026-10-25T17:00:00Z"
+  },
+  "roof_scenario": {
+    "assumed_state": "unverified",
+    "field_exposure": "unknown",
+    "direct_outdoor_weather_adjustment": "undetermined",
+    "source": "no_confirmed_roof_announcement",
+    "reason": "No adverse forecast: roof may be open or closed; do not assume",
+    "triggers": []
+  },
+  "assumed_publication_delay_hours": 7,
+  "roof_closed_when_adverse": "MODEL ASSUMPTION, NOT ACTUAL ROOF CONFIRMATION",
+  "original_replay_models_used_weather": false,
+  "uncertainty": "Forecast-model initialization is NOT verified public issuance time. Assumed conservative 7h processing lag for ECMWF; original forecasts retrieved after the games. Not weather observations; these weather conditions were NOT fed to the existing Week 7/8 simulations."
+}
