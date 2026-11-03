@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "source": "ESPN unofficial schedule (no forecasts or results)",
+  "refreshed_at": "2026-11-03T01:29:33.836715Z",
+  "days_verified": 17,
+  "failed_dates": [],
+  "games": [
+    {
+      "game_id": "2026_09_JAC_BAL",
+      "matchup": "JAC @ BAL",
+      "season": 2026,
+      "week": 9,
+      "away": "JAC",
+      "home": "BAL",
+      "kickoff_at": "2026-11-06T01:15:00Z",
+      "espn_event_id": "401873037"
+    },
+    {
+      "game_id": "2026_09_CIN_ATL",
+      "matchup": "CIN @ ATL",
+      "season": 2026,
+      "week": 9,
+      "away": "CIN",
+      "home": "ATL",
+      "kickoff_at": "2026-11-08T14:30:00Z",
+      "espn_event_id": "401873038"
+    },
+    {
+      "game_id": "2026_09_CLE_NO",
+      "matchup": "CLE @ NO",
+      "season": 2026,
+      "week": 9,
+      "away": "CLE",
+      "home": "NO",
+      "kickoff_at": "2026-11-08T18:00:00Z",
+      "espn_event_id": "401873039"
+    },
+    {
+      "game_id": "2026_09_DAL_IND",
+      "matchup": "DAL @ IND",
+      "season": 2026,
+      "week": 9,
+      "away": "DAL",
+      "home": "IND",
+      "kickoff_at": "2026-11-08T18:00:00Z",
+      "espn_event_id": "401873040"
+    },
+    {
+      "game_id": "2026_09_DEN_CAR",
+      "matchup": "DEN @ CAR",
+      "season": 2026,
+      "week": 9,
+      "away": "DEN",
+      "home": "CAR",
+      "kickoff_at": "2026-11-08T18:00:00Z",
+      "espn_event_id": "401873041"
+    },
+    {
+      "game_id": "2026_09_DET_MIA",
+      "matchup": "DET @ MIA",
+      "season": 2026,
+      "week": 9,
+      "away": "DET",
+      "home": "MIA",
+      "kickoff_at": "2026-11-08T18:00:00Z",
+      "espn_event_id": "401873042"
+    },
+    {
+      "game_id": "2026_09_LAR_WAS",
+      "matchup": "LAR @ WAS",
+      "season": 2026,
+      "week": 9,
+      "away": "LAR",
+      "home": "WAS",
+      "kickoff_at": "2026-11-08T18:00:00Z",
+      "espn_event_id": "401873043"
+    },
+    {
+      "game_id": "2026_09_NYG_PHI",
+      "matchup": "NYG @ PHI",
+      "season": 2026,
+      "week": 9,
+      "away": "NYG",
+      "home": "PHI",
+      "kickoff_at": "2026-11-08T18:00:00Z",
+      "espn_event_id": "401873044"
+    },
+    {
+      "game_id": "2026_09_NYJ_KC",
+      "matchup": "NYJ @ KC",
+      "season": 2026,
+      "week": 9,
+      "away": "NYJ",
+      "home": "KC",
+      "kickoff_at": "2026-11-08T18:00:00Z",
+      "espn_event_id": "401873045"
+    },
+    {
+      "game_id": "2026_09_HOU_LAC",
+      "matchup": "HOU @ LAC",
+      "season": 2026,
+      "week": 9,
+      "away": "HOU",
+      "home": "LAC",
+      "kickoff_at": "2026-11-08T21:05:00Z",
+      "espn_event_id": "401873046"
+    },
+    {
+      "game_id": "2026_09_ARI_SEA",
+      "matchup": "ARI @ SEA",
+      "season": 2026,
+      "week": 9,
+      "away": "ARI",
+      "home": "SEA",
+      "kickoff_at": "2026-11-08T21:25:00Z",
+      "espn_event_id": "401873048"
+    },
+    {
+      "game_id": "2026_09_GB_NE",
+      "matchup": "GB @ NE",
+      "season": 2026,
+      "week": 9,
+      "away": "GB",
+      "home": "NE",
+      "kickoff_at": "2026-11-08T21:25:00Z",
+      "espn_event_id": "401873049"
+    },
+    {
+      "game_id": "2026_09_LV_SF",
+      "matchup": "LV @ SF",
+      "season": 2026,
+      "week": 9,
+      "away": "LV",
+      "home": "SF",
+      "kickoff_at": "2026-11-08T21:25:00Z",
+      "espn_event_id": "401873047"
+    },
+    {
+      "game_id": "2026_09_TB_CHI",
+      "matchup": "TB @ CHI",
+      "season": 2026,
+      "week": 9,
+      "away": "TB",
+      "home": "CHI",
+      "kickoff_at": "2026-11-09T01:20:00Z",
+      "espn_event_id": "401873050"
+    },
+    {
+      "game_id": "2026_09_BUF_MIN",
+      "matchup": "BUF @ MIN",
+      "season": 2026,
+      "week": 9,
+      "away": "BUF",
+      "home": "MIN",
+      "kickoff_at": "2026-11-10T01:15:00Z",
+      "espn_event_id": "401873051"
+    },
+    {
+      "game_id": "2026_10_WAS_NYG",
+      "matchup": "WAS @ NYG",
+      "season": 2026,
+      "week": 10,
+      "away": "WAS",
+      "home": "NYG",
+      "kickoff_at": "2026-11-13T01:15:00Z",
+      "espn_event_id": "401873052"
+    },
+    {
+      "game_id": "2026_10_NE_DET",
+      "matchup": "NE @ DET",
+      "season": 2026,
+      "week": 10,
+      "away": "NE",
+      "home": "DET",
+      "kickoff_at": "2026-11-15T14:30:00Z",
+      "espn_event_id": "401873053"
+    },
+    {
+      "game_id": "2026_10_BUF_NYJ",
+      "matchup": "BUF @ NYJ",
+      "season": 2026,
+      "week": 10,
+      "away": "BUF",
+      "home": "NYJ",
+      "kickoff_at": "2026-11-15T18:00:00Z",
+      "espn_event_id": "401873054"
+    },
+    {
+      "game_id": "2026_10_CAR_NO",
+      "matchup": "CAR @ NO",
+      "season": 2026,
+      "week": 10,
+      "away": "CAR",
+      "home": "NO",
+      "kickoff_at": "2026-11-15T18:00:00Z",
+      "espn_event_id": "401873055"
+    },
+    {
+      "game_id": "2026_10_HOU_CLE",
+      "matchup": "HOU @ CLE",
+      "season": 2026,
+      "week": 10,
+      "away": "HOU",
+      "home": "CLE",
+      "kickoff_at": "2026-11-15T18:00:00Z",
+      "espn_event_id": "401873056"
+    },
+    {
+      "game_id": "2026_10_JAC_TEN",
+      "matchup": "JAC @ TEN",
+      "season": 2026,
+      "week": 10,
+      "away": "JAC",
+      "home": "TEN",
+      "kickoff_at": "2026-11-15T18:00:00Z",
+      "espn_event_id": "401873057"
+    },
+    {
+      "game_id": "2026_10_KC_ATL",
+      "matchup": "KC @ ATL",
+      "season": 2026,
+      "week": 10,
+      "away": "KC",
+      "home": "ATL",
+      "kickoff_at": "2026-11-15T18:00:00Z",
+      "espn_event_id": "401873058"
+    },
+    {
+      "game_id": "2026_10_MIA_IND",
+      "matchup": "MIA @ IND",
+      "season": 2026,
+      "week": 10,
+      "away": "MIA",
+      "home": "IND",
+      "kickoff_at": "2026-11-15T18:00:00Z",
+      "espn_event_id": "401873059"
+    },
+    {
+      "game_id": "2026_10_MIN_GB",
+      "matchup": "MIN @ GB",
+      "season": 2026,
+      "week": 10,
+      "away": "MIN",
+      "home": "GB",
+      "kickoff_at": "2026-11-15T18:00:00Z",
+      "espn_event_id": "401873060"
+    },
+    {
+      "game_id": "2026_10_LAR_ARI",
+      "matchup": "LAR @ ARI",
+      "season": 2026,
+      "week": 10,
+      "away": "LAR",
+      "home": "ARI",
+      "kickoff_at": "2026-11-15T21:05:00Z",
+      "espn_event_id": "401873061"
+    },
+    {
+      "game_id": "2026_10_SEA_LV",
+      "matchup": "SEA @ LV",
+      "season": 2026,
+      "week": 10,
+      "away": "SEA",
+      "home": "LV",
+      "kickoff_at": "2026-11-15T21:05:00Z",
+      "espn_event_id": "401873062"
+    },
+    {
+      "game_id": "2026_10_SF_DAL",
+      "matchup": "SF @ DAL",
+      "season": 2026,
+      "week": 10,
+      "away": "SF",
+      "home": "DAL",
+      "kickoff_at": "2026-11-15T21:25:00Z",
+      "espn_event_id": "401873063"
+    },
+    {
+      "game_id": "2026_10_PIT_CIN",
+      "matchup": "PIT @ CIN",
+      "season": 2026,
+      "week": 10,
+      "away": "PIT",
+      "home": "CIN",
+      "kickoff_at": "2026-11-16T01:20:00Z",
+      "espn_event_id": "401873064"
+    },
+    {
+      "game_id": "2026_10_LAC_BAL",
+      "matchup": "LAC @ BAL",
+      "season": 2026,
+      "week": 10,
+      "away": "LAC",
+      "home": "BAL",
+      "kickoff_at": "2026-11-17T01:15:00Z",
+      "espn_event_id": "401873065"
+    }
+  ]
+}
