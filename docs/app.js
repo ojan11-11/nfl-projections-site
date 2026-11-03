@@ -308,9 +308,16 @@ async function refresh() {
       errors.push("Schedule verification is over 36 hours old; kickoff times may have changed.");
   }catch(err){errors.push("Automatic schedule unavailable: "+err.message);}
   state.forecastIds=new Set(archived.map(g=>g.game_id));
+  const finalized=new Set(scheduled.filter(g=>g.game_state==="final").map(g=>g.game_id));
   const merged=new Map();
-  for(const game of scheduled)merged.set(game.game_id,game);
-  for(const game of archived)merged.set(game.game_id,game);
+  // A verified final is removed from Current Games. Historical reads the
+  // same schedule and original immutable pregame forecast, if one exists.
+  for(const game of scheduled){
+    if(!finalized.has(game.game_id))merged.set(game.game_id,game);
+  }
+  for(const game of archived){
+    if(!finalized.has(game.game_id))merged.set(game.game_id,game);
+  }
   const now=Date.now();
   state.games=[...merged.values()].sort((a,b)=>{
     const at=Date.parse(a.kickoff_at),bt=Date.parse(b.kickoff_at);
