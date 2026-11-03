@@ -25,7 +25,7 @@
     <section class="hero" aria-labelledby="page-title">
       <div class="eyebrow">SIMULATED. DOCUMENTED. BEFORE KICKOFF.</div>
       <h1 id="page-title">Your game.<br><span>Your numbers.</span></h1>
-      <p class="intro">Player projections from 10,000 simulated NFL games per model. V10+Weather is an unvalidated research option and appears only when a real pregame weather run exists.</p>
+      <p class="intro">Upcoming games are discovered automatically. Verified player projections come from 10,000 simulated NFL games per model. V10+Weather is an unvalidated research option and appears only when a real pregame weather run exists.</p>
       <div class="hero-metrics">
         <div class="metric"><strong>10,000</strong><span>SIMULATIONS / MODEL</span></div>
         <div class="metric"><strong>5</strong><span>POSITION GROUPS</span></div>
@@ -37,7 +37,7 @@
       <div class="section-header">
         <div>
           <div class="eyebrow muted">MODEL OUTPUT</div>
-          <h2 id="workspace-title">Player projections</h2>
+          <h2 id="workspace-title">NFL games &amp; player projections</h2>
         </div>
         <span class="status" id="status-chip">CHECKING FORECASTS</span>
       </div>
@@ -45,7 +45,7 @@
       <div class="controls">
         <div class="control-field game-control">
           <label for="game-select">MATCHUP</label>
-          <select id="game-select"><option value="">Loading verified matchups…</option></select>
+          <select id="game-select"><option value="">Discovering scheduled NFL games…</option></select>
         </div>
         <div class="control-field model-control">
           <label for="model-select">SIMULATION MODEL</label>
@@ -62,8 +62,8 @@
 
       <div id="empty-state" class="empty-state" role="status" hidden>
         <div class="empty-symbol" aria-hidden="true">01</div>
-        <h3>No verified forecasts published yet.</h3>
-        <p>Reports appear here only after all required pregame inputs pass validation and the simulations finish before kickoff. No placeholder projections or postgame backfills.</p>
+        <h3 id="empty-heading">No verified forecasts published yet.</h3>
+        <p id="empty-detail">Reports appear here only after all required pregame inputs pass validation and the simulations finish before kickoff. No placeholder projections or postgame backfills.</p>
         <button id="refresh-button" class="outline-button" type="button">Check for new forecasts</button>
       </div>
 

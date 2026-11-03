@@ -8,10 +8,11 @@ const STAT_COLUMNS = {
   K: [["fg_attempts","FG att"],["fg_made","FG made"],["pat_made","XP made"]]
 };
 const POSITION_LABEL = {QB:"Quarterback",RB:"Running back",WR:"Wide receiver",TE:"Tight end",K:"Kicker"};
-const MODELS = ["v9","v10","v10_fg","v10_weather"];
+const BASE_MODELS = ["v9","v10","v10_fg"];
+const MODELS = [...BASE_MODELS,"v10_weather"];
 const WEATHER_TYPE = "experimental_weather_shadow_not_validated";
 const YARDAGE = new Set(["passing_yards","rushing_yards","receiving_yards"]);
-const state = {games: [], game: null, weather: null, weatherLoading: false,
+const state = {games: [], forecastIds: new Set(), selected: null, game: null, weather: null, weatherLoading: false,
   weatherError: "", stadiums: null, position: "QB", model: "v9", loadToken: 0};
 const $ = id => document.getElementById(id);
 
@@ -43,7 +44,10 @@ function renderGameList() {
   const select=$("game-select");
   reset(select);
   for(const game of state.games) {
-    const option=node("option","",game.matchup+"  ·  "+localTime(game.kickoff_at));
+    const ready=state.forecastIds.has(game.game_id);
+    const past=Date.now()>=new Date(game.kickoff_at).getTime();
+    const label=ready?"Verified forecast":past?"No pregame forecast":"Awaiting projections";
+    const option=node("option","",game.matchup+"  ·  "+localTime(game.kickoff_at)+"  ·  "+label);
     option.value=game.game_id;
     select.append(option);
   }
@@ -176,8 +180,22 @@ function render() {
   const report=state.game;
   $("empty-state").hidden=!!report;
   $("forecast").hidden=!report;
-  $("status-chip").textContent=report?"VERIFIED ARCHIVED FORECAST":"AWAITING VERIFIED FORECAST";
-  if(!report)return;
+  const selected=state.selected;
+  const past=selected && Date.now()>=new Date(selected.kickoff_at).getTime();
+  $("status-chip").textContent=report?"VERIFIED PREGAME FORECAST":
+    selected?(past?"NO VERIFIED PREGAME FORECAST":"UPCOMING · FORECAST PENDING"):
+    "NO SCHEDULED GAMES AVAILABLE";
+  if(!report) {
+    $("empty-heading").textContent=selected?
+      (past?"No verified pregame forecast was published.":"Pregame forecast not yet available."):
+      "No upcoming NFL games available.";
+    $("empty-detail").textContent=selected?
+      selected.matchup+" · Kickoff "+localTime(selected.kickoff_at)+". "+
+      (past?"This game has no validated pre-kickoff forecast; results will never be backfilled.":
+      "The game was discovered automatically. Player projections appear only after valid models finish and publish before kickoff."):
+      "The schedule updates automatically from an NFL scoreboard feed. Verified archived projections remain available here.";
+    return;
+  }
   $("matchup-title").textContent=report.away+"  @  "+report.home;
   $("match-meta").textContent="Kickoff: "+localTime(report.kickoff_at)+"   ·   Data frozen: "+localTime(report.cutoff_at)+"   ·   "+Number(report.draws_per_model||10000).toLocaleString()+" simulations per model";
   const isPast=Date.now()>=new Date(report.kickoff_at).getTime();
@@ -213,16 +231,24 @@ function render() {
   renderWeather();
 }
 async function loadGame(id) {
-  if(!id)return;
+  const choice=state.games.find(g=>g.game_id===id);
+  if(!choice)return;
+  const current=++state.loadToken;
+  state.selected=choice;
+  if(!state.forecastIds.has(id)) {
+    state.game=null;state.weather=null;state.weatherLoading=false;state.weatherError="";
+    render();
+    return;
+  }
   const endpoint="./data/games/"+encodeURIComponent(id)+".json";
   const response=await fetch(endpoint,{cache:"no-store"});
   if(!response.ok)throw Error("Could not fetch the frozen projection file.");
   const doc=await response.json();
-  if(doc.game_id!==id || !doc.models || !MODELS.every(m=>Array.isArray(doc.models[m])))
+  if(doc.game_id!==id || !doc.models || !BASE_MODELS.every(m=>Array.isArray(doc.models[m])))
     throw Error("The projection file did not pass basic schema checks.");
   if(!doc.cutoff_at||!doc.kickoff_at||new Date(doc.cutoff_at)>=new Date(doc.kickoff_at))
     throw Error("This forecast has an invalid pregame cutoff.");
-  const current=++state.loadToken;
+  if(current!==state.loadToken)return;
   state.game=doc;
   state.weather=null;
   state.weatherError="";
@@ -259,22 +285,47 @@ async function loadStadiums() {
 }
 
 async function refresh() {
-  $("status-chip").textContent="CHECKING FORECASTS";
+  $("status-chip").textContent="CHECKING NFL GAMES";
   setMessage("");
+  const errors=[];
+  let archived=[],scheduled=[];
   try {
     const response=await fetch("./data/index.json",{cache:"no-store"});
-    if(!response.ok)throw Error("Forecast feed is temporarily unavailable.");
+    if(!response.ok)throw Error("verified forecast index unavailable");
     const list=await response.json();
-    if(list.version!==1||!Array.isArray(list.games))throw Error("Unsupported forecast feed.");
-    state.games=list.games.filter(g=>/^\d{4}_\d{2}_[A-Z]{2,4}_[A-Z]{2,4}$/.test(g.game_id));
-    renderGameList();
-    if(!state.games.length){state.game=null;state.weather=null;render();return;}
-    await loadGame(selectedGameId());
-  }catch(err){
-    setMessage("Unable to load reports: "+err.message+". You can try refreshing the page.");
-    state.game=null;
-    render();
+    if(list.version!==1||!Array.isArray(list.games))throw Error("invalid forecast index");
+    archived=list.games.filter(g=>/^\d{4}_\d{2}_[A-Z]{2,4}_[A-Z]{2,4}$/.test(g.game_id));
+  }catch(err){errors.push("Verified forecast archive unavailable: "+err.message);}
+  try {
+    const response=await fetch("./data/schedule.json",{cache:"no-store"});
+    if(!response.ok)throw Error("automatic schedule feed not yet published");
+    const list=await response.json();
+    if(list.version!==1||!Array.isArray(list.games)||!Number.isFinite(Date.parse(list.refreshed_at)))
+      throw Error("invalid NFL schedule feed");
+    scheduled=list.games.filter(g=>/^\d{4}_\d{2}_[A-Z]{2,4}_[A-Z]{2,4}$/.test(g.game_id) &&
+      g.matchup===g.away+" @ "+g.home && Number.isFinite(Date.parse(g.kickoff_at)));
+    if(Date.now()-Date.parse(list.refreshed_at)>36*60*60*1000)
+      errors.push("Schedule verification is over 36 hours old; kickoff times may have changed.");
+  }catch(err){errors.push("Automatic schedule unavailable: "+err.message);}
+  state.forecastIds=new Set(archived.map(g=>g.game_id));
+  const merged=new Map();
+  for(const game of scheduled)merged.set(game.game_id,game);
+  for(const game of archived)merged.set(game.game_id,game);
+  const now=Date.now();
+  state.games=[...merged.values()].sort((a,b)=>{
+    const at=Date.parse(a.kickoff_at),bt=Date.parse(b.kickoff_at);
+    const af=at>now,bf=bt>now;
+    if(af!==bf)return af?-1:1;
+    return af?at-bt:bt-at;
+  });
+  renderGameList();
+  setMessage(errors.join(" "));
+  if(!state.games.length){
+    state.selected=null;state.game=null;state.weather=null;render();
+    return;
   }
+  try{await loadGame(selectedGameId());}
+  catch(err){state.game=null;setMessage("Forecast file not usable: "+err.message);render();}
 }
 $("game-select").addEventListener("change",async evt=>{
   const id=evt.target.value;
@@ -296,7 +347,8 @@ for(const tab of document.querySelectorAll("[data-position]")){
 $("refresh-button").addEventListener("click",refresh);
 window.addEventListener("hashchange",async()=>{
   const id=selectedGameId();
-  if(id&&id!==state.game?.game_id){try{await loadGame(id);}catch(e){setMessage(e.message);}}
+  if(id&&id!==state.selected?.game_id){try{await loadGame(id);}catch(e){setMessage(e.message);}}
 });
 loadStadiums();
 refresh();
+setInterval(()=>{if(!document.hidden)refresh();},5*60*1000);
