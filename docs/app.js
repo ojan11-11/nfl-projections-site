@@ -46,7 +46,9 @@ function renderGameList() {
   for(const game of state.games) {
     const ready=state.forecastIds.has(game.game_id);
     const past=Date.now()>=new Date(game.kickoff_at).getTime();
-    const label=ready?"Verified forecast":past?"No pregame forecast":"Awaiting projections";
+    const label=game.game_state==="started"?
+      (ready?"Kickoff passed · Verified pregame forecast":"Kickoff passed · Final pending"):
+      ready?"Verified pregame forecast":past?"No pregame forecast":"Awaiting projections";
     const option=node("option","",game.matchup+"  ·  "+localTime(game.kickoff_at)+"  ·  "+label);
     option.value=game.game_id;
     select.append(option);
@@ -183,7 +185,8 @@ function render() {
   const selected=state.selected;
   const past=selected && Date.now()>=new Date(selected.kickoff_at).getTime();
   $("status-chip").textContent=report?"VERIFIED PREGAME FORECAST":
-    selected?(past?"NO VERIFIED PREGAME FORECAST":"UPCOMING · FORECAST PENDING"):
+    selected?(selected.game_state==="started"?"KICKOFF PASSED · FINAL PENDING":
+      past?"NO VERIFIED PREGAME FORECAST":"UPCOMING · FORECAST PENDING"):
     "NO SCHEDULED GAMES AVAILABLE";
   if(!report) {
     $("empty-heading").textContent=selected?
@@ -320,10 +323,14 @@ async function refresh() {
   }
   const now=Date.now();
   state.games=[...merged.values()].sort((a,b)=>{
+    // A non-final game that has kicked off remains at the TOP of Current.
+    // Otherwise next upcoming kickoffs come first, then older archival fallbacks.
+    const group=g=>g.game_state==="started"?0:
+      Date.parse(g.kickoff_at)>now?1:2;
+    const ga=group(a),gb=group(b);
+    if(ga!==gb)return ga-gb;
     const at=Date.parse(a.kickoff_at),bt=Date.parse(b.kickoff_at);
-    const af=at>now,bf=bt>now;
-    if(af!==bf)return af?-1:1;
-    return af?at-bt:bt-at;
+    return ga===1?at-bt:bt-at;
   });
   renderGameList();
   setMessage(errors.join(" "));
