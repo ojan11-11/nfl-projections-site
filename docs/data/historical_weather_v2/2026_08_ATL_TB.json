@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "type": "retrospective_pregame_multimodel_weather_diagnostic",
+  "game_id": "2026_08_ATL_TB",
+  "kickoff_at": "2026-11-01T18:00:00Z",
+  "as_of_at": "2026-11-01T17:00:00Z",
+  "weather_model_version": "V10+Weather-v2 experimental storm diagnostic",
+  "risk_level": "high",
+  "trigger_labels": [
+    "convective_storm_proxy",
+    "strong_wind"
+  ],
+  "models_compared": 2,
+  "models_requested": 3,
+  "unavailable_model": "NOAA HRRR archive retrieval timed out; no values were substituted",
+  "weather_applied_to_current_historical_scores": false,
+  "original_publication_time_verified": false,
+  "original_issue_lag_assumption_hours": 7,
+  "venue": "Raymond James Stadium",
+  "roof": "open_air",
+  "models": [
+    {
+      "model": "ECMWF IFS",
+      "run_initialized_at": "2026-11-01T06:00:00Z",
+      "assumed_available_by": "2026-11-01T13:00:00Z",
+      "precip_4h_in": 0.15,
+      "rain_4h_in": 0.079,
+      "precip_peak_in_per_hour": 0.091,
+      "cape_peak_jkg": 1230,
+      "thunderstorm_weather_code": true,
+      "gust_peak_mph": 31.1,
+      "source_sha256": "247a37fe29eeb522d492f49beabbb8478385db73db357a0993da4384f449c55d"
+    },
+    {
+      "model": "NOAA GFS",
+      "run_initialized_at": "2026-11-01T06:00:00Z",
+      "assumed_available_by": "2026-11-01T13:00:00Z",
+      "precip_4h_in": 0.075,
+      "rain_4h_in": 0.004,
+      "precip_peak_in_per_hour": 0.134,
+      "cape_peak_jkg": 1080,
+      "thunderstorm_weather_code": true,
+      "gust_peak_mph": 24.6,
+      "source_sha256": "74ffb88e457b2b97b0881e17942921c05d499d6a370d798e98b2c619dd638ff2"
+    }
+  ],
+  "note": "Reconstructed after kickoff from original archived weather-model runs, not observed weather. Actual public release times not verified; seven-hour distribution allowance assumed. Two original model runs indicated convection risk but predicted much less precipitation than actually occurred. These diagnostic values are supplementary; current V10+Weather historical scores have not been re-simulated with v2."
+}

@@ -10,7 +10,7 @@ const COL={
  K:[["fg_attempts","FG att"],["fg_made","FG made"],["pat_made","XP made"]]
 };
 const YARDS=new Set(["passing_yards","rushing_yards","receiving_yards"]);
-const S={index:[],game:null,model:"v9",position:"QB",stadiums:null,weather:null,weatherLoading:false,weatherError:"",weatherModel:null,weatherModelLoading:false,weatherModelError:"",gameRequestId:0};
+const S={index:[],game:null,model:"v9",position:"QB",stadiums:null,weather:null,weatherLoading:false,weatherError:"",weatherModel:null,weatherModelLoading:false,weatherModelError:"",stormV2:null,gameRequestId:0};
 const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 const clear=n=>n.replaceChildren();
 const time=str=>new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"}).format(new Date(str));
@@ -66,6 +66,40 @@ function renderWeather(){
   "archived run retrieved after the game. This forecast did NOT influence V9, V10 or V10+FG historical projections.";
 }
 
+function renderStormRisk(){
+ const panel=$("history-v2-storm-panel");
+ if(!panel)return;
+ const report=S.stormV2;
+ panel.hidden=!report;
+ if(!report)return;
+ const risk=$("history-v2-risk"),models=$("history-v2-models"),notes=$("history-v2-notes");
+ risk.textContent="Archived game-window storm signal: "+report.risk_level.toUpperCase()+
+  " · "+report.models_compared+" independent original model runs compared · "+
+  report.trigger_labels.map(x=>x.replaceAll("_"," ")).join(", ")+
+  ". This is not a calibrated chance of rain.";
+ models.replaceChildren();
+ for(const item of report.models){
+  const card=el("div");card.className="weather-cell";
+  const lines=[
+   ["Original forecast model",item.model],
+   ["Precipitation / 4-hour game",item.precip_4h_in.toFixed(3)+" in"],
+   ["Rain / 4-hour game",item.rain_4h_in.toFixed(3)+" in"],
+   ["Peak hourly precipitation",item.precip_peak_in_per_hour.toFixed(3)+" in"],
+   ["Thunderstorm code",item.thunderstorm_weather_code?"Forecast indicated possible thunderstorm":"Not indicated"],
+   ["Peak CAPE",Math.round(item.cape_peak_jkg)+" J/kg"],
+   ["Max gust",item.gust_peak_mph.toFixed(1)+" mph"],
+   ["Original model initialized",time(item.run_initialized_at)]
+  ];
+  for(const [key,value] of lines){
+   const label=el("span",key);label.className="weather-cell-label";
+   const val=el("strong",value);val.className="weather-cell-value";
+   card.append(label,val);
+  }
+  models.append(card);
+ }
+ notes.textContent=report.unavailable_model+". "+report.note;
+}
+
 function render(){
  $("history-empty").hidden=!!S.game;
  $("history-forecast").hidden=!S.game;
@@ -99,6 +133,7 @@ function render(){
   $("history-win-prob").textContent=d.home+" win probability: "+(score.home_win_probability*100).toFixed(1)+"% · Reconstructed after kickoff";
  }
  renderWeather();
+ renderStormRisk();
  const set=(S.model==="v10_weather"?(S.weatherModel?.players||[]):(d.models[S.model]||[])).filter(p=>p.position===S.position);
  $("history-count").textContent=set.length+" players";
  $("history-position").textContent=({QB:"Quarterback",RB:"Running back",WR:"Wide receiver",TE:"Tight end",K:"Kicker"})[S.position]+" projections";
@@ -117,7 +152,7 @@ async function load(id){
  const d=await r.json();
  if(d.type!=="retrospective_pregame_style"||d.original_pregame_snapshot_verified!==false||!["v9","v10","v10_fg"].every(m=>Array.isArray(d.models?.[m])))throw Error("Unexpected research archive record");
  const token=++S.gameRequestId;
- S.game=d;S.weather=null;S.weatherLoading=true;S.weatherError="";S.weatherModel=null;S.weatherModelLoading=true;S.weatherModelError="";render();
+ S.game=d;S.weather=null;S.weatherLoading=true;S.weatherError="";S.weatherModel=null;S.weatherModelLoading=true;S.weatherModelError="";S.stormV2=null;render();
  try {
   const wx=await fetch("./data/historical_weather/"+encodeURIComponent(id)+".json",{cache:"no-store"});
   if(token!==S.gameRequestId)return;
@@ -155,6 +190,23 @@ async function load(id){
   }
  }catch(e){if(token!==S.gameRequestId)return;S.weatherModelError="Unable to load experimental weather projections.";}
  if(token===S.gameRequestId){S.weatherModelLoading=false;render();}
+ try{
+  const resp=await fetch("./data/historical_weather_v2/"+encodeURIComponent(id)+".json",{cache:"no-store"});
+  if(token!==S.gameRequestId)return;
+  if(resp.ok){
+   const alert=await resp.json();
+   const cutoffOk=S.weather && new Date(alert.as_of_at).getTime()===
+     new Date(S.weather.as_of_at).getTime();
+   if(alert.type==="retrospective_pregame_multimodel_weather_diagnostic" &&
+      alert.game_id===id && alert.weather_applied_to_current_historical_scores===false &&
+      alert.original_publication_time_verified===false && alert.models_compared>=2 &&
+      cutoffOk && Array.isArray(alert.models) && alert.models.length===alert.models_compared &&
+      alert.models.every(m=>typeof m.source_sha256==="string" && m.source_sha256.length===64)){
+    S.stormV2=alert;
+   }
+  }
+ }catch(e){/* Optional v2 research unavailable; do not invent storm conditions */}
+ if(token===S.gameRequestId)render();
 }
 async function loadStadiumRoofs() {
  try {
