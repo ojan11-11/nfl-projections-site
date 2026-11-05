@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-05T04:42:24.313995Z",
+  "refreshed_at": "2026-11-05T05:22:59.365336Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -487,6 +487,17 @@
       "home": "BAL",
       "kickoff_at": "2026-11-17T01:15:00Z",
       "espn_event_id": "401873065",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_IND_HOU",
+      "matchup": "IND @ HOU",
+      "season": 2026,
+      "week": 11,
+      "away": "IND",
+      "home": "HOU",
+      "kickoff_at": "2026-11-20T01:15:00Z",
+      "espn_event_id": "401873066",
       "game_state": "scheduled"
     }
   ]
