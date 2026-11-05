@@ -25,11 +25,11 @@
     <section class="hero" aria-labelledby="page-title">
       <div class="eyebrow">SIMULATED. DOCUMENTED. BEFORE KICKOFF.</div>
       <h1 id="page-title">Your game.<br><span>Your numbers.</span></h1>
-      <p class="intro">Upcoming games are discovered automatically. Verified player projections come from 10,000 simulated NFL games per model. V10+Weather is an unvalidated research option and appears only when a real pregame weather run exists.</p>
+      <p class="intro">Upcoming games are discovered automatically. Verified player projections come from 10,000 simulated NFL games per model. V10+Weather and V11 are unvalidated research options; each appears with projections only when a real, verified pre-kickoff simulation has been published.</p>
       <div class="hero-metrics">
         <div class="metric"><strong>10,000</strong><span>SIMULATIONS / MODEL</span></div>
         <div class="metric"><strong>5</strong><span>POSITION GROUPS</span></div>
-        <div class="metric"><strong>4</strong><span>MODEL OPTIONS · WEATHER EXPERIMENTAL</span></div>
+        <div class="metric"><strong>5</strong><span>MODEL OPTIONS · RESEARCH LAB</span></div>
       </div>
     </section>
 
@@ -54,6 +54,7 @@
             <option value="v10">V10 — research</option>
             <option value="v10_fg">V10+FG — research</option>
             <option value="v10_weather">V10+Weather — experimental</option>
+            <option value="v11">V11 — opponent-adjusted passing (experimental)</option>
           </select>
         </div>
       </div>
@@ -123,6 +124,22 @@
           <p id="game-roof-context" class="weather-roof-context"></p>
         </section>
       </div>
+    </section>
+
+    <section class="method" aria-labelledby="v11-research-title">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow muted">RESEARCH TRACK · V11</div>
+          <h2 id="v11-research-title">Opponent-adjusted passing.</h2>
+        </div>
+      </div>
+      <p class="intro" style="max-width:860px">V11 modifies completed-pass gains inside the existing drive-by-drive simulation based on prior-week passing efficiency and opponent defense. It is <strong>experimental</strong>, not a replacement for V9, V10 or V10+FG. Choose V11 above to see a game-specific simulation only when it was independently generated and verified before kickoff.</p>
+      <div class="method-grid">
+        <article class="method-card"><span class="method-num">01</span><h3>208 historical games</h3><p>Paired 2025 regular-season study, Weeks 5–18. Retrospective data, not originally frozen live forecasts.</p></article>
+        <article class="method-card"><span class="method-num">02</span><h3>7.562 vs. 7.614</h3><p>V11 vs. V10 team-score mean absolute error (points per team); a small exploratory improvement.</p></article>
+        <article class="method-card"><span class="method-num">03</span><h3>0.22578 vs. 0.23120</h3><p>V11 vs. V10 win-probability Brier error in the same study; lower is better. Not evidence of a betting advantage.</p></article>
+      </div>
+      <p class="table-footnote">Historical research: 2,000 simulations/model/game; 2023–24 yardage-link training, 2025 prior-week inputs. Historical injury/starting-QB snapshots were incomplete. Live V11 forecasts, when available, use 10,000 simulations and a separate pre-kickoff source audit. <a href="./data/v11_study_2025.json">Research summary and methodology</a>.</p>
     </section>
 
     <section class="method" aria-labelledby="method-title">

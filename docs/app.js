@@ -9,11 +9,13 @@ const STAT_COLUMNS = {
 };
 const POSITION_LABEL = {QB:"Quarterback",RB:"Running back",WR:"Wide receiver",TE:"Tight end",K:"Kicker"};
 const BASE_MODELS = ["v9","v10","v10_fg"];
-const MODELS = [...BASE_MODELS,"v10_weather"];
+const MODELS = [...BASE_MODELS,"v10_weather","v11"];
 const WEATHER_TYPE = "experimental_weather_shadow_not_validated";
+const V11_TYPE = "experimental_v11_pregame_shadow";
 const YARDAGE = new Set(["passing_yards","rushing_yards","receiving_yards"]);
 const state = {games: [], forecastIds: new Set(), selected: null, game: null, weather: null, weatherLoading: false,
-  weatherError: "", stadiums: null, position: "QB", model: "v9", loadToken: 0};
+  weatherError: "", v11: null, v11Loading: false, v11Error: "",
+  stadiums: null, position: "QB", model: "v9", loadToken: 0};
 const $ = id => document.getElementById(id);
 
 function localTime(iso) {
@@ -82,6 +84,7 @@ function renderPlayers() {
   if(!state.game) return;
   const columns=STAT_COLUMNS[state.position];
   const players=(state.model==="v10_weather"?(state.weather?.players||[]):
+                 state.model==="v11"?(state.v11?.players||[]):
                  (state.game.models?.[state.model]||[]))
     .filter(p=>p.position===state.position)
     .sort((a,b)=>(a.team===state.game.away?0:1)-(b.team===state.game.away?0:1)
@@ -102,7 +105,10 @@ function renderPlayers() {
     const detail=state.model==="v10_weather" && !state.weather ?
       (state.weatherLoading?"Checking archived weather simulation…":
       "No verified pre-kickoff V10+Weather forecast is available for this matchup.") :
-      "No "+POSITION_LABEL[state.position].toLowerCase()+" projections are included in this verified snapshot.";
+      state.model==="v11" && !state.v11 ?
+      (state.v11Loading?"Checking for an independently verified V11 simulation…":
+       state.v11Error||"No frozen pre-kickoff V11 forecast exists for this matchup; V10 numbers are never substituted.") :
+      "No "+POSITION_LABEL[state.position].toLowerCase()+" projections are included in this verified snapshot."
     const td=node("td","",detail);
     td.colSpan=columns.length+2;
     tr.append(td);body.append(tr);
@@ -140,7 +146,7 @@ function renderWeather() {
     "Home stadium roof reference unavailable; no stadium/roof assumptions are inferred.";
   if(!isResearch) {
     use.textContent="No stadium weather was applied by "+(
-      state.model==="v9"?"V9":state.model==="v10"?"V10":"V10+FG")+
+      state.model==="v9"?"V9":state.model==="v10"?"V10":state.model==="v11"?"V11":"V10+FG")+
       " to this game’s simulation.";
     if(state.weather) {
       message.hidden=false;
@@ -206,9 +212,13 @@ function render() {
   $("capture-label").textContent=isPast?"ARCHIVED PRE-KICKOFF":"FROZEN PRE-KICKOFF";
   $("research-banner").hidden=state.model==="v9";
   $("research-banner-title").textContent=state.model==="v10_weather" ?
-    "V10+Weather — unvalidated experimental model" : "Experimental model";
+    "V10+Weather — unvalidated experimental model" : state.model==="v11" ?
+    "V11 — opponent-adjusted passing research" : "Experimental model";
   $("research-banner-message").textContent=state.model==="v10_weather" ?
     "Wind, gust, precipitation and temperature adjustments are provisional research assumptions. Weather results are displayed only when simulated and frozen before kickoff." :
+    state.model==="v11" ? (state.v11 ?
+      "Independent 10,000-draw pre-kickoff V11 simulation using prior-week opponent-adjusted passing efficiency. Research only; not validated as a production model. V11 inputs captured "+localTime(state.v11.source_captured_at)+"." :
+      "V11 is experimental. No authentic pre-kickoff V11 simulation has been published for this game; the 2025 retrospective backtest is not a substitute for a live forecast.") :
     "For research comparison only. V9 is the baseline; this model has not been promoted for production scoring.";
   for(const tab of document.querySelectorAll("[data-position]")){
     const selected=tab.dataset.position===state.position;
@@ -217,6 +227,7 @@ function render() {
     tab.tabIndex=selected?0:-1;
   }
   const score=state.model==="v10_weather"?state.weather?.score_projection:
+    state.model==="v11"?state.v11?.score_projection:
     report.score_projections?.[state.model];
   const validScore=score && Number.isFinite(score.away_score_mean)
     && Number.isFinite(score.home_score_mean)
@@ -227,7 +238,7 @@ function render() {
     $("live-home-name").textContent=report.home;
     $("live-away-score").textContent=score.away_score_mean.toFixed(1);
     $("live-home-score").textContent=score.home_score_mean.toFixed(1);
-    $("live-score-model").textContent=state.model==="v9"?"V9 BASELINE":state.model==="v10"?"V10 RESEARCH":state.model==="v10_fg"?"V10+FG RESEARCH":"V10+WEATHER EXPERIMENTAL";
+    $("live-score-model").textContent=state.model==="v9"?"V9 BASELINE":state.model==="v10"?"V10 RESEARCH":state.model==="v10_fg"?"V10+FG RESEARCH":state.model==="v11"?"V11 PASSING EXPERIMENTAL":"V10+WEATHER EXPERIMENTAL";
     $("live-win-prob").textContent=report.home+" win probability: "+(score.home_win_probability*100).toFixed(1)+"%";
   }
   renderPlayers();
@@ -240,6 +251,7 @@ async function loadGame(id) {
   state.selected=choice;
   if(!state.forecastIds.has(id)) {
     state.game=null;state.weather=null;state.weatherLoading=false;state.weatherError="";
+    state.v11=null;state.v11Loading=false;state.v11Error="";
     render();
     return;
   }
@@ -256,6 +268,9 @@ async function loadGame(id) {
   state.weather=null;
   state.weatherError="";
   state.weatherLoading=true;
+  state.v11=null;state.v11Loading=true;state.v11Error="";
+  // Independent optional V11 source: never alter the immutable three-model baseline.
+  const v11Promise=fetch("./data/v11/"+encodeURIComponent(id)+".json",{cache:"no-store"});
   render();
   try {
     const wx=await fetch("./data/weather/"+encodeURIComponent(id)+".json",{cache:"no-store"});
@@ -275,6 +290,35 @@ async function loadGame(id) {
     }
   }catch(e){if(current!==state.loadToken)return;state.weatherError="Weather research file could not be loaded.";}
   if(current===state.loadToken){state.weatherLoading=false;render();}
+  try {
+    const response=await v11Promise;
+    if(current!==state.loadToken)return;
+    if(response.status===404){
+      state.v11Error="V11 was not published before this game's kickoff. No forecast will be fabricated.";
+    } else if(!response.ok){
+      state.v11Error="V11 research feed is currently unavailable.";
+    } else {
+      const candidate=await response.json();
+      const t=x=>Date.parse(x);
+      const score=candidate.score_projection;
+      if(candidate.version!==1 || candidate.type!==V11_TYPE ||
+         candidate.game_id!==id || candidate.away!==doc.away || candidate.home!==doc.home ||
+         candidate.kickoff_at!==doc.kickoff_at || candidate.baseline_cutoff_at!==doc.cutoff_at ||
+         candidate.draws_per_model!==10000 || !Array.isArray(candidate.players) ||
+         !candidate.players.length || !score ||
+         ![score.away_score_mean,score.home_score_mean,score.home_win_probability]
+            .every(v=>typeof v==="number"&&Number.isFinite(v)) ||
+         score.home_win_probability<0 || score.home_win_probability>1 ||
+         !Number.isFinite(t(candidate.source_captured_at)) ||
+         !(t(doc.cutoff_at)<=t(candidate.source_captured_at) &&
+           t(candidate.source_captured_at)<=t(candidate.cutoff_at) &&
+           t(candidate.cutoff_at)<=t(candidate.generated_at) &&
+           t(candidate.generated_at)<t(doc.kickoff_at))) {
+        state.v11Error="V11 research report rejected: game, simulation, or pre-kickoff provenance mismatch.";
+      } else state.v11=candidate;
+    }
+  }catch(e){if(current!==state.loadToken)return;state.v11Error="V11 research file could not be loaded.";}
+  if(current===state.loadToken){state.v11Loading=false;render();}
 }
 async function loadStadiums() {
   try {

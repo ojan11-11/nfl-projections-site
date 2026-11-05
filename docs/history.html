@@ -24,9 +24,12 @@
 <div class="section-header"><div><div class="eyebrow muted">HISTORICAL RESEARCH</div><h2>Completed games and player projections</h2></div><span class="status" id="archive-status">RESEARCH ARCHIVE</span></div>
 <div class="controls">
 <div class="control-field game-control"><label for="history-game">PAST MATCHUP</label><select id="history-game"><option>Loading archive…</option></select></div>
-<div class="control-field model-control"><label for="history-model">MODEL VERSION</label><select id="history-model"><option value="v9">V9 — baseline</option><option value="v10">V10 — research</option><option value="v10_fg">V10+FG — research</option><option value="v10_weather">V10+Weather — retrospective experimental</option></select></div>
+<div class="control-field model-control"><label for="history-model">MODEL VERSION</label><select id="history-model"><option value="v9">V9 — baseline</option><option value="v10">V10 — research</option><option value="v10_fg">V10+FG — research</option><option value="v10_weather">V10+Weather — retrospective experimental</option><option value="v11">V11 — verified pregame only (experimental)</option></select></div>
 </div>
 <div class="notice" id="archive-notice" hidden role="status"></div>
+<div class="research-banner" id="history-v11-model-banner" hidden role="status" style="margin:12px 0">
+<strong>V11 — unvalidated opponent-adjusted passing research.</strong> Only an authentically frozen pre-kickoff V11 run can appear here. No reconstructed historical V11 forecasts are presented as original predictions.
+</div>
 <div class="research-banner" id="history-weather-model-banner" hidden role="status" style="margin:12px 0">
 <strong>V10+Weather — retrospective experimental simulation.</strong> Reconstructed after kickoff using an archived original weather model run assumed available before T−60. The weather coefficients have not been independently validated; some lineup and historical input evidence was incomplete. Never treat this as an authentic original pregame forecast.
 </div>
@@ -49,7 +52,7 @@
 <button class="tab active" data-position="QB" aria-selected="true" role="tab">QBs</button><button class="tab" data-position="RB" aria-selected="false" role="tab">RBs</button><button class="tab" data-position="WR" aria-selected="false" role="tab">WRs</button><button class="tab" data-position="TE" aria-selected="false" role="tab">TEs</button><button class="tab" data-position="K" aria-selected="false" role="tab">Kickers</button></div>
 <div class="table-heading"><div><h3 id="history-position">Quarterback projections</h3><p>Mean estimates; yardage cells show the 10th–90th percentile range.</p></div><span class="count" id="history-count">—</span></div>
 <div class="table-scroll"><table><thead id="history-head"></thead><tbody id="history-body"></tbody></table></div>
-<p class="table-footnote">These numbers were simulated retrospectively, not observed forecasts. They do not use actual game scores as targets, but available archival inputs are incomplete.</p>
+<p class="table-footnote" id="history-player-footnote">Historical forecasts are labeled according to their actual source and publication timing.</p>
 <section class="game-weather" aria-label="Historical as-of weather forecast and roof assumptions">
 <div class="eyebrow muted">ORIGINAL FORECAST RUN · HISTORICAL RESEARCH</div>
 <h3>What weather was forecast one hour before kickoff?</h3>

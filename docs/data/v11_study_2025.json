@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "type": "retrospective_v11_historical_model_comparison",
+  "model": "v11",
+  "baseline": "v10",
+  "season": 2025,
+  "weeks": [
+    5,
+    18
+  ],
+  "matched_games": 208,
+  "draws_per_model_per_game": 2000,
+  "models": {
+    "v10": {
+      "away_score_bias": 0.47077,
+      "games": 208,
+      "home_score_bias": -0.7143,
+      "margin_mae": 10.60834,
+      "team_score_mae": 7.61446,
+      "total_bias": -0.24353,
+      "total_mae": 10.43037,
+      "win_probability_brier": 0.2312,
+      "winner_accuracy": 0.61538
+    },
+    "v11": {
+      "away_score_bias": 0.50044,
+      "games": 208,
+      "home_score_bias": -0.64732,
+      "margin_mae": 10.49719,
+      "team_score_mae": 7.56175,
+      "total_bias": -0.14687,
+      "total_mae": 10.36438,
+      "win_probability_brier": 0.22578,
+      "winner_accuracy": 0.61538
+    }
+  },
+  "paired_v11_vs_v10": {
+    "brier": {
+      "ci95": [
+        0.00211,
+        0.00835
+      ],
+      "paired_games": 208,
+      "v11_improvement": 0.00542
+    },
+    "margin_mae": {
+      "ci95": [
+        -0.013,
+        0.22589
+      ],
+      "paired_games": 208,
+      "v11_improvement": 0.11114
+    },
+    "team_score_mae": {
+      "ci95": [
+        -0.00968,
+        0.11565
+      ],
+      "paired_games": 208,
+      "v11_improvement": 0.05272
+    },
+    "total_mae": {
+      "ci95": [
+        -0.04862,
+        0.18457
+      ],
+      "paired_games": 208,
+      "v11_improvement": 0.066
+    }
+  },
+  "training_seasons": [
+    2023,
+    2024
+  ],
+  "epa_to_pass_yards_coefficient": 0.284122,
+  "retrospective_data": true,
+  "verified_historical_pregame_snapshots": false,
+  "official_starters_injuries_reconstructed": false,
+  "notes": "Historical nflverse datasets were downloaded after the season, with previous-week filtering. Not authentic frozen pre-kickoff forecasts. Score-error uncertainty intervals include zero; independent prospective validation is required. No evidence of wagering profitability."
+}
