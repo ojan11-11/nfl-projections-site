@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-06T00:27:26.707389Z",
+  "refreshed_at": "2026-11-06T01:36:22.517380Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -179,7 +179,7 @@
       "home": "BAL",
       "kickoff_at": "2026-11-06T01:15:00Z",
       "espn_event_id": "401873037",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_CIN_ATL",
