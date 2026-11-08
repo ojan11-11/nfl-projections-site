@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-08T17:54:13.904408Z",
+  "refreshed_at": "2026-11-08T18:20:34.137305Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -201,7 +201,7 @@
       "home": "NO",
       "kickoff_at": "2026-11-08T18:00:00Z",
       "espn_event_id": "401873039",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_DAL_IND",
@@ -212,7 +212,7 @@
       "home": "IND",
       "kickoff_at": "2026-11-08T18:00:00Z",
       "espn_event_id": "401873040",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_DEN_CAR",
@@ -223,7 +223,7 @@
       "home": "CAR",
       "kickoff_at": "2026-11-08T18:00:00Z",
       "espn_event_id": "401873041",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_DET_MIA",
@@ -234,7 +234,7 @@
       "home": "MIA",
       "kickoff_at": "2026-11-08T18:00:00Z",
       "espn_event_id": "401873042",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_LAR_WAS",
@@ -245,7 +245,7 @@
       "home": "WAS",
       "kickoff_at": "2026-11-08T18:00:00Z",
       "espn_event_id": "401873043",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_NYG_PHI",
@@ -256,7 +256,7 @@
       "home": "PHI",
       "kickoff_at": "2026-11-08T18:00:00Z",
       "espn_event_id": "401873044",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_NYJ_KC",
@@ -267,7 +267,7 @@
       "home": "KC",
       "kickoff_at": "2026-11-08T18:00:00Z",
       "espn_event_id": "401873045",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_HOU_LAC",
