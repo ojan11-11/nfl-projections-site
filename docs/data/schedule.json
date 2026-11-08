@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-08T14:05:44.391805Z",
+  "refreshed_at": "2026-11-08T14:58:08.313732Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -190,7 +190,7 @@
       "home": "ATL",
       "kickoff_at": "2026-11-08T14:30:00Z",
       "espn_event_id": "401873038",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_09_CLE_NO",
