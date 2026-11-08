@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-08T04:37:47.574286Z",
+  "refreshed_at": "2026-11-08T05:13:52.056803Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -498,6 +498,127 @@
       "home": "HOU",
       "kickoff_at": "2026-11-20T01:15:00Z",
       "espn_event_id": "401873066",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_ARI_KC",
+      "matchup": "ARI @ KC",
+      "season": 2026,
+      "week": 11,
+      "away": "ARI",
+      "home": "KC",
+      "kickoff_at": "2026-11-22T18:00:00Z",
+      "espn_event_id": "401873067",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_BAL_CAR",
+      "matchup": "BAL @ CAR",
+      "season": 2026,
+      "week": 11,
+      "away": "BAL",
+      "home": "CAR",
+      "kickoff_at": "2026-11-22T18:00:00Z",
+      "espn_event_id": "401873068",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_JAC_NYG",
+      "matchup": "JAC @ NYG",
+      "season": 2026,
+      "week": 11,
+      "away": "JAC",
+      "home": "NYG",
+      "kickoff_at": "2026-11-22T18:00:00Z",
+      "espn_event_id": "401873069",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_MIA_BUF",
+      "matchup": "MIA @ BUF",
+      "season": 2026,
+      "week": 11,
+      "away": "MIA",
+      "home": "BUF",
+      "kickoff_at": "2026-11-22T18:00:00Z",
+      "espn_event_id": "401873070",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_NO_CHI",
+      "matchup": "NO @ CHI",
+      "season": 2026,
+      "week": 11,
+      "away": "NO",
+      "home": "CHI",
+      "kickoff_at": "2026-11-22T18:00:00Z",
+      "espn_event_id": "401873071",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_TB_DET",
+      "matchup": "TB @ DET",
+      "season": 2026,
+      "week": 11,
+      "away": "TB",
+      "home": "DET",
+      "kickoff_at": "2026-11-22T18:00:00Z",
+      "espn_event_id": "401873072",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_TEN_DAL",
+      "matchup": "TEN @ DAL",
+      "season": 2026,
+      "week": 11,
+      "away": "TEN",
+      "home": "DAL",
+      "kickoff_at": "2026-11-22T18:00:00Z",
+      "espn_event_id": "401873073",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_NYJ_LAC",
+      "matchup": "NYJ @ LAC",
+      "season": 2026,
+      "week": 11,
+      "away": "NYJ",
+      "home": "LAC",
+      "kickoff_at": "2026-11-22T21:05:00Z",
+      "espn_event_id": "401873074",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_LV_DEN",
+      "matchup": "LV @ DEN",
+      "season": 2026,
+      "week": 11,
+      "away": "LV",
+      "home": "DEN",
+      "kickoff_at": "2026-11-22T21:25:00Z",
+      "espn_event_id": "401873075",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_PIT_PHI",
+      "matchup": "PIT @ PHI",
+      "season": 2026,
+      "week": 11,
+      "away": "PIT",
+      "home": "PHI",
+      "kickoff_at": "2026-11-22T21:25:00Z",
+      "espn_event_id": "401873076",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_11_MIN_SF",
+      "matchup": "MIN @ SF",
+      "season": 2026,
+      "week": 11,
+      "away": "MIN",
+      "home": "SF",
+      "kickoff_at": "2026-11-23T01:20:00Z",
+      "espn_event_id": "401873077",
       "game_state": "scheduled"
     }
   ]
