@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-08T23:54:21.163362Z",
+  "refreshed_at": "2026-11-09T00:23:22.608170Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -289,7 +289,7 @@
       "home": "SEA",
       "kickoff_at": "2026-11-08T21:25:00Z",
       "espn_event_id": "401873048",
-      "game_state": "started"
+      "game_state": "final"
     },
     {
       "game_id": "2026_09_GB_NE",
@@ -311,7 +311,7 @@
       "home": "SF",
       "kickoff_at": "2026-11-08T21:25:00Z",
       "espn_event_id": "401873047",
-      "game_state": "started"
+      "game_state": "final"
     },
     {
       "game_id": "2026_09_TB_CHI",
