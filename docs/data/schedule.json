@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-11T04:20:36.333808Z",
+  "refreshed_at": "2026-11-11T05:23:49.824823Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -630,6 +630,17 @@
       "home": "WAS",
       "kickoff_at": "2026-11-24T01:15:00Z",
       "espn_event_id": "401873078",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_12_GB_LAR",
+      "matchup": "GB @ LAR",
+      "season": 2026,
+      "week": 12,
+      "away": "GB",
+      "home": "LAR",
+      "kickoff_at": "2026-11-26T01:00:00Z",
+      "espn_event_id": "401873079",
       "game_state": "scheduled"
     }
   ]
