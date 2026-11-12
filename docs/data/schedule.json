@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-12T04:42:24.756665Z",
+  "refreshed_at": "2026-11-12T05:25:44.667520Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -641,6 +641,39 @@
       "home": "LAR",
       "kickoff_at": "2026-11-26T01:00:00Z",
       "espn_event_id": "401873079",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_12_CHI_DET",
+      "matchup": "CHI @ DET",
+      "season": 2026,
+      "week": 12,
+      "away": "CHI",
+      "home": "DET",
+      "kickoff_at": "2026-11-26T18:00:00Z",
+      "espn_event_id": "401873081",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_12_PHI_DAL",
+      "matchup": "PHI @ DAL",
+      "season": 2026,
+      "week": 12,
+      "away": "PHI",
+      "home": "DAL",
+      "kickoff_at": "2026-11-26T21:30:00Z",
+      "espn_event_id": "401873080",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_12_KC_BUF",
+      "matchup": "KC @ BUF",
+      "season": 2026,
+      "week": 12,
+      "away": "KC",
+      "home": "BUF",
+      "kickoff_at": "2026-11-27T01:20:00Z",
+      "espn_event_id": "401873082",
       "game_state": "scheduled"
     }
   ]
