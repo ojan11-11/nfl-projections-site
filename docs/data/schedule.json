@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-13T03:36:57.183643Z",
+  "refreshed_at": "2026-11-13T04:20:35.317973Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -344,7 +344,7 @@
       "home": "NYG",
       "kickoff_at": "2026-11-13T01:15:00Z",
       "espn_event_id": "401873052",
-      "game_state": "started"
+      "game_state": "final"
     },
     {
       "game_id": "2026_10_NE_DET",
