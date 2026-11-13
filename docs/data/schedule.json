@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-13T04:42:22.241548Z",
+  "refreshed_at": "2026-11-13T05:24:08.146946Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -674,6 +674,17 @@
       "home": "BUF",
       "kickoff_at": "2026-11-27T01:20:00Z",
       "espn_event_id": "401873082",
+      "game_state": "scheduled"
+    },
+    {
+      "game_id": "2026_12_DEN_PIT",
+      "matchup": "DEN @ PIT",
+      "season": 2026,
+      "week": 12,
+      "away": "DEN",
+      "home": "PIT",
+      "kickoff_at": "2026-11-27T20:00:00Z",
+      "espn_event_id": "401873083",
       "game_state": "scheduled"
     }
   ]
