@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "ESPN unofficial fixture schedule and confirmed-final flags (no scores or player results)",
-  "refreshed_at": "2026-11-15T14:10:33.373871Z",
+  "refreshed_at": "2026-11-15T15:00:19.664944Z",
   "days_verified": 22,
   "failed_dates": [],
   "games": [
@@ -355,7 +355,7 @@
       "home": "DET",
       "kickoff_at": "2026-11-15T14:30:00Z",
       "espn_event_id": "401873053",
-      "game_state": "scheduled"
+      "game_state": "started"
     },
     {
       "game_id": "2026_10_BUF_NYJ",
